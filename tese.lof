@@ -18,12 +18,13 @@
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Escolha da dimensionalidade dos Embeddings}}{19}{figure.caption.22}%
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Exemplo de mutação. O aminoácido A na posição 3 está sendo substituído pelo o aminoácido C}}{20}{figure.caption.24}%
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Arquitetura da rede neural do Agente (\textit {GenSeq})}}{21}{figure.caption.27}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Primeiro estágio de treinamento}}{23}{figure.caption.28}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Comparação do Agente pré treinado com um Agente aleatório}}{24}{figure.caption.30}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Primeiro estágio de treinamento}}{22}{figure.caption.28}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Comparação do Agente pré treinado com um Agente aleatório}}{23}{figure.caption.30}%
 \contentsline {figure}{\numberline {3.8}{\ignorespaces Média móvel das recompensas por episódio - treino}}{24}{figure.caption.31}%
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Segundo estágio - Treino}}{26}{figure.caption.32}%
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Comparação do Agente treinado com um Agente aleatório}}{27}{figure.caption.34}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Segundo estágio - Treino}}{25}{figure.caption.32}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Comparação do Agente treinado com um Agente aleatório}}{26}{figure.caption.34}%
 \contentsline {figure}{\numberline {3.11}{\ignorespaces Média móvel das recompensas por episódio - treino}}{27}{figure.caption.35}%
 \contentsline {figure}{\numberline {3.12}{\ignorespaces Gerando sequência otimizada}}{28}{figure.caption.36}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Comparação entre estruturas}}{29}{figure.caption.38}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Variação da similaridade entre as sequências geradas e o FIX }}{29}{figure.caption.37}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Comparação entre estruturas}}{30}{figure.caption.39}%

@@ -1053,6 +1053,11 @@ INPUT ./conteudo/05_resultados.tex
 INPUT ./conteudo/05_resultados.tex
 INPUT ./conteudo/05_resultados.tex
 INPUT conteudo/05_resultados.tex
+INPUT ./figuras/plot_tmscore_decreasing.png
+INPUT ./figuras/plot_tmscore_decreasing.png
+INPUT ./figuras/plot_tmscore_decreasing.png
+INPUT ./figuras/plot_tmscore_decreasing.png
+INPUT ./figuras/plot_tmscore_decreasing.png
 INPUT ./figuras/target_structure.pdf
 INPUT ./figuras/target_structure.pdf
 INPUT ./figuras/target_structure.pdf

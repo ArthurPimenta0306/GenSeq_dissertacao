@@ -1,24 +1,29 @@
 \chapter{Resultados}
 
-Com o Agente treinado, é possível gerar novas sequências seguindo a arquitetura ilustrada no módulo de Geração de Sequências.
+{\color{red} Em andamento}
+
+Com o Agente treinado, é possível gerar novas sequências seguindo a arquitetura ilustrada na figura \ref{fig:geradorseq}.
 Neste caso, o Agente gerou mais de 200 proteínas diferentes a partir de mutações na sequência inicial. Destas, 63 possuem um TMScore superior a 92\%.
 
-{\color{red} Imagem do poster TMScore x Numero de proteinas}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=.8\linewidth]{figuras/plot_tmscore_decreasing.png}    
+    \caption{Variação da similaridade entre as sequências geradas e o FIX }
+    \label{fig:rew_per_ep_train}
+  \end{figure}
 
-
-
-%%% Estrutura | TM-Score | Ganho em relacao a inicial | Diferenca da inicial | Diferença da original 
-
+É interessante notar que, apesar da forte semelhança entre as estruturas, em termos de IS (Idêntidade de Sequência), são proteínas muito diferentes, tendo em média cerca de 30\% de similaridade. 
+  
 \begin{table}[htbp]
     \centering
     \begin{tabular}{c|cccc}
         \hline
-        \textbf{ID} & \textbf{TM-Score} & \textbf{Ganho de TM-Score} & \textbf{IS - seq. inicial} & \textbf{IS - seq. original} \\
+        \textbf{ID} & \textbf{TM-Score} & \textbf{IS - seq. original} \\
         \hline
-         1 & 0.9311 & +0.008 pp & 91\% & 31\% \\
-         2 & 0.9334 & +0.01 pp & 84\% & 29\% \\
-         3 & 0.9343 & +0.011 pp & 82\% & 29\% \\
-         4 & 0.9334 & +0.01 pp & 81\% & 28\% \\
+         20 & 93.33\% & 30.64\% \\
+         30 & 93.62\% & 30.21\% \\
+         34 & 94.48 & 29.79\% \\
+         63 & 93.36 & 26.81\% \\
         \hline
     \end{tabular}
     \caption{Generated proteins}
@@ -34,5 +39,8 @@ Neste caso, o Agente gerou mais de 200 proteínas diferentes a partir de mutaç�
     \label{fig:example}%
 \end{figure}
 
-Mesmo reduzindo a IS (Idêntidade de Sequência) em relação a sequência de partida, o Agente foi capaz de produzir sequências que geram um TM-Score ligeiramente superior ao inicial. Isso nos possibilita utilizar o Agente como um gerador de sequências diferentes que se traduzem em estruturas similares.
- 
+{\color{red} Imagem das proteinas sobrepostas}
+
+{\color{red} Resultados Imuno}
+
+{\color{red} Resultados Docking}

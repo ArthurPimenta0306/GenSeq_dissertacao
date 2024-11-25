@@ -91,7 +91,7 @@ Em outras palavras, é uma função que tem como entrada uma ação e o estado a
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=.8\textwidth]{figuras/metodologia-Mutation.jpg}
+  \includegraphics[width=.5\textwidth]{figuras/metodologia-Mutation.jpg}
   \caption{Exemplo de mutação. O aminoácido A na posição 3 está sendo substituído pelo o aminoácido C}
   \label{fig:mutacao}
 \end{figure}
@@ -185,7 +185,7 @@ Neste sentido, o primeiro estágio de treinamento consiste do seguinte procedime
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=.8\textwidth]{figuras/metodologia-Pre-Training.jpg}
+  \includegraphics[width=.9\textwidth]{figuras/metodologia-Pre-Training.jpg}
   \caption{Primeiro estágio de treinamento}
 \end{figure}
 
@@ -245,10 +245,10 @@ Análogamente, o terceiro termo penaliza se o erro atual for maior que o anterio
 Como o objetivo principal é encontrar sequências com erro menores que o inicial, atribuímos um peso maior ao segundo termo, i.e, $b>a$ e $b>c$.
 Além disso, consideramos $c>a$ para valorizar reduções do erro ao longo do episódio.  
 
-Introduzimos o conceito de vitória e derrota a cada episódio. 
+Introduzimos também o conceito de vitória e derrota a cada episódio. 
 Consideramos vitória caso o erro final seja menor que o inicial e derrota caso contrário. 
 De modo a valorizar a vitória e penalizar a derrota, ao final de cada episódio é adicionado uma recompensa adicional dada por $2500(Er_{0} - Er_{f})$, 
-onde $Er_{f}$ é o erro da final, i.e, da última iteração do episódio. Cada episódio é finalizado ao se atingir um número máximo de iterações, ou um limiar de erro. 
+onde $Er_{f}$ é o erro final, i.e, da última iteração do episódio. Cada episódio é finalizado ao se atingir um número máximo de iterações, ou um limiar de erro. 
 Foi definido um limite superior para o erro de modo a evitar que o Agente atinja erros muito grandes em um mesmo episódio,
 e um limite inferior para valorizar episódios em que o Agente foi capaz de encontrar "atalhos", i.e, conseguiu reduzir o erro considerávelmente em poucas iterações.
 
@@ -263,7 +263,7 @@ Neste sentido, o segundo estágio de treinamento consiste do seguinte procedimen
   \item Baseado no \textit{TMScore} entre a estrutura do Fator IX e da estrutura atual, no erro inicial e no erro da iteração anterior, é calculado $R_{II}$.
   \item $p$ é removido de $P_{val}$ e, se a quantidade de vezes que $r$ foi utilizado pelo \textit{GenSeq} é maior ou igual a 7, então $r$ é retirado de $R_{val}$.
   \item Se a iteração atual é igual ao tamanho do \textit{batch}, então \textit{GenSeq} atualiza seus pesos baseado nos valores obtidos por $R_{II}$ utilizando o \textit{PPO}
-  \item Se foi atingido o máximo de mutações por episódio, ou um limiar de erro, então o episódio é finalziado.
+  \item Se foi atingido o máximo de mutações por episódio, ou um limiar de erro, então o episódio é finalziado e é atribuído a recompensa adicional igual a $2500(Er_{0} - Er_{f})$.
   \item Repete a partir do item 1 até atingir o número máximo de iterações. 
 \end{enumerate}
 
@@ -296,7 +296,7 @@ Neste estágio, o Agente foi treinado com um total de 60 mil de iterações, pod
   bem superior às recompensas de um Agente aleatório.  
   \begin{figure}[H]
     \centering
-    \includegraphics[width=.8\linewidth]{figuras/plot_box_train_reward.jpg}  
+    \includegraphics[width=.9\linewidth]{figuras/plot_box_train_reward.jpg}  
     \caption{Comparação do Agente treinado com um Agente aleatório}
     \label{fig:box-train}
   \end{figure}
@@ -317,4 +317,5 @@ Por fim, o módulo de Geração de Sequências utiliza o agente treinado para ge
   \centering
   \includegraphics[width=.8\textwidth]{figuras/metodologia-Generating.jpg}
   \caption{Gerando sequência otimizada}
+  \label{fig:geradorseq}
 \end{figure}
