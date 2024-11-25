@@ -1,0 +1,30 @@
+
+\chapter{Revisão Bibliográfica}
+{\color{red} TO DO}
+\cite{aminodist}
+\subsection{Predição de estruturas}
+{\color{red} TO DO}
+\label{subsection:structure_pred}
+%Explicar que, dado uma sequencia, preve qual é a estrutura
+%Falar de Alphafold, ESMFold
+
+%Além do Rosetta, destacam-se o AlphaFold2 e o EMSFold como modelos relevantes para prever estruturas Z. L. e. al, 2022; Jumper, 2021. O primeiro utiliza MSAs (Alinhamento Múltiplo de Sequências) e templates de estruturas similares como entrada de uma rede neural profunda treinada para predizer a estrutura proteica Jumper, 2021. Entretanto, ao se processar uma predição, é necessário realizar uma busca em bancos de dados a fim de se obter os MSAs e os templates Jumper, 2021. Já o EMSFold utiliza um modelo de linguagem LLM (Large Language Model) batizado de ESM-2, composto por mais de 15 bilhões de parâmetros treinados para gerar uma representação da sequência que, por sua vez, serve de entrada para o ESMFold que prediz a disposição tridimensional dos átomos da estrutura Z. L. e. al, 2022. Por ter uma arquitetura que independe de buscas em bancos de dados, o EMSFold é capaz de realizar predições com uma ordem de grandeza mais rápidas que o AlphaFold2 e com acurácia comparável Z. L. e. al, 2022.
+
+
+%Dar o argumento do De Novo que essas predições são confiaveis e generalizaveis para proteinas nao vistas. 
+%De Novo
+%Este trabalho teve o objetivo de verificar se os modelos
+%deep learning treinados para prever estruturas, são capazes de fornecer informações relevantes o suficiente para criarmos proteinas novas, sem nenhuma relação com outras proteinas vistas na natureza. 
+%A conclusão é que sim. 
+%Para validar a hipotese, eles partiriam de uma sequencia aleatoria e geraramm o mapa de distancias inter-residuos usando o trRosetta. Com esse mapa eles criam uma distribuição de distâncias. A função objetivo é o KL entre essa distribuição e a distribuição média de todas as proteínas que foram utilizadas pra treinar o TrRosetta. 
+%Ou seja, o trabalho não buscou chegar em alguma estrutura target, e sim numa distribuição de distancias inter-resíduos target. E isso fez com que as proteínas obtidas fossem estáveis, e totalmente novas. 
+%Com essas proteinas, que são totalmente diferentes das proteinas vistas pelo modelo, eles produziram em laboratorio e confirmaram que a estrutura dessas proteinas estava de acordo com a estrututra prevista. 
+%Ou seja, esses modelos de deep learning são capazes realmente de prever a estrutura, mesmo que seja uma proteina nunca antes vista. 
+%O ponto é que existia a dúvida se esses modelos acertavam so as proteinas que existem e nao seriam capazes de generalizar proteinas nunca vistas. 
+%Logo, esse trabalho traz como argumento que utilizar esses modelos para prever estruturas é fair, mesmo sendo pra prever estruturas que nao existem na natureza. 
+
+%Se quiser falar desse trabalho aqui, precisaria explicar que ele não tem uma estrutura target e sim uma distribuição de distancias inter residuo target. 
+
+%Acho melhor citar esse trabalho quando for falar de predicao de estruturas, usando de argumento que esses modelos são bons. 
+
+%E procurar algum outro trabalho que maximize a similaridade entre estruturas. 

@@ -1,0 +1,148 @@
+%Adaptar para ficar de acordo com a figura da introdução 
+
+\chapter{Metodologia}
+
+De modo a atingir o objetivo deste trabalho, estruturamos a metodologia em dois módulos: Treinamento e Gerador de sequências.
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=.8\textwidth]{figuras/metodologia-visao-geral.drawio.pdf}
+  \caption{Visão geral do trabalho}
+\end{figure}
+
+\section{Condições iniciais}
+O objetivo do primeiro módulo (figura 2.2) é  obter a sequência e o erro inicial. 
+Ao se passar a estrutura alvo como entrada do \textit{ProteinMPNN}, obtemos como saída a sequência inicial. Já o erro inicial é definido pela seguinte expressão:
+ 
+\begin{equation}
+    Er_{0} = 1 - TMScore(E_{target}, E_{predicted})
+\end{equation}
+
+\noindent
+Onde $E_{target}$ é a estrutura alvo, i.e, a estrutura do fator IX de coagulação e $E_{predicted}$ é a estrutura vinculada a sequência de partida, predita pelo \textit{ESMFold}. 
+O \textit{TMScore} (\textit{Template Modeling Score}) consiste em uma medida de similariedade entre estruturas. Baseada principalmente em distâncias entre aminoácidos, o TM-Score é uma métrica que varia de 0 a 1, sendo que quanto mais próximo de 1, maior será a similaridade entre as estruturas. Um TM-Score igual a 1 indica uma sobreposição perfeita e uma correspondência estrutural quase idêntica entre as proteínas, enquanto valores menores sugerem uma maior divergência estrutural entre elas. O cálculo desta medida foi feito a partir da plataforma desenvolvida por \cite{USalign}.
+
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=.8\textwidth]{figuras/metodologia-Initial_cond.drawio.pdf}
+  \caption{Obtendo condições iniciais}
+\end{figure}
+
+\section{Aprendizado}
+%iterações entre Agente e Ambiente ok
+%Agente é PPO ok
+%Acao é mutação ok 
+%Imagem da mutação ok 
+%Ambiente de aprendizado é modelado por um MDP e é definido quem sao os estados, acoes e  recompensas. É tambem definido a função de transição entre estados (step) e função de reset
+ 
+O aprendizado ocorre através de iterações entre dois componentes: O Agente e o ambiente de aprendizado. 
+
+\subsection{Agente}
+O Agente é modelado pela técnica \textit{Proximal Policy Optimization} (PPO), e é responsável por decidir qual a melhor ação a se fazer, dada a sequência de entrada. 
+Os hiperparâmetros utilizados no Agente são apresentados na tabela a seguir. 
+
+\begin{table}[H]
+\centering
+\vspace{0.5cm}
+\begin{tabular}{r|lr}
+Hiperparâmetro & Valor \\ 
+\hline                               % para uma linha horizontal
+Número de camadas escodidas & 2 \\
+Número de neurônios por camada escondida & 64 \\
+Função de ativação & tangente hiperbólica \\
+Otimizador & Adam \\
+Taxa de aprendizagem & 3e-4 \\
+Número de épocas & 10 \\
+Fator de desconto ($\gamma$) & 0.99 \\
+\end{tabular}
+\caption{Hiperparâmetros do PPO}
+\end{table}
+
+\subsection{Ambiente de aprendizado}
+O ambiente de aprendizado é modelado como um MDP e, portanto, é responsável por definir o espaço de ações, o espaço de estados, a função de transição entre estados dado uma ação e a função de recompensa.  
+
+\subsubsection{Espaço de ações}
+
+A ação do agente pode ser interpretada como uma mutação na sequência, onde ocorre a substituição de um aminoácido por outro em uma posição selecionada, como ilustrado na figura 2.3. 
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=.8\textwidth]{figuras/metodologia-Mutacao.drawio.pdf}
+  \caption{Exemplo de mutação}
+\end{figure}
+
+Logo, definimos uma ação por um vetor bi-dimensional composto pela posição na sequência a ser alterada e o aminoácido a ser inserido. De modo a incentivar o Agente a explorar diferentes ações, definimos, para cada iteração, um conjunto de posições e aminoácidos válidos: $P_{val}$ e $R_{val}$ respectivamente. 
+$P_{val}$ é composto por todas as possíveis posições na sequência, com exceção das posições previamente selecionadas dentro do mesmo episódio. 
+Definimos $R_{val}$ sendo igual aos 19 possíveis aminoácidos, com exceção dos aminoácidos que foram selecionados mais de 7 vezes no mesmo episódio. Desta forma, o espaço de ações, para cada iteração $i$, é definido por:
+
+\begin{equation}
+A_{i} = \left\{(p, r) | p \in P_{val_{i}} , r \in R_{val_{i}} \right\}
+\end{equation}
+  
+
+\subsubsection{Espaço de estados}
+Definimos o espaço de estados como o conjunto de todas as possíveis sequências de $n$ aminoácidos, onde $n$ é o tamanho da sequência inicial, gerada pelo \textit{ProteinMPNN}:
+
+\begin{equation}
+S = \left\{(r_{1}, r_{2}, r_{3}, ..., r_{n}) | r_{i} \in R_{encoded} \forall i \in [1,n] \right\}
+\end{equation}
+
+Onde $R_{encoded}$ é o conjunto dos 20 possíveis aminoácidos, cada um representado por um vetor de 21 dimensões codificado por um \textit{encoder}. Este consiste em um modelo de \textit{Multidimensional Scaling} (MDS) que se propõe a encontrar, para cada aminoácido, uma representação vetorial que conserva as distâncias 2 a 2 estabelecidas por \cite{aminodist}.
+
+\subsubsection{Função de transição de estados}
+A função de transição de estados é caracterizada pela geração de uma nova sequência, resultante da mutação definida pelo Agente. Em outras palavras, é uma função que tem como entrada uma ação e o estado atual e como saída o estado resultante da transição. 
+
+\subsubsection{Função de recompensa}
+Já a função de recompensa calcula a qualidade da ação selecionada pelo Agente. O módulo de aprendizado é subdividido em dois estágios: Pré treino e treino - figuras 2.4 e 2.5 respectivamente. Ambos compartilham o mesmo Agente e ambiente de aprendizado, com exceção da função de recompensa, que será especificada individualmente para cada estágio nas seções a seguir.
+
+\subsection{Primeiro estágio - Pré treino}
+%Definição de episodio 
+%Vitoria ou derrota no episodio
+%Numero de steps total e por episodio
+
+Tendo em vista o vasto número de ações possíveis, desenvolvemos o primeiro estágio de treinamento com o objetivo de estimular o Agente a encontrar um subespaço menor de ações para atuar. Para isso, atribuímos recompensas negativas (ou penalizações) para ações em posições da sequência cujo o \textit{conservation score} é alto, bem como penalizamos ações onde o aminoácido substituído é muito diferente do que fora inserido. 
+Neste sentido, definimos a seguinte função de recompensa:
+
+\begin{equation}
+    R_{I} = -(CS(p) + D(r, r_{prev}))
+\end{equation}
+
+\noindent
+Onde $p$ e $r$ são a posição e o aminoácido selecionados pelo Agente, respectivamente. O $r_{prev}$ é o aminoácido que estava na posição $p$ antes da mutação. $CS(p)$ é o \textit{Conservation Score} normalizado da posição $p$ e $D(r, r_{prev})$ é a medida de similariedade entre os aminoácidos $r$ e $r_{prev}$. 
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=.8\textwidth]{figuras/metodologia-Pre-treino.drawio.pdf}
+  \caption{Primeiro estágio - Pré treino}
+\end{figure}
+
+\subsection{Segundo estágio - Treino}
+%Função do reward
+%Numero de steps total e por episodio
+%Vitoria ou derrota no episodio
+O objetivo do segundo estágio de treinamento é fazer com que o agente pré treinado aprenda a escolher ações que maximizem o \textit{TM-Score} entre a estrutura gerada e a alvo, ou minimizem o erro ($1-TMScore$).
+Para isto, definimos a função de recompensa como a soma de 3 termos: 
+
+\begin{equation}
+    R_{II} = -aEr_{i} + b(Er_{0} - Er_{i}) + c(Er_{i-1} - Er_{i})
+\end{equation}
+
+\noindent
+Onde $Er_{i}$ e $Er_{i-1}$ são os erros da iteração i e i-1 respectivamente, e $a, b$ e $c$ são constantes. O primeiro termo, $-aEr_{i}$, é a penalização pelo erro atual. O segundo determina uma penalização se o erro atual for maior que o inicial e uma recompensa caso contrário. Análogamente, o terceiro termo penaliza se o erro atual for maior que o anterior e recompensa se for menor. Como o objetivo principal é encontrar sequências com erro menores que o inicial, atribuímos um peso maior ao segundo termo, i.e, $b>a$ e $b>c$. Além disso, consideramos $c>a$ para valorizar reduções do erro ao longo do episódio.  
+Além disso, introduzimos o conceito de vitória e derrota a cada episódio. Consideramos vitória caso o erro final seja menor que o inicial e derrota caso contrário. De modo a valorizar a vitória e penalizar a derrota, ao final de cada episódio é adicionado um \textit{reward} adicional dado por $2500(Er_{0} - Er_{i})$. 
+
+Cada episódio é finalizado ao se atingir um número máximo de iterações, ou um limiar de erro. 
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=.8\textwidth]{figuras/metodologia-treino.drawio.pdf}
+  \caption{Segundo estágio - Treino}
+\end{figure}
+
+\section{Geração de sequências}
+Por fim, o módulo de Geração de Sequências utiliza o agente treinado para gerar novas sequências que sejam capazes de mimetizar a estrutura alvo melhor do que a sequência inicial, em termos de \textit{TM-Score}.  
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=.8\textwidth]{figuras/metodologia-gerador-seq.drawio.pdf}
+  \caption{Gerando sequência otimizada}
+\end{figure}

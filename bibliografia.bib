@@ -1,0 +1,518 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%% INSERINDO COMENTÁRIOS EM ARQUIVOS .bib %%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% 1. Como em outros arquivos LaTeX, comentários são iniciados por "%" e,
+%    portanto, é preciso usar "\%" para imprimir o caractere "%". Esquecer
+%    disso pode gerar erros difíceis de encontrar!
+%
+% 2. Não é possível inserir comentários dentro de uma entrada, apenas fora.
+%
+% 3. Não é possível incluir o caractere arroba em um comentário.
+%
+% 4. Se quiser desabilitar temporariamente um campo ("comentar" o campo),
+%    troque seu nome para algum nome inválido, como "author-disable".
+%    Se quiser fazer alguma observação permanente dentro de uma entrada,
+%    você também pode usar algum nome de campo inválido, como "lembrete",
+%    ou usar o campo "annotation", que normalmente é ignorado.
+%
+% 5. Se quiser desabilitar temporariamente uma entrada inteira ("comentar" a
+%    entrada), não basta colocar "%" nas linhas correspondentes por causa do
+%    caractere arroba; também é preciso remover a arroba.
+%
+% 6. Na verdade, as regras não são bem essas, mas segui-las é uma boa ideia:
+%    https://tex.stackexchange.com/a/262282
+%
+% Por exemplo, esta entrada está comentada, ou seja, não tem efeito: se
+% houvesse uma referência a ela no texto, a referência ficaria inválida.
+% Observe que, para isso, o caractere arroba foi apagado!
+%
+%Book{JW82,
+% author    = {Richard A. Johnson and Dean W. Wichern},
+% title     = {Applied Multivariate Statistical Analysis},
+% publisher = {Prentice-Hall},
+% year      = {1983}
+%}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% O CAMPO "MONTH" %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% biblatex prefere o uso do campo "date" para definir ano, mês etc. No
+% entanto, se você quiser garantir compatibilidade tanto com biblatex
+% quanto com bibtex, use os campos "year" e "month". Ambos reconhecem
+% diversos formatos para o campo "month", mas apenas um funciona
+% corretamente com os dois: o nome do mês em inglês, abreviado com três
+% letras minúsculas e sem chaves, ou seja:
+%
+% ...
+% author = {Somebody},
+% year = {2011},
+% month = oct,
+% title = {Some title},
+% ...
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Esta entrada não está em uso em tese.tex, apenas em
+% apresentacao.tex, mas isso não é um problema: você pode
+% ter um banco de dados com todos os papers que são de seu
+% interesse e, em um dado texto, citar apenas alguns deles.
+
+
+Silver, D., et al. (2021). AlphaFold: A solution to a 50-year-old grand challenge in biology. Nature, 596(7873), 397-404.
+@Book{MDP,
+ author   = {Jerônimo Pellegrini},
+ title    = {Processos de Decisão de Markov: um tutorial},
+ publisher= {RITA},
+ edition = {XIV},
+ year     = {2007},
+}
+
+@Article{PPO,
+ author   = {John Schulman et al},
+ title    = {Proximal Policy Optimization Algorithms},
+ journal  = {ArXiv},
+ year     = {2017},
+}
+
+@Article{Figueiredo,
+ author   = {Jonathas Figueiredo},
+ title    = {Aplicação de algoritmos de aprendizagem por reforço para controle de navios em águas restritas},
+ journal  = {Universidade de São Paulo},
+ year     = {2018},
+}
+
+@Book{Bishop,
+ author   = {M. Christopher Bishop},
+ title    = {Pattern Recognition and Machine Learning},
+ publisher= {New York: Springer},
+ year     = {2006},
+}
+@Book{Bio,
+ author   = {B. Alberts, et al.,},
+ title    = {Molecular Biology of the Cell},
+ publisher= {Garland Science},
+ year     = {2002},
+}
+
+@Article{Mannucci,
+ author   = {Mannucci PM},
+ title    = {emophilia therapy: the future has begun.},
+ journal  = {Haematologica},
+ year     = {2020},
+}
+
+@Article{Gouw,
+ author   = {Gouw, S. C., et al.},
+ title    = {Factor VIII products and inhibitor development in severe hemophilia A},
+ journal  = {New England Journal of Medicine},
+ year     = {2013},
+}
+
+@Article{Mancuso,
+ author   = {Mancuso, M. E., et al.},
+ title    = {Environmental risk factors for inhibitor development in children with hemophilia A: a case–control study},
+ journal  = {Haematologica},
+ year     = {2005},
+}
+
+@Article{CS,
+ author   = {Lopes Tiago J. S., Nogueira Tatiane, Rios Ricardo},
+ title    = {A Machine Learning Framework Predicts the Clinical Severity of Hemophilia B Caused by Point-Mutations},
+ journal  = {Frontiers in Bioinformatics},
+ year     = {2022},
+}
+
+@Article{ConsurfDB,
+ author   = {Ben Chorin, A. et al},
+ title    = {ConSurf-DB: an accessible repository for the evolutionary conservation patterns of the majority of PDB proteins},
+ journal  = {Protein Sci},
+ year     = {2020},
+}
+
+@article{AC,
+author = {Konda, Vijay and Tsitsiklis, John},
+year = {2001},
+month = {04},
+pages = {},
+title = {Actor-Critic Algorithms},
+volume = {42},
+journal = {Society for Industrial and Applied Mathematics}
+}
+
+@article{gym,
+  title={Openai gym},
+  author={Brockman et al.},
+  journal={arXiv preprint arXiv:1606.01540},
+  year={2016}
+}
+
+@Article{aminodist,
+ author   = {Lopes Tiago J. S., Nogueira Tatiane, Rios Ricardo et al.},
+ title    = {Prediction of hemophilia A severity using a small-input machine-learning framework},
+ journal  = {Nature},
+ year     = {2021},
+}
+
+@Article{seqinR,
+ author   = {Charif, D. Lobry, J.},
+ title    = {R. In Structural Approaches to Sequence Evolution},
+ journal  = {Springer},
+ year     = {2007},
+}
+
+
+@Article{Eddy,
+ author   = {Eddy, S. R. },
+ title    = {Where did the BLOSUM62 alignment score matrix come from?},
+ journal  = {Nature Biotechnology},
+ year     = {2004},
+}
+
+
+@Article{USalign,
+ author   = {Zhang, C., et al.},
+ title    = {US-align: universal structure alignments of proteins, nucleic acids, and macromolecular complexes},
+ journal  = {Nat Methods},
+ year     = {2022},
+}
+
+@Article{Alphafold2,
+ author   = {Jumper, J., et al.},
+ title    = {Highly accurate protein structure prediction with AlphaFold},
+ journal  = {Nature},
+ year     = {2021},
+}
+
+@Article{Rosetta,
+ author   = {Kuhlman B},
+ title    = {Designing protein structures and complexes with the molecular modeling program Rosetta},
+ journal  = {J Biol Chem},
+ year     = {2019},
+}
+
+@Article{Overview,
+ author   = {Wenze Ding , Kenta Nakai and Haipeng Gong},
+ title    = {Protein design via deep learning},
+ journal  = {Oxford Academic},
+ year     = {2022},
+}
+
+
+
+@Article{George,
+ author   = {George, L. A., Camire, R. M.},
+ title    = {Gene therapy for hemophilia: a concise review},
+ journal  = {Human Gene Therapy},
+ year     = {2017},
+}
+
+@Article{Rangarajan,
+ author   = {Rangarajan, S., et al.},
+ title    = {AAV5-Factor VIII gene transfer in severe hemophilia A.},
+ journal  = {New England Journal of Medicine},
+ year     = {2017},
+}
+
+@Article{Jain,
+ author   = {Jain, S., et al.},
+ title    = {A structural and functional blueprint for proteins in the bioactive conformation},
+ journal  = {Nature Chemical Biology},
+ year     = {2020},
+}
+
+@Article{Silver,
+ author   = {Silver, D., et al.},
+ title    = {AlphaFold: A solution to a 50-year-old grand challenge in biology},
+ journal  = {Nature},
+ year     = {2021},
+}
+
+@Article{DeNovo,
+ author   = {Anishchenko, I., et al.},
+ title    = {De novo protein design by deep network hallucination},
+ journal  = {Nature},
+ year     = {2021},
+}
+
+@Article{ProteinMPNN,
+ author   = {J. Dauparas et al},
+ title    = {Robust deep learning–based protein sequence design using ProteinMPNN},
+ journal  = {Science},
+ year     = {2022},
+}
+
+@Article{ESMFold,
+ author   = {Zeming Lin et al},
+ title    = {Language models of protein sequences at the scale
+of evolution enable accurate structure prediction},
+ journal  = {bioRxiv},
+ year     = {2022},
+}
+
+@Article{DRLDrug,
+ author   = {Mariya Popova et al},
+ title    = {Deep reinforcement learning for de novo drug design},
+ journal  = {Science Advances},
+ year     = {2018},
+}
+
+@Article{DRLPPO,
+ author   = {Angermueller Christof et al},
+ title    = {Model-based reinforcement learning for biological sequence design},
+ journal  = {ICLR},
+ year     = {2020},
+}
+
+
+
+
+
+
+
+
+
+
+@Manual{CORBA:spec,
+ title       = {{CORBA} v3.0 Specification},
+ author      = {{Object Management Group}},
+ shortauthor = {OMG},
+ month       = jul,
+ year        = {2002},
+ note        = {OMG Document 02-06-33}
+}
+
+@Book{eco:09,
+ author   = {Umberto Eco},
+ title    = {Como se Faz uma Tese},
+ edition  = 22,
+ publisher= {Perspectiva},
+ note     = {Tradução Gilson Cesar Cardoso de Souza},
+ year     = {2009},
+}
+
+@Book{zobel:04,
+ author   = {Justin Zobel},
+ title    = {Writing for Computer Science: The Art of Effective Communication},
+ publisher= {Springer},
+ edition  = 2,
+ year     = {2004},
+}
+
+@Book{waz:09,
+ author   = {Raul S. Wazlawick},
+ title    = {Metodologia de Pesquisa em Ciência da Computação},
+ publisher= {Campus},
+ edition  = 1,
+ year     = {2009},
+}
+
+@Book{Higham:98,
+ author   = {Nicholas J. Higham},
+ title    = {Handbook of Writing for the Mathematical Sciences},
+ edition  = 2,
+ publisher= {SIAM: Society for Industrial and Applied Mathematics},
+ month    = aug,
+ year     = {1998},
+}
+
+@book{Knuth:96,
+ author   = {Donald E. Knuth and Tracy Larrabee and Paul M. Roberts},
+ title    = {Mathematical Writing},
+ publisher= {The Mathematical Association of America},
+ month    = sep,
+ year     = {1996}
+}
+
+@InProceedings{alves03:simi,
+ author   = {Carlos E. R. Alves and Edson N. Cáceres and Frank Dehne and Siang W. Song},
+ title    = {A Parallel Wavefront Algorithm for Efficient Biological Sequence Comparison},
+ booktitle= {ICCSA'03: The 2003 International Conference on Computational Science and its Applications},
+ year     = {2003},
+ pages    = {249-258},
+ month    = may,
+ publisher= {Springer-Verlag}
+}
+
+@Article{MenaChalco08,
+ author   = {Jesús P. Mena-Chalco and Helaine Carrer and Yossi Zana and Roberto M. Cesar-Jr.},
+ title    = {Identification of Protein Coding Regions Using the Modified {G}abor-Wavelet Transform},
+ journal  = {IEEE/ACM Transactions on Computational Biology and Bioinformatics},
+ volume   = {5},
+ pages    = {198-207},
+ year     = {2008},
+}
+
+@Article{floats2014,
+ author    = {Frank Mittelbach},
+ title     = {How to influence the position of float environments like figure and table in {\LaTeX}?},
+ journal   = {{TUGboat}},
+ journalsubtitle = {Communications of the \TeX\ Users Group},
+ volume    = {35},
+ number    = {3},
+ year      = 2014,
+ url       = {tug.org/TUGboat/tb35-3/tb111mitt-float.pdf},
+ urldate   = {2020-01-09},
+ publisher = {\TeX\ {Users} {Group}},
+ address   = {Portland ({OR}), {USA}},
+}
+
+@Techreport{alvisi99:analysisCIC,
+ author      = {Lorenzo Alvisi and Elmootazbellah Elnozahy and Sriram S. Rao and Syed A. Husain and Asanka Del Mel},
+ title       = {An Analysis of Comunication-Induced Checkpointing},
+ institution = {Department of Computer Science, University of Texas at Austin},
+ year        = {1999},
+ number      = {TR-99-01},
+ address     = {Austin, USA}
+}
+
+@Misc{gridftp,
+ author   = {William Allcock},
+ title    = {{GridFTP} Protocol Specification. {Global Grid Forum} Recommendation ({GFD}.20)},
+ year     = {2003}
+}
+
+% A entrada "year" eh usada por bibtex;
+% biblatex pode usar "year" ou "date"
+@Manual{natbib,
+ title       = "Reference sheet for \texttt{natbib} usage",
+ author      = "Patrick W. Daly",
+ year        = {2010},
+ date        = {2010-09-13},
+ urldate     = {2018-12-20},
+ url         = {mirrors.ctan.org/macros/latex/contrib/natbib/natnotes.pdf},
+}
+
+@Manual{biblatex,
+ title       = "The \texttt{biblatex} Package",
+ author      = "Philipp Lehman and Philip Kime and Moritz Wemheuer and Audrey Boruvka and Joseph Wright",
+ year        = 2018,
+ date        = {2018-10-30},
+ urldate     = {2018-12-20},
+ url         = {mirrors.ctan.org/macros/latex/contrib/biblatex/doc/biblatex.pdf},
+}
+
+@PhdThesis{garcia01:PhD,
+ author   = {Islene C. Garcia},
+ title    = {Visões Progressivas de Computações Distribuídas},
+ school   = {Instituto de Computação, Universidade de Campinas},
+ address  = {Campinas, Brasil},
+ year     = {2001},
+ month    = dec
+}
+
+@Conference{bronevetsky02,
+ author     = {Greg Bronevetsky and Daniel Marques and Keshav Pingali and Paul Stodghill},
+ title      = {Automated Application-Level Checkpointing of {MPI} Programs},
+ booktitle  = {PPoPP'03: Proceedings of the 9th ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming},
+ year       = {2003},
+ pages      = {84-89},
+ eventdate  = {2003-06-11/2003-06-13},
+ venue      = {San Diego, California}
+}
+
+@InCollection{bobaoglu93:concepts,
+ author   = {Ozalp Babaoglu and Keith Marzullo},
+ title    = {Consistent Global States of Distributed Systems: Fundamental Concepts and Mechanisms},
+ editor   = {Sape Mullender},
+ booktitle= {Distributed Systems},
+ edition  = 2,
+ year     = {1993},
+ pages    = {55-96}
+}
+
+@MastersThesis{schmidt03:MSc,
+ author   = {Rodrigo M. Schmidt},
+ title    = {Coleta de Lixo para Protocolos de \emph{Checkpointing}},
+ school   = {Instituto de Computação, Universidade de Campinas},
+ address  = {Campinas, Brasil},
+ year     = {2003},
+ month    = oct
+}
+
+@online{fowler04:designDead,
+ author   = {Martin Fowler},
+ title    = {Is Design Dead?},
+ year     = {2004},
+ month    = may,
+ urldate  = {2010-01-30},
+ url      = {martinfowler.com/articles/designDead.html},
+}
+
+@online{FSF:GNU-GPL,
+ author      = {{Free Software Foundation}},
+ shortauthor = {FSF},
+ title       = {{GNU} General Public License},
+ year        = 2007,
+ urldate     = {2010-01-30},
+ url         = {www.gnu.org/copyleft/gpl.html},
+}
+
+@article{alon09:how,
+ author   = {Uri Alon},
+ title    = {How To Choose a Good Scientific Problem},
+ journal  = {Molecular Cell},
+ year     = {2009},
+ volume   = {35},
+ number   = {6},
+ pages    = {726--728},
+ publisher= {Cell Press},
+ month    = sep,
+ doi      = {10.1016/j.molcel.2009.09.013},
+}
+
+@book{tufte01:visualDisplay,
+ author   = {Edward Tufte},
+ title    = {The Visual Display of Quantitative Information},
+ year     = {2001},
+ edition  = 2,
+ publisher= {Graphics Press},
+ month    = may,
+}
+
+@Manual{usp:guidelines,
+ author      = {{Universidade de São Paulo --- Sistema Integrado de Bibliotecas}},
+ shortauthor = {SIBiUSP},
+ title       = {Diretrizes para Apresentação de
+	        Dissertações e Teses da {USP}:
+	        Documento Eletrônico e Impresso},
+ year        = 2009,
+ url         = {www.teses.usp.br/index.php?option=com_content&view=article&id=52&Itemid=67},
+ urldate     = {2017-11-10},
+}
+
+@online{carlis:09,
+ author  = {John V. Carlis},
+ title   = {Design: The Key to Writing
+            (and Advising) a One-Draft {Ph.D} Dissertation},
+ year    = 2009,
+ url     = {www-users.cs.umn.edu/~carlis/one-draft.pdf},
+ urldate = {2017-11-10},
+}
+
+@book{craftresearch,
+ author    = {Wayne C. Booth and Gregory G. Colomb and Joseph M. Williams},
+ title     = {The Craft of Research},
+ publisher = {The University of Chicago Press},
+ year      = 2008,
+}
+
+@book{dissertjourney,
+ author    = {Carol M. Roberts},
+ title     = {The Dissertation Journey},
+ publisher = {Corwin},
+ year      = 2010,
+ edition   = 2,
+ location  = {Thousand Oaks, CA},
+}
+
+@manual{sbctemplate,
+ author  = {Luciana P. Nedel and Rafael H. Bordini and Flávio Rech Wagner and Jomi F. H\"{u}bner},
+ title   = {Instructions for Authors of {SBC} Conferences Papers and Abstracts},
+ year    = 2017,
+ url     = {www.sbc.org.br/documentos-da-sbc/category/169-templates-para-artigos-e-capitulos-de-livros},
+ urldate = {2018-12-13},
+}

@@ -1,0 +1,50 @@
+\babel@toc {brazilian}{}\relax 
+\contentsline {chapter}{Introdução}{1}{section*.6}%
+\contentsline {section}{\numberline {0.1}Projeto de sequências}{2}{section.0.1}%
+\contentsline {subsection}{\numberline {0.1.1}Baseado em busca}{3}{subsection.0.1.1}%
+\contentsline {subsection}{\numberline {0.1.2}Baseado em aprendizado profundo}{4}{subsection.0.1.2}%
+\contentsline {section}{\numberline {0.2}Proposta}{5}{section.0.2}%
+\contentsline {section}{\numberline {0.3}Objetivos}{6}{section.0.3}%
+\contentsline {chapter}{\numberline {1}Revisão Bibliográfica}{7}{chapter.1}%
+\contentsline {subsection}{\numberline {1.0.1}Predição de estruturas}{7}{subsection.1.0.1}%
+\contentsline {chapter}{\numberline {2}Fundamentação teórica}{9}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Proteina}{9}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Estrutura proteíca}{10}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Resposta Imunológica}{11}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Afinidade de ligação}{11}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.1.4}Estrutura alvo - Fator IX}{11}{subsection.2.1.4}%
+\contentsline {subsection}{\numberline {2.1.5}Mutação}{11}{subsection.2.1.5}%
+\contentsline {subsection}{\numberline {2.1.6}Conservation Score}{11}{subsection.2.1.6}%
+\contentsline {subsection}{\numberline {2.1.7}Similariedade entre aminoácidos}{12}{subsection.2.1.7}%
+\contentsline {subsection}{\numberline {2.1.8}Similariedade entre estruturas}{12}{subsection.2.1.8}%
+\contentsline {section}{\numberline {2.2}Aprendizado por reforço profundo}{12}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Processo de Decisão de Markov}{13}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Redes Neurais}{14}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Método Actor-Critic}{15}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}PPO}{15}{subsection.2.2.4}%
+\contentsline {subsection}{\numberline {2.2.5}MDS}{16}{subsection.2.2.5}%
+\contentsline {chapter}{\numberline {3}Metodologia}{17}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Condições iniciais}{17}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Treinamento}{18}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Ambiente de aprendizado}{18}{subsection.3.2.1}%
+\contentsline {subsubsection}{Espaço de ações}{18}{subsubsection*.19}%
+\contentsline {subsubsection}{Espaço de estados}{18}{subsubsection*.20}%
+\contentsline {subsubsection}{Função de transição de estados}{19}{subsubsection*.23}%
+\contentsline {subsubsection}{Função de recompensa}{20}{subsubsection*.25}%
+\contentsline {subsection}{\numberline {3.2.2}Agente}{20}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Treinamento - Estágio I}{22}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Treinamento - Estágio II}{24}{subsection.3.2.4}%
+\contentsline {section}{\numberline {3.3}Geração de sequências}{28}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Resultados}{29}{chapter.4}%
+{\protect \large \protect \vspace {0pt plus 2\baselineskip minus 0pt}}
+\protect \pagebreak [2]
+\protect \vspace {.8\baselineskip }
+{\protect \large \protect \bfseries \protect \hspace {-1.3em}Apêndices\par }
+\protect \@afterheading 
+{\protect \large \protect \vspace {0pt plus 2\baselineskip minus 0pt}}
+\protect \pagebreak [2]
+\protect \vspace {.8\baselineskip }
+{\protect \large \protect \bfseries \protect \hspace {-1.3em}Anexos\par }
+\protect \@afterheading 
+\vspace {2\baselineskip plus .5\baselineskip minus .5\baselineskip }
+\contentsline {chapter}{Refer\^encias}{31}{annex*.39}%
