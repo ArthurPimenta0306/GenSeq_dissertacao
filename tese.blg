@@ -1,18 +1,18 @@
-[0] Config.pm:307> INFO - This is Biber 2.19
-[1] Config.pm:310> INFO - Logfile is 'tese.blg'
-[166] biber-darwin:340> INFO - === Mon Nov 25, 2024, 00:04:45
-[210] Biber.pm:419> INFO - Reading 'tese.bcf'
-[446] Biber.pm:979> INFO - Found 18 citekeys in bib section 0
-[480] Biber.pm:4419> INFO - Processing section 0
-[503] Biber.pm:4610> INFO - Looking for bibtex file 'bibliografia.bib' for section 0
-[507] bibtex.pm:1713> INFO - LaTeX decoding ...
-[608] bibtex.pm:1519> INFO - Found BibTeX data source 'bibliografia.bib'
-[886] UCollate.pm:68> INFO - Overriding locale 'pt-BR' defaults 'variable = shifted' with 'variable = non-ignorable'
-[886] UCollate.pm:68> INFO - Overriding locale 'pt-BR' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[886] Biber.pm:4239> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'pt-BR'
-[886] Biber.pm:4245> INFO - No sort tailoring available for locale 'pt-BR'
-[925] bbl.pm:660> INFO - Writing 'tese.bbl' with encoding 'UTF-8'
-[944] bbl.pm:763> INFO - Output to tese.bbl
-[944] Biber.pm:131> WARN - BibTeX subsystem: /var/folders/n1/xg_y30z90hlgp231t9r6139c0000gn/T/biber_tmp_8Ki4/499af1e6906591d6961f19d66c065a09_58361.utf8, line 66, warning: 104 characters of junk seen at toplevel
-[944] Biber.pm:131> WARN - BibTeX subsystem: warning: comma(s) at end of name (removing)
-[944] Biber.pm:133> INFO - WARNINGS: 2
+[1] Config.pm:307> INFO - This is Biber 2.19
+[2] Config.pm:310> INFO - Logfile is 'tese.blg'
+[187] biber-darwin:340> INFO - === Mon Dec  2, 2024, 01:14:31
+[225] Biber.pm:419> INFO - Reading 'tese.bcf'
+[624] Biber.pm:979> INFO - Found 18 citekeys in bib section 0
+[661] Biber.pm:4419> INFO - Processing section 0
+[690] Biber.pm:4610> INFO - Looking for bibtex file 'bibliografia.bib' for section 0
+[695] bibtex.pm:1713> INFO - LaTeX decoding ...
+[821] bibtex.pm:1519> INFO - Found BibTeX data source 'bibliografia.bib'
+[1102] UCollate.pm:68> INFO - Overriding locale 'pt-BR' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1102] UCollate.pm:68> INFO - Overriding locale 'pt-BR' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1102] Biber.pm:4239> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'pt-BR'
+[1102] Biber.pm:4245> INFO - No sort tailoring available for locale 'pt-BR'
+[1145] bbl.pm:660> INFO - Writing 'tese.bbl' with encoding 'UTF-8'
+[1161] bbl.pm:763> INFO - Output to tese.bbl
+[1162] Biber.pm:131> WARN - BibTeX subsystem: /var/folders/n1/xg_y30z90hlgp231t9r6139c0000gn/T/biber_tmp_Bqas/499af1e6906591d6961f19d66c065a09_45317.utf8, line 66, warning: 104 characters of junk seen at toplevel
+[1162] Biber.pm:131> WARN - BibTeX subsystem: warning: comma(s) at end of name (removing)
+[1162] Biber.pm:133> INFO - WARNINGS: 2
