@@ -5,8 +5,7 @@
 Com o Agente treinado, é possível gerar novas sequências seguindo a arquitetura ilustrada na figura \ref{fig:geradorseq}. 
 O Agente gerou mais de 200 proteínas diferentes a partir de mutações na sequência inicial. 
 De modo a identificar cada proteína, vamos considerar a ordem com que foi gerada como seu respectivo ID.
-Destas, selecionamos as 63 primeiras, pois possuem um TMScore superior a 92\%. 
-
+Filtramos as proteínas geradas baseado em um limiar de 92\% de TMScore. Com isso, selecionamos as 63 primeiras sequências.  
 
 \begin{figure}[H]
     \centering
@@ -29,7 +28,7 @@ tendo TMScore igual a 94.48\% e RMSD de 1.485 angstroms.
 
 É interessante notar que, apesar da forte semelhança estrutural entre as proteínas,
 em termos de IS (Idêntidade de Sequência)
-são sequências muito diferentes, tendo em média cerca de 30\% de similaridade. 
+são sequências muito diferentes, tendo em média apenas 30\% de similaridade. 
   
 \begin{table}[htbp]
     \centering
@@ -144,18 +143,19 @@ Já para os grupos DQ e DP, nenhuma sequência superou o IM do FIX.
 \section{Docking}
 
 {\color{red} Explicar Docking no background, explicando a interação entre FIX e FVIII. Explicar as métricas}        
+{\color{red} Corrigir os percentuais com as novas imagens}        
 
 Ao projetar proteínas capazes de substituir o FIX no tratamento da Hemofilia B, um aspecto crítico é garantir que as 
 proteínas geradas possuem uma interação eficaz ou até mais favorável com o FVIII se comparado ao FIX.
 Para isto, realizamos análises de \textit{docking} molecular de cada sequência gerada com o FVIII,
-calculando métricas que capturam diferentes aspectos da interface proteína-proteína. 
+calculando métricas que capturam diferentes características da interface proteína-proteína. 
 
 \begin{itemize}
-    \item \textit{Contact Molecular Surface}: Obtivemos 19 proteínas (30\% do total) superiores ao FIX em termos de CMS, 
+    \item \textit{Contact Molecular Surface}: obtivemos 19 proteínas (30\% do total) superiores ao FIX em termos de CMS, 
     sugerindo interfaces de ligação maiores para essas sequências.
-    \item DDG: Cerca de 32\% das proteínas geradas atingiram um DDG mais favorável (menor) do que o FIX, indicando ligações mais estáveis.   
+    \item DDG: cerca de 32\% das proteínas geradas atingiram um DDG mais favorável (menor) do que o FIX, indicando ligações mais estáveis.   
     \item \textit{Interface Buried Sasa}: 33\% das proteínas obtiveram um SASA superior ao FIX.
-    \item \textit{SAP Score Target}: Apenas 2\% das sequências projetas atingiram valores superiores ao FIX.
+    \item \textit{SAP Score Target}: apenas 2\% das sequências projetadas atingiram valores superiores ao FIX.
   \end{itemize}
 
 

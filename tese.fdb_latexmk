@@ -1,18 +1,18 @@
 # Fdb version 4
-["biber tese"] 1733112865.24167 "tese.bcf" "tese.bbl" "tese" 1734057959.63607 0
+["biber tese"] 1734322964.37459 "tese.bcf" "tese.bbl" "tese" 1734323003.93923 0
   "bibliografia.bib" 1729746128 15544 0780362793cffdc11355a1d9b5fb5732 ""
-  "tese.bcf" 1734057958.52673 110718 a094ded102bb08eca483c38d53508f68 "pdflatex"
+  "tese.bcf" 1734323002.87981 110718 814f7ef197c8578f1fb5a59c556511e5 "pdflatex"
   (generated)
   "tese.bbl"
   "tese.blg"
   (rewritten before read)
-["makeindex tese.idx"] 1733112864.85938 "tese.idx" "tese.ind" "tese" 1734057959.63554 0
-  "tese.idx" 1734057958.52974 970 b38f7762008176c0029bee57f43dc5e7 "pdflatex"
+["makeindex tese.idx"] 1734322964.02056 "tese.idx" "tese.ind" "tese" 1734323003.9381 0
+  "tese.idx" 1734323002.88258 970 b38f7762008176c0029bee57f43dc5e7 "pdflatex"
   (generated)
   "tese.ilg"
   "tese.ind"
   (rewritten before read)
-["pdflatex"] 1734057943.48258 "/Users/arthurmoriggipimenta/Desktop/GenSeq_dissertacao/tese.tex" "tese.pdf" "tese" 1734057959.63699 0
+["pdflatex"] 1734322987.83443 "/Users/arthurmoriggipimenta/Desktop/GenSeq_dissertacao/tese.tex" "tese.pdf" "tese" 1734323003.94121 0
   "/Users/arthurmoriggipimenta/Desktop/GenSeq_dissertacao/tese.tex" 1734057924.10151 17677 603c96b706f13c4fffd8f410f1cd5327 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_75t36g.enc" 1667852677 3022 13dbae1db4ca7b6d6a3611a22a194cb8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_cb34qf.enc" 1667852677 3498 97969c5bc9b87f369104f937c6467737 ""
@@ -408,9 +408,9 @@
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
   "conteudo/00_introducao.tex" 1732502178.83221 11350 c019f4ef82fffbfb992f102eca31a2f7 ""
   "conteudo/01_revisaobibliografica.tex" 1732492660.25529 3283 86ce7890a679b4b8455e044f39782e37 ""
-  "conteudo/02_background.tex" 1732843143.09061 16484 032daa7c5d36e901a2d49b7598507a28 ""
+  "conteudo/02_background.tex" 1734322923.58401 21756 572ed933f7c96e4e4d4a0ed85c92a013 ""
   "conteudo/04_metodologia.tex" 1732503797.4139 16662 f2dd557d62745aae80c0def5c55d0c00 ""
-  "conteudo/05_resultados.tex" 1734057850.23087 8443 858922c3e1e4840d6102784bdac0cfe4 ""
+  "conteudo/05_resultados.tex" 1734322082.88591 8564 98b451bfacea208981c301151f99293e ""
   "conteudo/06_conclusao.tex" 1734057924.25534 48 4585c2b2ba473e841d9bd4624633ad3a ""
   "extras/basics.tex" 1729746128 21858 e8ebcf37eadf449319a17242b7094977 ""
   "extras/bibconfig.tex" 1729746128 4132 2896d8e8e6ab0b32113a40e44ab486ef ""
@@ -447,8 +447,8 @@
   "figuras/metodologia-pipeline_proposta.jpg" 1730851216.76196 108069 388e07b93b32b069ed9dbc39f6888e46 ""
   "figuras/plot_box_pre_train_reward.jpg" 1695563226.02739 24134 f2ca15b5a6bb57a8035659d1531d08d0 ""
   "figuras/plot_box_train_reward.jpg" 1695563178.208 26793 7cbb2a0895a24fc72736073ebc7c11de ""
-  "figuras/plot_contact_molecular_surface.png" 1734054827.21462 195665 907103f37f584a6a8b293ed39ef31ea5 ""
-  "figuras/plot_ddg.png" 1734054844.38615 160742 f5b8984922f0395a4f6df773d1944668 ""
+  "figuras/plot_contact_molecular_surface.png" 1734321664.66936 186801 20eb546402213769f56e15c1ee30413e ""
+  "figuras/plot_ddg.png" 1734321759.78486 153113 1b4a121fa2e29e68283e36254cb1ddb0 ""
   "figuras/plot_immuno_B_v2_step_63.png" 1732837754.62746 34361 642f7d7e44f11e3237e613ad6c89fcd0 ""
   "figuras/plot_immuno_wt_FIX.png" 1732837684.33496 36472 b94005e9c93239dcaf83f377baf6fd8c ""
   "figuras/plot_imuno_IMscore_DP.png" 1733277519.62205 157871 8792600feeb72d4cfb8fba3729408914 ""
@@ -456,9 +456,9 @@
   "figuras/plot_imuno_IMscore_DRB1.png" 1733277523.06837 162106 feb47fc382053467f0b39f73b883b049 ""
   "figuras/plot_imuno_IMscore_DRB3_4_5.png" 1733277512.56552 161930 0ca18de148ad419dd07dccff50626c48 ""
   "figuras/plot_imuno_IMscore_geral.png" 1733276321.21747 182342 96a07e9f9901c012857c72c03cf22b69 ""
-  "figuras/plot_interface_buried_sasa.png" 1734054869.96981 194807 b27cc0c421ac96907b54965cc733cbaf ""
+  "figuras/plot_interface_buried_sasa.png" 1734321814.74291 194586 df667a30452dcbef67617ad498509ec5 ""
   "figuras/plot_pre_train_reward.jpg" 1695560468.13888 47571 1a4e47fdae6142f4aa3981fdb2846941 ""
-  "figuras/plot_sap_score_target.png" 1734054888.05344 184408 9fadef83cf3d8dae9b2f1f85b29e804a ""
+  "figuras/plot_sap_score_target.png" 1734321837.34768 173656 293e0ab1b5c39a45b0355c08d268fd9f ""
   "figuras/plot_tmscore_decreasing.png" 1732504488.02261 43176 08903b7e0adc66923820478c7ced16cb ""
   "figuras/plot_train_reward.jpg" 1695560597.44963 49532 63c4ae79d9eb2a2f8de03ea5dc4619c0 ""
   "figuras/target_structure.pdf" 1729746128 142312 9b02bb40589bd4256e02bc62c0d4f867 ""
@@ -466,15 +466,15 @@
   "imagechapter.sty" 1729746128 6292 df5a2992b4ef39fd6e7a93b6da37f445 ""
   "lstpseudocode.sty" 1729746128 8773 ee54807d51c2d1bcdf9ca65307b1e611 ""
   "mkidxhead.ist" 1730256675.99497 80 c56667d514c1ae5929d36d5c24f727ad ""
-  "tese.aux" 1734057958.504 20539 5053c181de6b96169bdf62552ea0e92b "pdflatex"
-  "tese.bbl" 1733112872.87997 22613 62f1145593ef4b84df8dac878167feef "biber tese"
-  "tese.ind" 1733112865.2315 1346 75c461dd6327dc2be9794f68f4f2bf6a "makeindex tese.idx"
-  "tese.lof" 1734057958.52984 3873 05b2175c31c0bc29a471db382af740ad "pdflatex"
-  "tese.lot" 1734057958.52993 700 23f060a79ab612673503745cc91da0ae "pdflatex"
-  "tese.out" 1734057958.5149 5424 b3f67813907f8d13b52794949709d92c "pdflatex"
-  "tese.run.xml" 1734057958.52946 2466 3ee5bd278abc846af94930ead8952602 "pdflatex"
+  "tese.aux" 1734323002.85818 20509 a3967d830e92e69991862c7e5617cf2f "pdflatex"
+  "tese.bbl" 1734322971.2675 22613 62f1145593ef4b84df8dac878167feef "biber tese"
+  "tese.ind" 1734322964.36982 1346 75c461dd6327dc2be9794f68f4f2bf6a "makeindex tese.idx"
+  "tese.lof" 1734323002.88266 3873 32a42fce79c4aa48f9ae92b4ea585b15 "pdflatex"
+  "tese.lot" 1734323002.88275 700 18458622adfad3d25ffd05cb2f024a13 "pdflatex"
+  "tese.out" 1734323002.86871 5266 af51a55c6281d5a07704953dd1390a39 "pdflatex"
+  "tese.run.xml" 1734323002.88231 2466 3ee5bd278abc846af94930ead8952602 "pdflatex"
   "tese.tex" 1734057924.10151 17677 603c96b706f13c4fffd8f410f1cd5327 ""
-  "tese.toc" 1734057958.53003 3931 e232714524cf43bf9077a90f103b2c88 "pdflatex"
+  "tese.toc" 1734323002.88286 3901 83ed1f7c0a444f2a511f16b066f18ab5 "pdflatex"
   (generated)
   "tese.aux"
   "tese.bcf"

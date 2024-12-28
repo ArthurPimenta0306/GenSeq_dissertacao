@@ -2382,15 +2382,15 @@
     <bcf:citekey order="25" intorder="1">Bio</bcf:citekey>
     <bcf:citekey order="26" intorder="1">Bio</bcf:citekey>
     <bcf:citekey order="27" intorder="1">Bio</bcf:citekey>
-    <bcf:citekey order="28" intorder="1">Eddy</bcf:citekey>
-    <bcf:citekey order="29" intorder="1">ConsurfDB</bcf:citekey>
-    <bcf:citekey order="30" intorder="1">aminodist</bcf:citekey>
-    <bcf:citekey order="31" intorder="1">seqinR</bcf:citekey>
-    <bcf:citekey order="32" intorder="1">aminodist</bcf:citekey>
+    <bcf:citekey order="28" intorder="1">USalign</bcf:citekey>
+    <bcf:citekey order="29" intorder="1">Eddy</bcf:citekey>
+    <bcf:citekey order="30" intorder="1">ConsurfDB</bcf:citekey>
+    <bcf:citekey order="31" intorder="1">aminodist</bcf:citekey>
+    <bcf:citekey order="32" intorder="1">seqinR</bcf:citekey>
     <bcf:citekey order="33" intorder="1">aminodist</bcf:citekey>
     <bcf:citekey order="34" intorder="1">aminodist</bcf:citekey>
     <bcf:citekey order="35" intorder="1">aminodist</bcf:citekey>
-    <bcf:citekey order="36" intorder="1">USalign</bcf:citekey>
+    <bcf:citekey order="36" intorder="1">aminodist</bcf:citekey>
     <bcf:citekey order="37" intorder="1">MDP</bcf:citekey>
     <bcf:citekey order="38" intorder="1">Bishop</bcf:citekey>
     <bcf:citekey order="39" intorder="1">Bishop</bcf:citekey>
