@@ -40,9 +40,15 @@ A cadeia polipeptídica é composta por três componentes: a cadeia principal, a
 
 \subsection{Estrutura proteíca}
 
-A função de uma proteína está intimamente relacionada à sua estrutura tridimensional, que é formada principalmente a partir das interações entre as cadeias laterais e móleculas encontradas no meio físico ao qual a proteína está inserida. Devido a essas interações, a maioria das proteínas assume uma estrutura tridimensional única, que é determinada pela ordem dos aminoácidos na sequência. A conformação final tende a ser aquela que possui a menor energia livre \cite{Bio}.
+A função de uma proteína está intimamente relacionada à sua estrutura tridimensional,
+que é formada principalmente a partir das interações entre as cadeias laterais e móleculas encontradas no meio físico ao qual
+a proteína está inserida. Devido a essas interações, a maioria das proteínas assume uma estrutura tridimensional única,
+que é determinada pela ordem dos aminoácidos na sequência. 
+A conformação final tende a ser aquela que possui a menor energia livre \cite{Bio}.
+{\color{red} Explicar o que é energia livre nesse contexto}
 
-\cite{Bio} explica que a polaridade das cadeias laterais desempenham um papel importante na predição estrutural da proteína. As cadeias não polares (hidrofóbicas) tendem a se agrupar no interior da molécula, evitando contato com a água. Já as polares tendem a se dispor perto da superfície da molécula, onde podem formar ligações de hidrogênio com a água e outras moléculas polares. 
+\cite{Bio} explica que a polaridade das cadeias laterais desempenham um papel importante na predição estrutural da proteína. 
+As cadeias não polares (hidrofóbicas) tendem a se agrupar no interior da molécula, evitando contato com a água. Já as polares tendem a se dispor perto da superfície da molécula, onde podem formar ligações de hidrogênio com a água e outras moléculas polares. 
 
 \begin{figure}[H]
      \centering
@@ -53,12 +59,143 @@ A função de uma proteína está intimamente relacionada à sua estrutura tridi
 {\color{red} Adaptar para uma imagem propria}
 
 \subsection{O Fator IX}
-{\color{red} TO DO}
-%Explicar o tamanho da sequencia, as especificidades, a resposta imunologica, a estabilidade
-%citar Blood coagulation factor IX: structural insights impacting hemophilia B therapy
-%https://ashpublications.org/blood/article-abstract/doi/10.1182/blood.2023023276/517006/Blood-coagulation-factor-IX-structural-insights?redirectedFrom=fulltext
-%Mostrar como ela se liga ao FVIII por imagem.
+O Fator IX (FIX) é uma proteína essencial para o processo de coagulação.
+Quando ativado (FIXa), atua em conjunto com o Fator VIIIa (FVIIIa) para formar 
+um complexo conhecido como tenase intrínseco, que é responsável por ativar o Fator X. 
+Este processo é fundamental para a geração de trombina e formação de coágulos \cite{FIX}. 
+A ausência ou disfunção do FIX compromete o processo de ativação do FX,
+impossibilitando uma coagulação saúdavel, o que configura a hemofilia tipo B.
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=.8\textwidth]{figuras/ativaFX.png}
+    \caption{Atuação do FIXa na ativação do FX}
+  \end{figure}
+
+O FIXa é composta por diferentes domínios,
+cada um desempenhando um papel essencial nas interações moleculares que permitem a formação do complexo tenase intrínseco. 
+Na região N-terminal, o domínio Gla (gamma-carboxiglutâmico) é responsável por ligar o FIXa a superfícies de membranas fosfolipídicas, 
+uma interação dependente de íons de cálcio, 
+fundamental para posicionar o complexo de coagulação no local da lesão vascular \cite{FIX}. 
+Os domínios de fator de crescimento epidérmico (EGF1 e EGF2) desempenham funções complementares: 
+o EGF1 facilita o reconhecimento de cofatores e substratos, enquanto o EGF2 interage com o domínio A3 do Fator VIIIa,
+contribuindo para a montagem do complexo tenase \cite{FIX}. 
+O papel mais crítico para a estabilidade e a funcionalidade do complexo tenase reside no domínio protease,
+cuja interação com o domínio A2 do FVIIIa permite a ativação conformacional necessária para uma catálise eficiente do FX.
+%O domínio protease de serina contém o sítio ativo responsável pela atividade catalítica do FIXa, 
+%interagindo diretamente com os domínios A2 e A3 do FVIIIa \cite{FIX}. Por conta disso,
+%o domínio protease de serina é o mais relevante para a estabilidade e a eficiência catalítica do 
+%complexo tenase intrínseco. 
+\cite{FIX} explica que variantes do FIXa, como o FIX-Padua, que modificam o domínio protease, 
+apresentam maior eficiência catalítica, destacando seu papel central no projeto de proteínas otimizadas para terapia de hemofilia.
+
+%A formação de um complexo tenase estável depende de várias interações específicas.
+%O domínio Gla do FIXa se liga ao domínio C2 do FVIIIa, promovendo a ancoragem na membrana fosfolipídica.
+%Os domínios EGF1 e EGF2 interagem com os domínios A1 e A3 do FVIIIa, conferindo estabilidade adicional ao complexo.
+%O papel mais crítico para a estabilidade e a funcionalidade do complexo tenase reside no domínio protease,
+%cuja interação com o domínio A2 do FVIIIa permite a ativação conformacional necessária para uma catálise eficiente do FX.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=.3\textwidth]{figuras/FIXa_FVIIIa.png}
+    \caption{Interação entre FIXa e FVIIIa, formando o complexo tenase. Adaptação da figura 3 de \cite{FIX}}
+  \end{figure}
+
+A estrutura do domínio protease é a estrutura alvo do projeto de sequências proposto por este trabalho.  
+É composta por 235 resíduos. 
+Logo, o espaço de possíveis novas sequências com este tamanho, considerando 20 diferentes aminoácidos, é de $235^20$. 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=.6\textwidth]{figuras/FIX.jpg}
+    \caption{Estrutura alvo - Domínio protease do Fator IXa}
+  \end{figure}
+
+As proteínas projetadas neste estudo serão desenvolvidas para mimetizar a estrutura do domínio protease.
+O objetivo é identificar, entre as variantes geradas, aquelas capazes de estabelecer interações mais estáveis com o FVIIIa,
+aprimorando a estabilidade do complexo tenase intrínseco. 
+Adicionalmente, espera-se que as novas estruturas apresentem um perfil imunogênico reduzido em comparação ao FIXa nativo, 
+contribuindo para maior segurança e eficácia terapêutica.
+
+\subsection{Docking}
+A análise de docking é uma técnica computacional amplamente utilizada no estudo de interações biomoleculares,
+particularmente para prever a orientação e a afinidade entre duas moléculas,
+como proteínas. Nesse sentido, é essencial para avaliar como uma proteína substituta do FIXa interage com o FVIIIa. 
+O docking molecular simula o reconhecimento entre uma molécula "receptor" e outra "ligante". 
+No caso de interações proteína-proteína, o receptor e o ligante são ambos macromoléculas,
+cujas superfícies e conformações influenciam a formação de um complexo estável.
+O objetivo do docking é identificar as poses mais favoráveis termodinamicamente, ou seja, 
+aquelas que minimizam a energia livre do sistema.
+
+Durante o docking, diversas poses do ligante em relação ao receptor são geradas.
+Ferramentas como RosettaDock ou AutoDock realizam essa busca, explorando translações, rotações e flexibilidade local.
+Cada pose é avaliada com base em métricas energéticas, como a \textit{Contact Molecular Surface} (CMS), \textit{Interface Buried SASA} (IBSASA),
+\textit{Delta Gibbs Free Energy of Binding} (DDG) e \textit{Surface Area Potential Score} (SAP Score).
+
+A CMS é uma medida desenvolvida para superar as limitações de métricas tradicionais, 
+como Shape Complementarity (SC) e Delta Solvent Accessible Surface Area (Delta SASA) \cite{Docking}.
+Enquanto SC analisa a complementaridade geométrica entre superfícies moleculares e 
+Delta SASA calcula a área de superfície acessível ao solvente antes e depois da complexação,
+ambas possuem limitações na identificação de interfaces bem empacotadas.
+Em contraste, o CMS combina a área de contato com um fator de penalização baseado na distância entre triângulos de superfície,
+oferecendo uma representação mais precisa da qualidade do empacotamento na interface \cite{Docking}.
+
+A IBSASA é frequentemente usada para estimar a extensão de área de superfície enterrada durante a formação de um complexo proteico,
+correlacionando-se com a estabilidade de ligação. 
+No entanto, sozinha, essa métrica pode ser enganosa em interfaces mal organizadas, 
+onde grandes áreas de contato podem não resultar em interações eficazes \cite{Docking}. 
+
+Por outro lado, a DDG fornece uma medida direta do quão favorável energéticamente é uma interação,
+com valores mais negativos indicando maior estabilidade termodinâmica \cite{Docking}. 
+A DDG, calculada frequentemente com o software Rosetta, 
+permite a otimização de sequências e conformações para maximizar a energia de ligação.
+
+O SAP Score avalia a hidrofobicidade com base na superfície acessível ao solvente, 
+sendo uma ferramenta crucial para prever a propensão à agregação e a estabilidade de complexos \cite{Docking}.
+Alterações no SAP Score após a ligação, conhecidas como Delta SAP Score, 
+fornecem insights sobre a contribuição hidrofóbica para a força motriz da interação.
+
+%O design de proteínas substitutas do FIX depende diretamente da eficácia dessas proteínas em formar complexos estáveis
+%e funcionais com o FVIII. 
+%A análise de docking não só ajuda a identificar mutações promissoras no FIX artificial,
+%mas também fornece insights sobre como melhorar sua funcionalidade na cascata de coagulação.
+
+
+
+\subsection{Resposta Imunológica}
+
+
+A resposta imune desencadeada por uma proteína terapêutica é um fator crítico que pode influenciar diretamente sua segurança e eficácia. 
+No contexto do projeto de uma proteína substituta do FIXa,
+a análise dessa resposta imune é especialmente relevante para evitar complicações associadas à formação de inibidores,
+uma limitação comum no tratamento de hemofilia. 
+Esses inibidores são anticorpos neutralizantes que se ligam à proteína administrada,
+reduzindo sua eficácia e exigindo estratégias de tratamento alternativas mais caras e menos seguras.
+
+A imunogenicidade está intrinsicamente relacionada à presença de epítopos imunogênicos na sequência da proteína. 
+Esses epítopos são regiões específicas que se ligam a moléculas de MHC classe II em células que apresentam antígenos (APCs), 
+facilitando a ativação de linfócitos T auxiliares \cite{Imuno}. 
+A afinidade de ligação é um fator determinante na indução da resposta imune. 
+Altas afinidades entre peptídeos e MHC-II aumentam a probabilidade de reconhecimento imune e subsequente ativação de células T \cite{Imuno}.
+
+A predição de afinidade de ligação entre epítopos e MHC-II emprega ferramentas computacionais baseadas em aprendizado de máquina,
+como o NetMHCIIpan, que simulam interações entre peptídeos derivados da proteína e uma variedade de alelos de MHC. 
+A sequência da proteína é fragmentada em peptídeos sobrepostos com comprimentos típicos de 8 a 15 aminoácidos,
+e a afinidade de cada peptídeo é quantificada por meio do valor de $IC_{50}$ (concentração inibitória de 50\%).
+Peptídeos com valores de $IC_{50}$ baixos (($IC_{50}$ < 50 nM)) indicam maior afinidade de ligação e, portanto, 
+são mais propensos a serem reconhecidos como epítopos imunogênicos \cite{Imuno}.
+
+Portanto, o objetivo ao projetar a proteína substituta do FIXa é não apenas otimizar a estabilidade de ligação ao FVIIIa, 
+mas também evitar a apresentação de novos epítopos imunogênicos que poderiam levar à formação de inibidores. 
+A redução da imunogenicidade melhora a adesão ao tratamento e reduz complicações, 
+consolidando a importância da integração de predições imunológicas no pipeline de projeto de proteínas terapêuticas.
+
+
+\subsection{Mutação}
+Uma mutação no contexto de proteínas refere-se a uma modificação na sequência de aminoácidos. 
+Por menor que seja esta modificação, a mutação pode acarretar em uma alteração na estrutura tridimensional da proteína,
+uma vez que a ordem que os aminoácidos estão dispostos na sequência influencia diretamente na conformação da estrutura. 
+Neste trabalho, vamos assumir que uma mutação consiste na substituição de apenas um aminoácido por outro na sequência. 
 
 \subsection{Similariedade entre estruturas}
 \label{subsection:tmscore}
@@ -70,82 +207,6 @@ enquanto valores menores sugerem uma maior divergência estrutural entre elas.
 O cálculo desta medida foi feito a partir da plataforma desenvolvida por \cite{USalign}.
 {\color{red} comparar com RMSD }
 
-
-\subsection{Docking}
-{\color{red} TO DO}
-{\color{red} Afinidade de ligação}
-{\color{red} Refinar GPT}
-A análise de docking é uma técnica computacional amplamente utilizada no estudo de interações biomoleculares,
-particularmente para prever a orientação e a afinidade entre duas moléculas,
-como proteínas. 
-No contexto do design de proteínas artificiais para o tratamento da hemofilia tipo B,
-o docking é essencial para avaliar como uma proteína substituta do Fator IX (FIX) interage com o Fator VIII (FVIII). 
-Essa interação é crucial, pois o complexo FIXa-FVIIIa desempenha um papel central na ativação do Fator X,
-um passo chave na cascata de coagulação sanguínea.
-
-O docking molecular simula o reconhecimento entre uma molécula "receptor" e outra "ligante". 
-No caso de interações proteína-proteína, o receptor e o ligante são ambos macromoléculas,
-cujas superfícies e conformações influenciam a formação de um complexo estável.
-O objetivo do docking é identificar as poses mais favoráveis termodinamicamente, ou seja, 
-aquelas que minimizam a energia livre do sistema.
-
-Durante o docking, diversas poses do ligante (Fator IX artificial) em relação ao receptor (Fator VIII) são geradas.
-Ferramentas como RosettaDock ou AutoDock realizam essa busca, explorando translações, rotações e flexibilidade local.
-
-Cada pose é avaliada com base em métricas energéticas, como:
-Contact Molecular Surface (CMS): Mede a área de contato entre as proteínas, indicando a proximidade e complementaridade estrutural.
-Interface Buried SASA (IBSASA): Calcula a área de superfície solvente enterrada na interface, importante para avaliar a estabilidade do complexo.
-DDG (Binding Free Energy): Representa a energia livre associada à ligação entre as proteínas. Valores mais baixos de DDG indicam interações mais favoráveis.
-SAP Score Target (Shape Complementarity): Quantifica o encaixe geométrico entre as superfícies, fundamental para interações específicas.
-Refinamento e Análise Pós-Docking:
-Após identificar as poses iniciais, etapas de refinamento estrutural ajustam as interações para maior precisão. Os resultados finais permitem prever tanto a afinidade quanto a estabilidade da interação.
-
-O design de proteínas substitutas do FIX depende diretamente da eficácia dessas proteínas em formar complexos estáveis e funcionais com o FVIII. 
-A análise de docking não só ajuda a identificar mutações promissoras no FIX artificial,
-mas também fornece insights sobre como melhorar sua funcionalidade na cascata de coagulação.
-
-
-
-\subsection{Resposta Imunológica}
-{\color{red} Refinar GPT}
-{\color{red} TO DO}
-Uma das principais preocupações no design de proteínas terapêuticas é sua imunogenicidade, ou seja,
-o potencial de desencadear uma resposta imune indesejada no organismo.
-No caso de proteínas artificiais que substituem o FIX, 
-é essencial prever a afinidade de ligação com epítopos presentes no complexo de histocompatibilidade principal (MHC),
-que podem ativar células T e levar à rejeição imunológica.
-
-
-A imunogenicidade de uma proteína terapêutica está diretamente relacionada à presença de epítopos imunogênicos em sua sequência.
-Esses epítopos são regiões da proteína que se ligam ao MHC de classe II em células apresentadoras de antígenos (APCs) e são apresentados para linfócitos T auxiliares.
-A afinidade de ligação entre os epítopos e o MHC-II é um determinante chave na ativação imunológica.
-
-A afinidade de ligação entre os epítopos e o MHC-II é comumente avaliada usando ferramentas bioinformáticas que simulam interações entre peptídeos derivados da proteína e moléculas de MHC.
-Algumas etapas incluem:
-
-Divisão da Proteína em Peptídeos:
-A sequência da proteína é fragmentada em peptídeos sobrepostos de tamanho típico (8-15 aminoácidos).
-Predição de Afinidade:
-Softwares como NetMHCIIpan calculam o potencial de cada peptídeo se ligar a diferentes alelos de MHC-II. A afinidade de ligação é expressa em termos de $IC_{50}$ (concentração inibitória 50\%), onde valores baixos indicam alta afinidade.
-Seleção de Epítopos Potenciais:
-Peptídeos com alta afinidade de ligação ($IC_{50}$ < 50 nM) são considerados epítopos candidatos e representam risco imunogênico.
-
-
-No caso das proteínas artificiais projetadas para substituir o FIX,
-a análise de binding affinity permite identificar regiões potencialmente imunogênicas,
-que podem ser modificadas para reduzir o risco de resposta imune.
-Estratégias como "desenho racional" podem ser usadas para remover ou mascarar esses epítopos, minimizando sua interação com o MHC-II.
-
-
-Além da predição computacional, a validação experimental pode incluir ensaios in vitro para confirmar a imunogenicidade reduzida das proteínas projetadas. 
-O equilíbrio entre eficácia funcional e imunogenicidade controlada é o objetivo central no desenvolvimento dessas terapias.
-
-
-\subsection{Mutação}
-Uma mutação no contexto de proteínas refere-se a uma modificação na sequência de aminoácidos. 
-Por menor que seja esta modificação, a mutação pode acarretar em uma alteração na estrutura tridimensional da proteína,
-uma vez que a ordem que os aminoácidos estão dispostos na sequência influencia diretamente na conformação da estrutura. 
-Neste trabalho, vamos assumir que uma mutação consiste na substituição de apenas um aminoácido por outro na sequência. 
 
 \subsection{Conservation Score}
 O \textit{Conservation Score} (CS) é uma métrica que estima a importância ou contribuição individual de cada aminoácido da sequência na caracterização da função da proteína. Aminoácidos cruciais na estrutura da proteína tendem a ser conservados, visto que alterações neles podem impactar significativamente a função proteíca. 

@@ -77,6 +77,35 @@
       \field{title}{Proximal Policy Optimization Algorithms}
       \field{year}{2017}
     \endentry
+    \entry{FIX}{article}{}
+      \name{author}{1}{}{%
+        {{un=1,uniquepart=given,hash=ddd26532d9a9340696520fbee43e4349}{%
+           family={al},
+           familyi={a\bibinitperiod},
+           given={Mettine\bibnamedelimb H.A.\bibnamedelimi Bos},
+           giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=1,
+           prefix={et},
+           prefixi={e\bibinitperiod},
+           prefixun=0}}%
+      }
+      \strng{namehash}{ddd26532d9a9340696520fbee43e4349}
+      \strng{fullhash}{ddd26532d9a9340696520fbee43e4349}
+      \strng{bibnamehash}{ddd26532d9a9340696520fbee43e4349}
+      \strng{authorbibnamehash}{ddd26532d9a9340696520fbee43e4349}
+      \strng{authornamehash}{ddd26532d9a9340696520fbee43e4349}
+      \strng{authorfullhash}{ddd26532d9a9340696520fbee43e4349}
+      \field{labelalpha}{al24}
+      \field{sortinit}{a}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{American Society for Hematology Journal BLOOD}
+      \field{title}{Blood coagulation factor IX: structural insights impacting hemophilia B therapy}
+      \field{year}{2024}
+    \endentry
     \entry{DeNovo}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=94d72c55d22b4bea6f176f5208bccf07}{%
@@ -214,6 +243,38 @@
       \field{title}{Pattern Recognition and Machine Learning}
       \field{year}{2006}
     \endentry
+    \entry{Imuno}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=28eeef117090f8d913f4993916613334}{%
+           family={Bjoern\bibnamedelima Peters},
+           familyi={B\bibinitperiod\bibinitdelim P\bibinitperiod},
+           given={Morten\bibnamedelima Nielsen},
+           giveni={M\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=01f57f098eba14e67a810ddbe5217d31}{%
+           family={Sette},
+           familyi={S\bibinitperiod},
+           given={Alessandro},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{60d9ec5749c5549116a03972bad148d7}
+      \strng{fullhash}{60d9ec5749c5549116a03972bad148d7}
+      \strng{bibnamehash}{60d9ec5749c5549116a03972bad148d7}
+      \strng{authorbibnamehash}{60d9ec5749c5549116a03972bad148d7}
+      \strng{authornamehash}{60d9ec5749c5549116a03972bad148d7}
+      \strng{authorfullhash}{60d9ec5749c5549116a03972bad148d7}
+      \field{labelalpha}{BS20}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Annual Reviews}
+      \field{title}{T Cell Epitope Predictions}
+      \field{year}{2020}
+    \endentry
     \entry{seqinR}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=63e82e5d19e96535423411f314d57fd9}{%
@@ -242,6 +303,35 @@
       \field{journaltitle}{Springer}
       \field{title}{R. In Structural Approaches to Sequence Evolution}
       \field{year}{2007}
+    \endentry
+    \entry{Docking}{thesis}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7a8447e9d417158bdc499df8b9e7b775}{%
+           family={Coventry},
+           familyi={C\bibinitperiod},
+           given={Brian},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {University of Washington}%
+      }
+      \strng{namehash}{7a8447e9d417158bdc499df8b9e7b775}
+      \strng{fullhash}{7a8447e9d417158bdc499df8b9e7b775}
+      \strng{bibnamehash}{7a8447e9d417158bdc499df8b9e7b775}
+      \strng{authorbibnamehash}{7a8447e9d417158bdc499df8b9e7b775}
+      \strng{authornamehash}{7a8447e9d417158bdc499df8b9e7b775}
+      \strng{authorfullhash}{7a8447e9d417158bdc499df8b9e7b775}
+      \field{labelalpha}{Cov21}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Learning How to Make Mini-Proteins that Bind to Specific Target Proteins}
+      \field{type}{phdthesis}
+      \field{year}{2021}
     \endentry
     \entry{Eddy}{article}{}
       \name{author}{1}{}{%

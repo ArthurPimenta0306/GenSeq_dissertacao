@@ -1,18 +1,18 @@
 # Fdb version 4
-["biber tese"] 1734322964.37459 "tese.bcf" "tese.bbl" "tese" 1734323003.93923 0
-  "bibliografia.bib" 1729746128 15544 0780362793cffdc11355a1d9b5fb5732 ""
-  "tese.bcf" 1734323002.87981 110718 814f7ef197c8578f1fb5a59c556511e5 "pdflatex"
+["biber tese"] 1736465362.13473 "tese.bcf" "tese.bbl" "tese" 1736465858.36965 0
+  "bibliografia.bib" 1736465328.14088 16386 6b73a07286afae939e5209e748cb2f6e ""
+  "tese.bcf" 1736465857.0929 111511 356e5f96ef64a5c037be80a0b398c843 "pdflatex"
   (generated)
   "tese.bbl"
   "tese.blg"
   (rewritten before read)
-["makeindex tese.idx"] 1734322964.02056 "tese.idx" "tese.ind" "tese" 1734323003.9381 0
-  "tese.idx" 1734323002.88258 970 b38f7762008176c0029bee57f43dc5e7 "pdflatex"
+["makeindex tese.idx"] 1736376455.44823 "tese.idx" "tese.ind" "tese" 1736465858.36922 0
+  "tese.idx" 1736465857.09657 970 b38f7762008176c0029bee57f43dc5e7 "pdflatex"
   (generated)
   "tese.ilg"
   "tese.ind"
   (rewritten before read)
-["pdflatex"] 1734322987.83443 "/Users/arthurmoriggipimenta/Desktop/GenSeq_dissertacao/tese.tex" "tese.pdf" "tese" 1734323003.94121 0
+["pdflatex"] 1736465841.72087 "/Users/arthurmoriggipimenta/Desktop/GenSeq_dissertacao/tese.tex" "tese.pdf" "tese" 1736465858.3704 0
   "/Users/arthurmoriggipimenta/Desktop/GenSeq_dissertacao/tese.tex" 1734057924.10151 17677 603c96b706f13c4fffd8f410f1cd5327 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_75t36g.enc" 1667852677 3022 13dbae1db4ca7b6d6a3611a22a194cb8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_cb34qf.enc" 1667852677 3498 97969c5bc9b87f369104f937c6467737 ""
@@ -406,9 +406,9 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1730170637.68238 5467645 128b85b7cde5f5edc5cb7f1dd7ff8736 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1730170096 8221430 c4ea0f7dbfb943ea0b3b1592b1fd62cc ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "conteudo/00_introducao.tex" 1732502178.83221 11350 c019f4ef82fffbfb992f102eca31a2f7 ""
+  "conteudo/00_introducao.tex" 1736273943.67068 11255 425e0f766fb9dc73d8b6a8140699b009 ""
   "conteudo/01_revisaobibliografica.tex" 1732492660.25529 3283 86ce7890a679b4b8455e044f39782e37 ""
-  "conteudo/02_background.tex" 1734322923.58401 21756 572ed933f7c96e4e4d4a0ed85c92a013 ""
+  "conteudo/02_background.tex" 1736465840.23699 25989 54bd884a964576b428463b1ab5148887 ""
   "conteudo/04_metodologia.tex" 1732503797.4139 16662 f2dd557d62745aae80c0def5c55d0c00 ""
   "conteudo/05_resultados.tex" 1734322082.88591 8564 98b451bfacea208981c301151f99293e ""
   "conteudo/06_conclusao.tex" 1734057924.25534 48 4585c2b2ba473e841d9bd4624633ad3a ""
@@ -429,9 +429,12 @@
   "figuras/20Aminoacidos.pdf" 1729746128 75337 04ae73ebf902e8aefe6955a2e3992836 ""
   "figuras/ActivationFunc.pdf" 1729746128 36924 bb26b6474b93dec2b58d4282038b115a ""
   "figuras/ConformacaoProteica.pdf" 1729746128 43412 3ebb0d540ce24c73006fee0205d9b898 ""
+  "figuras/FIX.jpg" 1736200345.82435 88967 ba494dc5bdf44adbafd523e517b022ac ""
+  "figuras/FIXa_FVIIIa.png" 1736375962.04821 37239 1a5539a1e3008263b0cbf0a12072f30e ""
   "figuras/FIXvsID34.png" 1732840050.04498 111829 df6453dc665aa0edf63442c7ab2a38dd ""
   "figuras/ProteinBackbone.pdf" 1729746128 45978 44c6c86b62c62df495a1431ae01955fa ""
   "figuras/RedeNeural.pdf" 1729746128 86201 a93cdfc83294c5205f6c3299f1fa2d4f ""
+  "figuras/ativaFX.png" 1736279238.77098 52634 bce40fac59e4674eb899166378d3dae0 ""
   "figuras/best_dim.jpg" 1731905300.9788 19537 f9bb066baf87869fbe15aa83eeefe55a ""
   "figuras/matrix_amino_dist.png" 1731897720.4697 160180 a54a7a2facab871d035c7d47d92a18b4 ""
   "figuras/metodologia-DeepLearningBased.pdf" 1729746128 35253 bb9dcdf4c299bc044887893c8e6e4d48 ""
@@ -461,20 +464,19 @@
   "figuras/plot_sap_score_target.png" 1734321837.34768 173656 293e0ab1b5c39a45b0355c08d268fd9f ""
   "figuras/plot_tmscore_decreasing.png" 1732504488.02261 43176 08903b7e0adc66923820478c7ced16cb ""
   "figuras/plot_train_reward.jpg" 1695560597.44963 49532 63c4ae79d9eb2a2f8de03ea5dc4619c0 ""
-  "figuras/target_structure.pdf" 1729746128 142312 9b02bb40589bd4256e02bc62c0d4f867 ""
   "hyperxindy.xdy" 1730256675.97854 301 e1a1e2f569821a37ccf6e0c8ec8620ec ""
   "imagechapter.sty" 1729746128 6292 df5a2992b4ef39fd6e7a93b6da37f445 ""
   "lstpseudocode.sty" 1729746128 8773 ee54807d51c2d1bcdf9ca65307b1e611 ""
   "mkidxhead.ist" 1730256675.99497 80 c56667d514c1ae5929d36d5c24f727ad ""
-  "tese.aux" 1734323002.85818 20509 a3967d830e92e69991862c7e5617cf2f "pdflatex"
-  "tese.bbl" 1734322971.2675 22613 62f1145593ef4b84df8dac878167feef "biber tese"
-  "tese.ind" 1734322964.36982 1346 75c461dd6327dc2be9794f68f4f2bf6a "makeindex tese.idx"
-  "tese.lof" 1734323002.88266 3873 32a42fce79c4aa48f9ae92b4ea585b15 "pdflatex"
-  "tese.lot" 1734323002.88275 700 18458622adfad3d25ffd05cb2f024a13 "pdflatex"
-  "tese.out" 1734323002.86871 5266 af51a55c6281d5a07704953dd1390a39 "pdflatex"
-  "tese.run.xml" 1734323002.88231 2466 3ee5bd278abc846af94930ead8952602 "pdflatex"
+  "tese.aux" 1736465857.06476 22246 326b3c345f3d2ea72af835958d579121 "pdflatex"
+  "tese.bbl" 1736465369.94161 26469 64a028990dd8fc87b2ef564fb58271dd "biber tese"
+  "tese.ind" 1736376455.89907 1346 75c461dd6327dc2be9794f68f4f2bf6a "makeindex tese.idx"
+  "tese.lof" 1736465857.09674 4203 9dd94c385a9362258139a774ab38a656 "pdflatex"
+  "tese.lot" 1736465857.09688 700 8e11696633ae25ec7025a0f54243c670 "pdflatex"
+  "tese.out" 1736465857.07856 5266 bb5ead8e1f99fadea35d82c78f42bdda "pdflatex"
+  "tese.run.xml" 1736465857.09618 2466 3ee5bd278abc846af94930ead8952602 "pdflatex"
   "tese.tex" 1734057924.10151 17677 603c96b706f13c4fffd8f410f1cd5327 ""
-  "tese.toc" 1734323002.88286 3901 83ed1f7c0a444f2a511f16b066f18ab5 "pdflatex"
+  "tese.toc" 1736465857.09702 3901 5d106080bee787e655633de35f7f7234 "pdflatex"
   (generated)
   "tese.aux"
   "tese.bcf"

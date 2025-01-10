@@ -77,6 +77,35 @@
       \field{title}{Proximal Policy Optimization Algorithms}
       \field{year}{2017}
     \endentry
+    \entry{FIX}{article}{}
+      \name{author}{1}{}{%
+        {{un=1,uniquepart=given,hash=ddd26532d9a9340696520fbee43e4349}{%
+           family={al},
+           familyi={a\bibinitperiod},
+           given={Mettine\bibnamedelimb H.A.\bibnamedelimi Bos},
+           giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=1,
+           prefix={et},
+           prefixi={e\bibinitperiod},
+           prefixun=0}}%
+      }
+      \strng{namehash}{ddd26532d9a9340696520fbee43e4349}
+      \strng{fullhash}{ddd26532d9a9340696520fbee43e4349}
+      \strng{bibnamehash}{ddd26532d9a9340696520fbee43e4349}
+      \strng{authorbibnamehash}{ddd26532d9a9340696520fbee43e4349}
+      \strng{authornamehash}{ddd26532d9a9340696520fbee43e4349}
+      \strng{authorfullhash}{ddd26532d9a9340696520fbee43e4349}
+      \field{labelalpha}{al24}
+      \field{sortinit}{a}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{American Society for Hematology Journal BLOOD}
+      \field{title}{Blood coagulation factor IX: structural insights impacting hemophilia B therapy}
+      \field{year}{2024}
+    \endentry
     \entry{DeNovo}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=94d72c55d22b4bea6f176f5208bccf07}{%

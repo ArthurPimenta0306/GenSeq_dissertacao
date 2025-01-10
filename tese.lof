@@ -1,34 +1,36 @@
 \babel@toc {brazilian}{}\relax 
-\contentsline {figure}{\numberline {1}{\ignorespaces Estrutura Alvo: Fator IX - Hemofilia tipo B}}{2}{figure.caption.7}%
-\contentsline {figure}{\numberline {2}{\ignorespaces Projeto de Sequências}}{3}{figure.caption.8}%
-\contentsline {figure}{\numberline {3}{\ignorespaces Projeto de Sequências baseado em busca}}{4}{figure.caption.9}%
-\contentsline {figure}{\numberline {4}{\ignorespaces Projeto de Sequências baseado em aprendizado profundo}}{5}{figure.caption.10}%
-\contentsline {figure}{\numberline {5}{\ignorespaces Projeto de Sequências proposto}}{6}{figure.caption.11}%
+\contentsline {figure}{\numberline {1}{\ignorespaces Projeto de Sequências}}{2}{figure.caption.7}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Projeto de Sequências baseado em busca}}{3}{figure.caption.8}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Projeto de Sequências baseado em aprendizado profundo}}{4}{figure.caption.9}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Projeto de Sequências proposto}}{5}{figure.caption.10}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Componentes de uma proteína \blx@tocontentsinit {0}\cite {Bio}}}{10}{figure.caption.12}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Os 20 aminoácidos \blx@tocontentsinit {0}\cite {Bio}}}{10}{figure.caption.13}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Exemplo de conformação protéica \blx@tocontentsinit {0}\cite {Bio}}}{11}{figure.caption.14}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Distâncias entre pares de aminoácidos \blx@tocontentsinit {0}\cite {aminodist}}}{14}{figure.caption.15}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Arquitetura de uma rede neural \blx@tocontentsinit {0}\cite {Bishop}}}{16}{figure.caption.16}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Neurônio processando sinal \blx@tocontentsinit {0}\cite {Figueiredo}}}{16}{figure.caption.17}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Componentes de uma proteína \blx@tocontentsinit {0}\cite {Bio}}}{10}{figure.caption.11}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Os 20 aminoácidos \blx@tocontentsinit {0}\cite {Bio}}}{10}{figure.caption.12}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Exemplo de conformação protéica \blx@tocontentsinit {0}\cite {Bio}}}{11}{figure.caption.13}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Atuação do FIXa na ativação do FX}}{11}{figure.caption.14}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Interação entre FIXa e FVIIIa, formando o complexo tenase. Adaptação da figura 3 de \blx@tocontentsinit {0}\cite {FIX}}}{12}{figure.caption.15}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Estrutura alvo - Domínio protease do Fator IXa}}{12}{figure.caption.16}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Distâncias entre pares de aminoácidos \blx@tocontentsinit {0}\cite {aminodist}}}{16}{figure.caption.17}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Arquitetura de uma rede neural \blx@tocontentsinit {0}\cite {Bishop}}}{18}{figure.caption.18}%
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Neurônio processando sinal \blx@tocontentsinit {0}\cite {Figueiredo}}}{18}{figure.caption.19}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Obtenção das condições iniciais}}{19}{figure.caption.18}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Construção e uso do \textit {Encoder}. }}{21}{figure.caption.21}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Escolha da dimensionalidade dos Embeddings}}{21}{figure.caption.22}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Exemplo de mutação. O aminoácido A na posição 3 está sendo substituído pelo o aminoácido C}}{22}{figure.caption.24}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Arquitetura da rede neural do Agente (\textit {GenSeq})}}{23}{figure.caption.27}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Primeiro estágio de treinamento}}{24}{figure.caption.28}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Comparação do Agente pré treinado com um Agente aleatório}}{25}{figure.caption.30}%
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Média móvel das recompensas por episódio - treino}}{26}{figure.caption.31}%
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Segundo estágio - Treino}}{27}{figure.caption.32}%
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Comparação do Agente treinado com um Agente aleatório}}{28}{figure.caption.34}%
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Média móvel das recompensas por episódio - treino}}{29}{figure.caption.35}%
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Gerando sequência otimizada}}{30}{figure.caption.36}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Obtenção das condições iniciais}}{21}{figure.caption.20}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Construção e uso do \textit {Encoder}. }}{23}{figure.caption.23}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Escolha da dimensionalidade dos Embeddings}}{23}{figure.caption.24}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Exemplo de mutação. O aminoácido A na posição 3 está sendo substituído pelo o aminoácido C}}{24}{figure.caption.26}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Arquitetura da rede neural do Agente (\textit {GenSeq})}}{25}{figure.caption.29}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Primeiro estágio de treinamento}}{26}{figure.caption.30}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Comparação do Agente pré treinado com um Agente aleatório}}{27}{figure.caption.32}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Média móvel das recompensas por episódio - treino}}{28}{figure.caption.33}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Segundo estágio - Treino}}{29}{figure.caption.34}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Comparação do Agente treinado com um Agente aleatório}}{30}{figure.caption.36}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Média móvel das recompensas por episódio - treino}}{31}{figure.caption.37}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Gerando sequência otimizada}}{32}{figure.caption.38}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Variação da similaridade entre as sequências geradas e o FIX }}{31}{figure.caption.37}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Alinhamento entre FIX (em azul) e a proteína ID 34 (em vermelho)}}{32}{figure.caption.38}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Comparação do IM entre as proteínas geradas e o FIX}}{33}{figure.caption.42}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces IM calculado para cada grupo de alelo}}{34}{figure.caption.43}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Resultado do \textit {Docking} entre as proteínas geradas e o fator VII}}{36}{figure.caption.44}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Variação da similaridade entre as sequências geradas e o FIX }}{33}{figure.caption.39}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Alinhamento entre FIX (em azul) e a proteína ID 34 (em vermelho)}}{34}{figure.caption.40}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Comparação do IM entre as proteínas geradas e o FIX}}{35}{figure.caption.44}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces IM calculado para cada grupo de alelo}}{36}{figure.caption.45}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Resultado do \textit {Docking} entre as proteínas geradas e o fator VII}}{38}{figure.caption.46}%
 \addvspace {10\p@ }

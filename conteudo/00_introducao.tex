@@ -10,20 +10,21 @@
 
 \label{cap:introducao}
 \enlargethispage{.5\baselineskip}
-A hemofilia é uma doença hereditária rara, caracterizada por uma deficiência nos fatores de coagulação sanguínea. Existem dois principais tipos de hemofilia: a A, causada pela deficiência do fator VIII de coagulação, e a hemofilia B, causada pela deficiência do fator IX. 
-Os pacientes com hemofilia enfrentam um risco maior de sofrer com hemorragias graves, tanto internas quanto externas, 
+A hemofilia tipo B é uma doença hereditária rara, caracterizada por uma deficiência no fator IX de coagulação sanguínea. 
+Os pacientes com a doença enfrentam um risco maior de sofrer com hemorragias graves, tanto internas quanto externas, 
 podendo levar a complicações debilitantes e até mesmo à morte \cite{Mannucci}.
 
-Embora tenham sido obtidos avanços notáveis no tratamento da doença nas últimas décadas, muitos desafios ainda persistem \cite{Gouw}. 
-O tratamento tradicional da hemofilia envolve a infusão de fatores de coagulação recombinantes ou derivados do plasma sanguíneo \cite{Gouw}. Apesar de sua eficácia na prevenção de hemorragias, esse tratamento possui limitações, tais como a necessidade de infusões frequentes, a possibilidade de desenvolvimento de inibidores anticoagulantes e, principalmente, os altos custos envolvidos \cite{Mancuso}. 
-{\color{red} Pegar algum artigo que fale sobre a instabilidade do fator IX, que faz com que o tratamento seja caro e sobre a resposta imune.}
-O projeto de sequências proteicas surge como uma abordagem que tem potencial de reduzir substancialmente os custos associados ao tratamento da doença, ao criar proteínas sob medida com eficácia comparável.
+{\color{red} Imagem do fator IX completo}
 
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=.8\textwidth]{figuras/target_structure.pdf}
-  \caption{Estrutura Alvo: Fator IX - Hemofilia tipo B}
-\end{figure}
+Embora tenham sido obtidos avanços notáveis no tratamento da doença nas últimas décadas, muitos desafios ainda persistem. 
+O tratamento tradicional da hemofilia envolve a infusão de fatores de coagulação recombinantes ou derivados do plasma sanguíneo \cite{Gouw}. 
+Apesar de sua eficácia na prevenção de hemorragias, 
+esse tratamento possui limitações, 
+tais como a necessidade de infusões frequentes, a possibilidade de desenvolvimento de inibidores anticoagulantes e, principalmente, 
+os altos custos envolvidos \cite{Mancuso}. 
+{\color{red} Pegar algum artigo que fale sobre a instabilidade do fator IX, que faz com que o tratamento seja caro e sobre a resposta imune.}
+O projeto de sequências proteicas surge como uma abordagem que tem potencial de reduzir substancialmente 
+os custos associados ao tratamento da doença, ao criar proteínas sob medida com eficácia comparável.
 
 
 \section{Projeto de sequências}
@@ -32,7 +33,11 @@ O projeto de sequências proteicas surge como uma abordagem que tem potencial de
 %Falar do Computational protein design
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-O projeto de sequências se refere ao processo de criar ou otimizar uma sequência de aminoácidos de modo a produzir uma proteína cuja estrutura tridimensional possua características desejadas. Esta é uma tarefa desafiadora que, a depender do tamanho da sequência, é inviável de se resolver através de uma busca por força bruta, devido as inúmeras permutações possíveis que se pode obter com os 20 aminoácidos conhecidos na natureza \cite{Overview}.  
+O projeto de sequências se refere ao processo de criar ou otimizar uma sequência de aminoácidos de modo a produzir uma proteína 
+cuja estrutura tridimensional possua características desejadas. 
+Esta é uma tarefa desafiadora que, a depender do tamanho da sequência, 
+é inviável de se resolver através de uma busca por força bruta, d
+evido as inúmeras permutações possíveis que se pode obter com os 20 aminoácidos conhecidos na natureza \cite{Overview}.  
 
 \begin{figure}[H]
   \centering
@@ -98,10 +103,20 @@ que se baseia nas características da estrutura - distância e orientação dos 
 %Problema: tratamento com Fator IX é caro por exigir inumeras infusoes pq o Fator IX é instavel. Alem disso, pode gerar resposta imune nos pacientes. 
 %A pergunta cientifica é: É possível encontrar uma proteina melhor (mais estavel, mais barata de se produzir, menos resposta imune e capaz de exercer as mesmas funções da proteina original) que a proteina original utilizando um pipeline de busca, com RL, otimizando TMScore?
 %A nossa hipótese é que, se houver uma proteína melhor que desempenha a mesma função, ela deve ter uma estrutura tridimensional similar. Logo, a busca será feita no espaço de proteínas similares. Logo, criamos um pipeline para gerar um conjunto de proteínas candidatas. 
-Além de possívelmente provocar uma resposta imune no paciente, o tratamento da hemofilia tipo B, baseado na infusão do Fator IX, é custoso devido ao pouco tempo de vida do Fator IX na corrente sanguínea, demandando infusões frequentes. 
-Neste sentido, o presente trabalho se propõe a responder a seguinte pergunta científica: É possível, através de projeto de sequências, projetar uma proteína que desempenhe a mesma função do Fator IX mas com um perfil imunológico melhor e que demande menos infusões no tratamento da hemofilia tipo B?
+Além de possívelmente provocar uma resposta imune no paciente, 
+o tratamento da hemofilia tipo B, baseado na infusão do Fator IX, é custoso devido ao pouco tempo de vida do Fator IX na corrente sanguínea, demandando infusões frequentes. 
+Neste sentido, o presente trabalho se propõe a responder a seguinte pergunta científica: 
+É possível, através de projeto de sequências, projetar uma proteína que desempenhe a mesma função do Fator IX mas com 
+um perfil imunológico melhor e que demande menos infusões no tratamento da hemofilia tipo B?
 
-Para responder a esta questão, formulamos a hipótese de que, se existir uma proteína alternativa superior ao Fator IX, ela deverá ser estruturalmente similar. Com base nisso, pretendemos selecionar, dentre um conjunto de proteínas estruturalmente semelhantes ao Fator IX, aquelas que satisfaçam os critérios estabelecidos, caso existam.
+Para responder a esta questão, formulamos a hipótese de que, 
+se existir uma proteína alternativa superior ao Fator IX, 
+ela deverá ser estruturalmente similar. 
+Com base nisso, pretendemos selecionar, dentre um conjunto de proteínas estruturalmente semelhantes ao Fator IX,
+aquelas que satisfaçam os critérios estabelecidos, caso existam.
+
+{\color{red} Explicar que, para simplificar o problema, vamos projetar apenas um dominio, que é o mais relevante}
+{\color{red} Imagem do FIX destacando o dominio que vamos projetar}
 
 De modo a obter esse conjunto de proteínas, será desenvolvido um pipeline que combina a arquitetura do projeto de sequências baseado em busca e técnicas de aprendizado profundo.
 O processo será dividido em três módulos: Condições Iniciais, Treinamento e Geração de Sequências. 
