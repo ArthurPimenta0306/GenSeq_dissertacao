@@ -448,6 +448,32 @@
       \field{volume}{42}
       \field{year}{2001}
     \endentry
+    \entry{mds}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3b89b4f02ff2e102fd2373f69879b51a}{%
+           family={Kruskal},
+           familyi={K\bibinitperiod},
+           given={J.B.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{3b89b4f02ff2e102fd2373f69879b51a}
+      \strng{fullhash}{3b89b4f02ff2e102fd2373f69879b51a}
+      \strng{bibnamehash}{3b89b4f02ff2e102fd2373f69879b51a}
+      \strng{authorbibnamehash}{3b89b4f02ff2e102fd2373f69879b51a}
+      \strng{authornamehash}{3b89b4f02ff2e102fd2373f69879b51a}
+      \strng{authorfullhash}{3b89b4f02ff2e102fd2373f69879b51a}
+      \field{labelalpha}{Kru64}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Psychometrika}
+      \field{title}{Nonmetric multidimensional scaling: A numerical method}
+      \field{year}{1964}
+    \endentry
     \entry{aminodist}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=eda0cb2b70b2e245d00414035e866e49}{%
@@ -611,6 +637,7 @@
       \strng{authorbibnamehash}{b1d783a5458bbcea86ec2d64b93c5f47}
       \strng{authornamehash}{b1d783a5458bbcea86ec2d64b93c5f47}
       \strng{authorfullhash}{b1d783a5458bbcea86ec2d64b93c5f47}
+      \field{extraname}{1}
       \field{labelalpha}{Zha22}
       \field{sortinit}{Z}
       \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
@@ -621,6 +648,36 @@
       \field{journaltitle}{Nat Methods}
       \field{title}{US-align: universal structure alignments of proteins, nucleic acids, and macromolecular complexes}
       \field{year}{2022}
+    \endentry
+    \entry{tmscore}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7772092686b27faaff37331534d4b100}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={et\bibnamedelima al.},
+           giveni={e\bibinitperiod\bibinitdelim a\bibinitperiod},
+           givenun=0,
+           suffix={Y.},
+           suffixi={Y\bibinitperiod},
+           suffixun=0}}%
+      }
+      \strng{namehash}{7772092686b27faaff37331534d4b100}
+      \strng{fullhash}{7772092686b27faaff37331534d4b100}
+      \strng{bibnamehash}{7772092686b27faaff37331534d4b100}
+      \strng{authorbibnamehash}{7772092686b27faaff37331534d4b100}
+      \strng{authornamehash}{7772092686b27faaff37331534d4b100}
+      \strng{authorfullhash}{7772092686b27faaff37331534d4b100}
+      \field{extraname}{2}
+      \field{labelalpha}{Zha04}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proteins: Structure, Function, and Bioinformatics}
+      \field{title}{Scoring function for automated assessment of protein structure template quality}
+      \field{year}{2004}
     \endentry
   \enddatalist
 \endrefsection

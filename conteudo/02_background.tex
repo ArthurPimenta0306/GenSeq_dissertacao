@@ -17,26 +17,30 @@ Uma proteína é uma macromolécula biológica composta por cadeias de aminoáci
 Constituem a maior parte da massa seca de uma célula, podendo desempenhar funções enzimáticas, estruturais,
 imunológicas, de transporte, entre outras \cite{Bio}. 
 
-Existem milhares de proteínas diferentes em uma célula, onde cada uma é composta por uma sequência distinta dos 20 tipos de aminoácidos encontrados na natureza, unidos através de ligações peptídicas. Por conta disto, as proteínas são também conhecidas como polipeptídeos \cite{Bio}. 
+Existem milhares de proteínas diferentes em uma célula,
+onde cada uma é composta por uma sequência distinta dos 20 tipos de aminoácidos encontrados na natureza,
+unidos através de ligações peptídicas.
+Por conta disto, as proteínas são também conhecidas como polipeptídeos \cite{Bio}. 
 
-A cadeia polipeptídica é composta por três componentes: a cadeia principal, as cadeias laterais e as ligações peptídicas. A cadeia principal é também referida como o esqueleto da proteína e é definida como uma série repetitiva e encadeada de átomos de carbono, nitrogénio e oxigénio. Anexadas a cadeia principal, encontram-se as cadeias laterais. Estas não estão envolvidas nas ligações peptídicas e são responsáveis por caracterizar as principais propriedades da proteína \cite{Bio}. 
-
+A cadeia polipeptídica é composta por três componentes: a cadeia principal,
+as cadeias laterais e as ligações peptídicas.
+A cadeia principal é também referida como o esqueleto da proteína e
+é definida como uma série repetitiva e encadeada de átomos de carbono,
+nitrogénio e oxigénio. Anexadas a cadeia principal, encontram-se as cadeias laterais. 
+Estas não estão envolvidas nas ligações peptídicas e são responsáveis por caracterizar as principais propriedades da proteína \cite{Bio}. 
 
 \begin{figure}[H]
      \centering
-     \includegraphics[width=0.6\textwidth]{figuras/ProteinBackbone.pdf}
-     \caption{Componentes de uma proteína \cite{Bio}}
-     %\label{Label de referência para a imagem}
+     \includegraphics[width=0.6\textwidth]{figuras/ProteinBackbone.png}
+     \caption{Componentes de uma proteína}
 \end{figure}
-{\color{red} Criar imagem propria}
 
 \begin{figure}[H]
      \centering
-     \includegraphics[width=0.6\textwidth]{figuras/20Aminoacidos.pdf}
-     \caption{Os 20 aminoácidos \cite{Bio}}
-     %\label{Label de referência para a imagem}
+     \includegraphics[width=0.7\textwidth]{figuras/20Aminoacidos.png}
+     \caption{Cada aminoácido tem uma abreviação de uma ou três letras - figura 3-2 adaptada \cite{Bio}.}
 \end{figure}
-{\color{red} Criar imagem propria}
+
 
 \subsection{Estrutura proteíca}
 
@@ -45,18 +49,23 @@ que é formada principalmente a partir das interações entre as cadeias laterai
 a proteína está inserida. Devido a essas interações, a maioria das proteínas assume uma estrutura tridimensional única,
 que é determinada pela ordem dos aminoácidos na sequência. 
 A conformação final tende a ser aquela que possui a menor energia livre \cite{Bio}.
-{\color{red} Explicar o que é energia livre nesse contexto}
+Por energia livre entende-se como à energia potencial total do sistema molecular que inclui a proteína e seu meio circundante. 
+Essa energia é uma medida termodinâmica que combina componentes de energia entálpica (relacionada a ligações químicas e interações eletrostáticas) 
+e entropia (relacionada à desordem ou ao número de configurações possíveis das moléculas).
 
 \cite{Bio} explica que a polaridade das cadeias laterais desempenham um papel importante na predição estrutural da proteína. 
-As cadeias não polares (hidrofóbicas) tendem a se agrupar no interior da molécula, evitando contato com a água. Já as polares tendem a se dispor perto da superfície da molécula, onde podem formar ligações de hidrogênio com a água e outras moléculas polares. 
+As cadeias não polares (hidrofóbicas) tendem a se agrupar no interior da molécula, 
+evitando contato com a água. 
+Já as polares tendem a se dispor perto da superfície da molécula,
+onde podem formar ligações de hidrogênio com a água e outras moléculas polares. 
 
 \begin{figure}[H]
      \centering
-     \includegraphics[width=0.6\textwidth]{figuras/ConformacaoProteica.pdf}
-     \caption{Exemplo de conformação protéica \cite{Bio}}
+     \includegraphics[width=0.6\textwidth]{figuras/ConformacaoProteica.png}
+     \caption{Exemplo de conformação protéica \cite{Bio} - adaptado}
      %\label{Label de referência para a imagem}
 \end{figure}
-{\color{red} Adaptar para uma imagem propria}
+
 
 \subsection{O Fator IX}
 O Fator IX (FIX) é uma proteína essencial para o processo de coagulação.
@@ -155,6 +164,9 @@ sendo uma ferramenta crucial para prever a propensão à agregação e a estabil
 Alterações no SAP Score após a ligação, conhecidas como Delta SAP Score, 
 fornecem insights sobre a contribuição hidrofóbica para a força motriz da interação.
 
+%Apresentar equações/imagens ilustrativas das métricas
+
+
 %O design de proteínas substitutas do FIX depende diretamente da eficácia dessas proteínas em formar complexos estáveis
 %e funcionais com o FVIII. 
 %A análise de docking não só ajuda a identificar mutações promissoras no FIX artificial,
@@ -190,6 +202,7 @@ mas também evitar a apresentação de novos epítopos imunogênicos que poderia
 A redução da imunogenicidade melhora a adesão ao tratamento e reduz complicações, 
 consolidando a importância da integração de predições imunológicas no pipeline de projeto de proteínas terapêuticas.
 
+%Apresentar equações/imagens ilustrativas das métricas
 
 \subsection{Mutação}
 Uma mutação no contexto de proteínas refere-se a uma modificação na sequência de aminoácidos. 
@@ -198,32 +211,101 @@ uma vez que a ordem que os aminoácidos estão dispostos na sequência influenci
 Neste trabalho, vamos assumir que uma mutação consiste na substituição de apenas um aminoácido por outro na sequência. 
 
 \subsection{Similariedade entre estruturas}
-\label{subsection:tmscore}
-A métrica utilizada neste trabalho para mensurar a similariedade entre estruturas é o \textit{Template Matching Score} - \textit{TMScore}. 
-Baseada principalmente em distâncias entre aminoácidos, o \textit{TMScore} é uma métrica que varia de 0 a 1,
-sendo que quanto mais próximo de 1, maior será a similaridade entre as estruturas. 
-Um TM-Score igual a 1 indica uma sobreposição perfeita e uma correspondência estrutural quase idêntica entre as proteínas, 
-enquanto valores menores sugerem uma maior divergência estrutural entre elas. 
-O cálculo desta medida foi feito a partir da plataforma desenvolvida por \cite{USalign}.
-{\color{red} comparar com RMSD }
+
+Para projetar proteínas semelhantes ao FIXa, é necessário definir uma métrica de similaridade entre estruturas.
+Duas métricas amplamente utilizadas são o \textit{Root-Mean-Square Deviation} (RMSD) 
+e o \textit{Template Modeling Score} (TM-score) \cite{tmscore},
+cada uma com características próprias que influenciam sua adequação a diferentes cenários de comparação estrutural.
+
+O \textbf{RMSD} é definido como a raiz quadrada da média dos quadrados das distâncias 
+entre pares de átomos correspondentes em duas estruturas alinhadas:
+
+\begin{equation}
+    \text{RMSD} = \sqrt{\frac{1}{N} \sum_{i=1}^{N} d_i^2},
+\end{equation}
+
+onde \(N\) representa o número de pares de átomos alinhados e \(d_i\) é a distância entre os \(i\)-ésimos átomos nas estruturas comparadas. 
+Embora seja uma métrica intuitiva, o RMSD é altamente sensível a desalinhamentos locais e não é normalizado pelo comprimento da proteína,
+o que limita sua eficácia ao comparar proteínas de diferentes tamanhos.
+
+O \textbf{TM-score}, por sua vez,
+mede a similaridade estrutural global, superando limitações do RMSD. \cite{tmscore} a formulou da seguinte maneira:
+
+\begin{equation}
+    \text{TM-score} = \frac{1}{L_{\text{ref}}} \sum_{i=1}^{L_{\text{model}}} \frac{1}{1 + \left(\frac{d_i}{d_0(L_{\text{ref}})}\right)^2},
+\end{equation}
+
+onde \(L_{\text{ref}}\) é o número de resíduos na estrutura de referência,
+ \(L_{\text{model}}\) é o número de resíduos no modelo comparado, 
+ e \(d_i\) é a distância entre os átomos \(C_\alpha\) alinhados. 
+ 
+ \cite{tmscore} define \(d_0\) em função de \(L_{\text{ref}}\) da seguinte maneira:
+
+\begin{equation}
+    d_0(L_{\text{ref}}) = 1.24 \times (L_{\text{ref}} - 15)^{1/3} - 1.8.
+\end{equation}
+
+Este parâmetro adapta a escala de distâncias consideradas significativas para o alinhamento estrutural,
+ajustando-se ao comprimento da proteína de referência, \( L_{\text{ref}} \). 
+O termo \( (L_{\text{ref}} - 15)^{1/3} \) 
+reflete uma relação empírica entre o tamanho da proteína e as distâncias típicas entre resíduos alinhados,
+modelando o crescimento da distância permissível conforme a proteína aumenta de tamanho.
+A constante multiplicativa 1.24 e o deslocamento -1.8 também foram determinados empiricamente para fornecer 
+um valor de \( d_0 \) que otimiza a correlação entre o TM-score e a percepção biológica de similaridade estrutural.
+Essa função adapta o limiar de normalização das distâncias entre pares de resíduos alinhados,
+garantindo que proteínas de diferentes comprimentos sejam comparadas de forma justa.
+Proteínas maiores toleram distâncias absolutas maiores entre resíduos alinhados sem que o TM-score seja severamente penalizado \cite{tmscore}.
+ 
+
+O TMScore varia entre 0 e 1, onde valores próximos a 1 indicam alta similaridade topológica \cite{tmscore}.
+Se a distância entre cada par alinhado de átomos \(C_\alpha\) for igual a 0, então o TMScore é igual a 1, indicando sobreposição completa 
+entre as macromoléculas. Em contra partida, quanto maiores são as distâncias, menor é o TMScore (mais próximo de 0).
+
+Devido à sua robustez na avaliação da similaridade estrutural global e à sua interpretabilidade,
+com valores limitados entre 0 e 1, adotaremos o TM-score como a métrica principal a ser otimizada neste projeto.
+O cálculo desta medida será feito a partir da plataforma desenvolvida por \cite{USalign}.
 
 
 \subsection{Conservation Score}
-O \textit{Conservation Score} (CS) é uma métrica que estima a importância ou contribuição individual de cada aminoácido da sequência na caracterização da função da proteína. Aminoácidos cruciais na estrutura da proteína tendem a ser conservados, visto que alterações neles podem impactar significativamente a função proteíca. 
-O score é obtido levando-se em conta a frequência com que certas combinações de aminoácidos ocorrem em proteínas homólogas ao longo da evolução das espécies \cite{Eddy}. 
-Para este trabalho, utilizamos o CS calculado pelo servidor ConsurfDB \cite{ConsurfDB}, tendo a estrutura do fator IX de coagulação como entrada. 
-{\color{red} colocar uma imagem pra explicar}
+O \textit{Conservation Score} (CS) é uma métrica que estima a importância ou 
+contribuição individual de cada resíduo da sequência na caracterização da estrutura da proteína.
+Resíduos cruciais na estrutura da proteína tendem a ser conservados,
+visto que alterações neles podem impactar significativamente a função proteíca. 
+O score é obtido levando-se em conta a frequência com que certas combinações de aminoácidos 
+ocorrem em proteínas homólogas ao longo da evolução das espécies \cite{Eddy}. 
+Para este trabalho, utilizamos o CS calculado pelo servidor ConsurfDB \cite{ConsurfDB},
+tendo a estrutura do FIXa de coagulação como entrada. 
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=.8\textwidth]{figuras/ConservationScore.png}
+    \caption{A maior parte dos resíduos do FIXa possuem um baixo CS. Os maiores valores estão concentrados em cerca de 12 resíduos 
+    espalhados ao longo da sequência.}
+  \end{figure}
+
+A identificação de posições conservadas é um aspecto fundamental ao projetar novas proteínas,
+pois fornece informações essenciais para evitar mutações em regiões críticas,
+preservando assim a estabilidade estrutural e a função biológica da molécula.
 
 \subsection{Similariedade entre aminoácidos}
-Para mensurar o nível de similariedade entre os aminoácidos, utilizamos uma métrica de distância com base no trabalho \cite{aminodist}.
-Nesse estudo, uma representação vetorial de 544 dimensões foi criada para cada aminoácido, incorporando informações sobre suas propriedades.
-Essa representação foi desenvolvida com o auxílio do pacote seqinR \cite{seqinR}. 
-Posteriormente, \cite{aminodist} aplicou uma redução de dimensionalidade com Principal Component Analysis (PCA), 
-obtendo uma nova representação com 19 dimensões, retendo 99\% da informação original. 
-Por fim, \cite{aminodist} apresenta a matriz de distâncias que iremos utilizar neste trabalho,
-que é o resultado da distancia euclidiana entre cada par de vetores de 19 dimensões. 
-{\color{red} Nao precisa explicar do PCA. Explicar somente a metodologia e quais informações foram usadas pra criar essa representacao}
+
+Da mesma forma que regiões com altos score de conservação devem ser evitadas, 
+convém evitar mutações que substituem aminoácidos muito diferentes.
+Nesse sentido, para mensurar o nível de similaridade entre os aminoácidos,
+utilizamos uma métrica de distância fundamentada no trabalho de \cite{aminodist}, 
+que propõe uma abordagem vetorial para representar as propriedades de cada aminoácido.
+Nesse estudo, cada aminoácido foi descrito por um vetor de 544 dimensões, 
+incorporando uma ampla gama de características físico-químicas e estruturais. 
+A construção desses vetores foi realizada com o auxílio do pacote seqinR \cite{seqinR}, 
+uma ferramenta especializada em análise de sequências biológicas.
+O pacote seqinR utiliza uma base de dados abrangente contendo propriedades como peso molecular,
+hidrofobicidade, polaridade, acessibilidade à superfície, entre outras,
+para derivar descritores numéricos que caracterizam as propriedades de cada aminoácido.
+
+A partir dessa representação, \cite{aminodist} introduziu
+uma matriz de distâncias, construída a partir das distâncias euclidianas de cada par 
+de vetores, fornecendo uma medida quantitativa da dissimilaridade entre aminoácidos.
+
 
 \begin{figure}[H]
     \centering
@@ -280,8 +362,8 @@ Em geral, é organizada em camadas, que incluem três tipos: a camada de entrada
 
 \begin{figure}[H]
      \centering
-     \includegraphics[width=0.6\textwidth]{figuras/RedeNeural.pdf}
-     \caption{Arquitetura de uma rede neural \cite{Bishop}}
+     \includegraphics[width=0.6\textwidth]{figuras/RedeNeural.png}
+     \caption{Arquitetura de uma rede neural - \cite{Bishop} adaptado}
      \label{arqNN}
 \end{figure}
 
@@ -292,7 +374,7 @@ tangente hiperbólica, entre outras \cite{Bishop}.
 
 \begin{figure}[H]
      \centering
-     \includegraphics[width=0.6\textwidth]{figuras/ActivationFunc.pdf}
+     \includegraphics[width=0.6\textwidth]{figuras/ActivationFunc.png}
      \caption{Neurônio processando sinal \cite{Figueiredo}}
 \end{figure}
 
@@ -365,25 +447,41 @@ Uma vez que o aprendizado das redes do AC são dependentes entre si, \cite{PPO} 
 
 Onde $c_1$ e $c_2$ são constantes e $S$ é definido por \cite{PPO} como um bônus de entropia que garante que o agente explore suficientemente o ambiente durante o treinamento.
 
-\subsection{MDS}
-\label{subsection:MDS}
-{\color{red} Começar explicando a motivação do uso dessa tecnica (fazer um embedding baseado na matriz do Tiago)}
-Dado um conjunto de $n$ objetos e uma matriz $D = (dij)$ contendo a distância entre cada par $(i,j)$ de objetos, o objetivo do \textit{Metric Multidimensional Scaling} (MDS) é encontrar, 
-para um objeto qualquer $Xi$, uma representação vetorial $Xi = [xi1,...,xim]$ tal que $||Xi - Xj|| = dij$.
-Para isto, o método busca minimizar a diferença entre $||Xi - Xj||$ e $dij$ através da seguinte função de perda, conhecida por $Stress$:
+
+\subsection{Escalonamento Multidimensional (MDS)}  
+\label{subsection:MDS}  
+
+O uso de técnicas de redução de dimensionalidade, como o \textit{Metric Multidimensional Scaling} (MDS),
+é motivado pela necessidade de construir representações vetoriais de objetos em um espaço de menor dimensão,
+preservando as distâncias definidas em uma matriz de similaridade ou dissimilaridade.
+No contexto deste trabalho, utilizamos o MDS para gerar uma representação vetorial para cada aminoácido,
+respeitando as distâncias previamente definidas na matriz proposta por \cite{aminodist}. 
+Esta abordagem permite incorporar relações complexas de similaridade em uma forma compatível com métodos de aprendizado de máquina e
+análise estrutural.  
+
+Dado um conjunto de $n$ objetos e uma matriz de distâncias $D = (d_{ij})$,
+onde cada elemento $d_{ij}$ representa a distância entre o par de objetos $i$ e $j$,
+o objetivo do MDS é encontrar uma configuração vetorial $X_i = [x_{i1}, x_{i2}, ..., x_{im}]$ 
+para cada objeto $i$ em um espaço de dimensão $m$,
+de modo que a distância euclidiana entre $X_i$ e $X_j$ aproxime $d_{ij}$. 
+O MDS busca minimizar as distâncias reais e as distâncias no espaço embutido, 
+utilizando a função de perda conhecida como \textit{stress}:
 
 \begin{equation}
-    Stress(X1, X2, ..., Xn) = \sqrt{\sum_{i \neq j = 1}^{n} (d_{ij} - ||X_i - X_j||)^2}
- \end{equation}
+    Stress(X_1, X_2, ..., X_n) = \sqrt{\sum_{i \neq j = 1}^{n} (d_{ij} - ||X_i - X_j||)^2}.
+\end{equation}
 
-{\color{red} Explicar como essa função é minimizada. Daria pra fazer pelo Gradient descendente mas aparentemente o mais usado é o SMACOF}
+A minimização desta função é geralmente realizada pelo algoritmo 
+SMACOF (\textit{Scaling by MAjorizing a Complicated Function}),
+que iterativamente melhora a configuração de pontos em direção a uma solução de menor \textit{stress},
+garantindo uma melhor correspondência entre as distâncias calculadas e as observadas \cite{mds}.
+Embora outros métodos, como o gradiente descendente, possam ser utilizados, 
+o SMACOF é amplamente preferido devido à sua eficiência e estabilidade.
 
-Neste trabalho utilizamos o MDS para codificar cada aminoácido em uma representação vetorial
-que respeita a matriz de distâncias pré definidas por \cite{aminodist}. 
-
-{\color{red} Sklearn cita Nonmetric multidimensional scaling: a numerical method” Kruskal, J. Psychometrika, 29 (1964)}
-
-
+Neste trabalho, 
+a implementação do MDS foi realizada utilizando a biblioteca \texttt{sklearn}, 
+que fornece uma solução eficiente para problemas de escala multidimensional, 
+baseada nas técnicas originalmente propostas por \cite{mds}.
 
 
 
