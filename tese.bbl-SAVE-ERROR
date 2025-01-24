@@ -106,35 +106,6 @@
       \field{title}{Blood coagulation factor IX: structural insights impacting hemophilia B therapy}
       \field{year}{2024}
     \endentry
-    \entry{DeNovo}{article}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=94d72c55d22b4bea6f176f5208bccf07}{%
-           family={Anishchenko},
-           familyi={A\bibinitperiod},
-           given={et\bibnamedelima al.},
-           giveni={e\bibinitperiod\bibinitdelim a\bibinitperiod},
-           givenun=0,
-           suffix={I.},
-           suffixi={I\bibinitperiod},
-           suffixun=0}}%
-      }
-      \strng{namehash}{94d72c55d22b4bea6f176f5208bccf07}
-      \strng{fullhash}{94d72c55d22b4bea6f176f5208bccf07}
-      \strng{bibnamehash}{94d72c55d22b4bea6f176f5208bccf07}
-      \strng{authorbibnamehash}{94d72c55d22b4bea6f176f5208bccf07}
-      \strng{authornamehash}{94d72c55d22b4bea6f176f5208bccf07}
-      \strng{authorfullhash}{94d72c55d22b4bea6f176f5208bccf07}
-      \field{labelalpha}{Ani21}
-      \field{sortinit}{A}
-      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Nature}
-      \field{title}{De novo protein design by deep network hallucination}
-      \field{year}{2021}
-    \endentry
     \entry{Rosetta}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=eeedee582edf50b183fd2baeda9f33f6}{%
@@ -243,6 +214,38 @@
       \field{title}{Pattern Recognition and Machine Learning}
       \field{year}{2006}
     \endentry
+    \entry{Imuno}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=28eeef117090f8d913f4993916613334}{%
+           family={Bjoern\bibnamedelima Peters},
+           familyi={B\bibinitperiod\bibinitdelim P\bibinitperiod},
+           given={Morten\bibnamedelima Nielsen},
+           giveni={M\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=01f57f098eba14e67a810ddbe5217d31}{%
+           family={Sette},
+           familyi={S\bibinitperiod},
+           given={Alessandro},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{60d9ec5749c5549116a03972bad148d7}
+      \strng{fullhash}{60d9ec5749c5549116a03972bad148d7}
+      \strng{bibnamehash}{60d9ec5749c5549116a03972bad148d7}
+      \strng{authorbibnamehash}{60d9ec5749c5549116a03972bad148d7}
+      \strng{authornamehash}{60d9ec5749c5549116a03972bad148d7}
+      \strng{authorfullhash}{60d9ec5749c5549116a03972bad148d7}
+      \field{labelalpha}{BS20}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Annual Reviews}
+      \field{title}{T Cell Epitope Predictions}
+      \field{year}{2020}
+    \endentry
     \entry{seqinR}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=63e82e5d19e96535423411f314d57fd9}{%
@@ -271,6 +274,35 @@
       \field{journaltitle}{Springer}
       \field{title}{R. In Structural Approaches to Sequence Evolution}
       \field{year}{2007}
+    \endentry
+    \entry{Docking}{thesis}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7a8447e9d417158bdc499df8b9e7b775}{%
+           family={Coventry},
+           familyi={C\bibinitperiod},
+           given={Brian},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {University of Washington}%
+      }
+      \strng{namehash}{7a8447e9d417158bdc499df8b9e7b775}
+      \strng{fullhash}{7a8447e9d417158bdc499df8b9e7b775}
+      \strng{bibnamehash}{7a8447e9d417158bdc499df8b9e7b775}
+      \strng{authorbibnamehash}{7a8447e9d417158bdc499df8b9e7b775}
+      \strng{authornamehash}{7a8447e9d417158bdc499df8b9e7b775}
+      \strng{authorfullhash}{7a8447e9d417158bdc499df8b9e7b775}
+      \field{labelalpha}{Cov21}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Learning How to Make Mini-Proteins that Bind to Specific Target Proteins}
+      \field{type}{phdthesis}
+      \field{year}{2021}
     \endentry
     \entry{Eddy}{article}{}
       \name{author}{1}{}{%
@@ -386,6 +418,32 @@
       \field{title}{Actor-Critic Algorithms}
       \field{volume}{42}
       \field{year}{2001}
+    \endentry
+    \entry{mds}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3b89b4f02ff2e102fd2373f69879b51a}{%
+           family={Kruskal},
+           familyi={K\bibinitperiod},
+           given={J.B.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{3b89b4f02ff2e102fd2373f69879b51a}
+      \strng{fullhash}{3b89b4f02ff2e102fd2373f69879b51a}
+      \strng{bibnamehash}{3b89b4f02ff2e102fd2373f69879b51a}
+      \strng{authorbibnamehash}{3b89b4f02ff2e102fd2373f69879b51a}
+      \strng{authornamehash}{3b89b4f02ff2e102fd2373f69879b51a}
+      \strng{authorfullhash}{3b89b4f02ff2e102fd2373f69879b51a}
+      \field{labelalpha}{Kru64}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Psychometrika}
+      \field{title}{Nonmetric multidimensional scaling: A numerical method}
+      \field{year}{1964}
     \endentry
     \entry{aminodist}{article}{}
       \name{author}{1}{}{%
@@ -550,6 +608,7 @@
       \strng{authorbibnamehash}{b1d783a5458bbcea86ec2d64b93c5f47}
       \strng{authornamehash}{b1d783a5458bbcea86ec2d64b93c5f47}
       \strng{authorfullhash}{b1d783a5458bbcea86ec2d64b93c5f47}
+      \field{extraname}{1}
       \field{labelalpha}{Zha22}
       \field{sortinit}{Z}
       \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
@@ -560,6 +619,36 @@
       \field{journaltitle}{Nat Methods}
       \field{title}{US-align: universal structure alignments of proteins, nucleic acids, and macromolecular complexes}
       \field{year}{2022}
+    \endentry
+    \entry{tmscore}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7772092686b27faaff37331534d4b100}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={et\bibnamedelima al.},
+           giveni={e\bibinitperiod\bibinitdelim a\bibinitperiod},
+           givenun=0,
+           suffix={Y.},
+           suffixi={Y\bibinitperiod},
+           suffixun=0}}%
+      }
+      \strng{namehash}{7772092686b27faaff37331534d4b100}
+      \strng{fullhash}{7772092686b27faaff37331534d4b100}
+      \strng{bibnamehash}{7772092686b27faaff37331534d4b100}
+      \strng{authorbibnamehash}{7772092686b27faaff37331534d4b100}
+      \strng{authornamehash}{7772092686b27faaff37331534d4b100}
+      \strng{authorfullhash}{7772092686b27faaff37331534d4b100}
+      \field{extraname}{2}
+      \field{labelalpha}{Zha04}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proteins: Structure, Function, and Bioinformatics}
+      \field{title}{Scoring function for automated assessment of protein structure template quality}
+      \field{year}{2004}
     \endentry
   \enddatalist
 \endrefsection

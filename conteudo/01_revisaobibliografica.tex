@@ -1,12 +1,8 @@
 
 \chapter{Revisão Bibliográfica}
-{\color{red} TO DO}
-\cite{aminodist}
-\subsection{Predição de estruturas}
-{\color{red} TO DO}
 \label{subsection:structure_pred}
 %Explicar que, dado uma sequencia, preve qual é a estrutura
-%Falar de Alphafold, ESMFold
+
 
 %Além do Rosetta, destacam-se o AlphaFold2 e o EMSFold como modelos relevantes para prever estruturas Z. L. e. al, 2022; Jumper, 2021. O primeiro utiliza MSAs (Alinhamento Múltiplo de Sequências) e templates de estruturas similares como entrada de uma rede neural profunda treinada para predizer a estrutura proteica Jumper, 2021. Entretanto, ao se processar uma predição, é necessário realizar uma busca em bancos de dados a fim de se obter os MSAs e os templates Jumper, 2021. Já o EMSFold utiliza um modelo de linguagem LLM (Large Language Model) batizado de ESM-2, composto por mais de 15 bilhões de parâmetros treinados para gerar uma representação da sequência que, por sua vez, serve de entrada para o ESMFold que prediz a disposição tridimensional dos átomos da estrutura Z. L. e. al, 2022. Por ter uma arquitetura que independe de buscas em bancos de dados, o EMSFold é capaz de realizar predições com uma ordem de grandeza mais rápidas que o AlphaFold2 e com acurácia comparável Z. L. e. al, 2022.
 
@@ -28,3 +24,24 @@
 %Acho melhor citar esse trabalho quando for falar de predicao de estruturas, usando de argumento que esses modelos são bons. 
 
 %E procurar algum outro trabalho que maximize a similaridade entre estruturas. 
+
+%----------------- REVISAR %-----------------%-----------------%-----------------
+%A revisao bibliográfica foca nos trabalhos que foram feitos relacionados com o tema. No caso, design de proteina pra hemofilia B. 
+%1- Começa com tratamentos atuais de hemofilia
+%2- Abordagens de design de sequencias 
+%Falar de Alphafold, ESMFold, Rosetta, ProteinMPNN, 
+
+
+
+%O desenvolvimento de proteínas terapêuticas tem se beneficiado amplamente dos avanços na modelagem computacional e no aprendizado de máquina. Trabalhos pioneiros em bioengenharia molecular estabeleceram que a estrutura tridimensional de uma proteína determina sua função biológica e, portanto, o design de proteínas deve priorizar a geração de sequências que estabilizem conformações específicas de baixa energia livre. Métodos computacionais como o Rosetta \cite{Rosetta} são amplamente reconhecidos por sua capacidade de prever a estrutura de proteínas e otimizar interações moleculares com base em modelos de energia livre. Esses modelos consideram interações de Van der Waals, ligações de hidrogênio e solubilidade para minimizar a energia de dobramento e otimizar a funcionalidade.
+
+%No contexto da hemofilia tipo B, variantes do fator IX (FIX) têm sido amplamente estudadas para melhorar a estabilidade e reduzir a frequência de infusões necessárias no tratamento. Por exemplo, a variante FIX-Padua apresentou maior atividade específica devido a uma mutação pontual (R338L), que aumenta sua eficiência catalítica \cite{FIXPadua}. Este avanço destaca o potencial do design de proteínas em superar limitações associadas ao FIX selvagem, como sua curta meia-vida e a necessidade de altas doses terapêuticas.
+
+%Outra linha de pesquisa relevante foca na imunogenicidade de proteínas terapêuticas. Trabalhos como o de Peters et al. \cite{Peters2020} introduziram metodologias para prever epítopos de células T em proteínas, utilizando ferramentas como NetMHCIIpan. Essas ferramentas avaliam a afinidade de ligação entre peptídeos derivados de proteínas e moléculas do complexo de histocompatibilidade principal (MHC), um passo crucial na ativação de respostas imunológicas. No design de variantes do FIX, reduzir ou eliminar epítopos imunogênicos é fundamental para minimizar a formação de inibidores, uma das complicações mais graves em terapias baseadas em proteínas recombinantes.
+
+%O uso de aprendizado de máquina no design de proteínas também tem se expandido rapidamente. Redes neurais profundas, como a ProteinMPNN \cite{ProteinMPNN}, permitem mapear estruturas tridimensionais para sequências de aminoácidos com base em características geométricas e químicas. Essas redes utilizam arquiteturas encoder-decoder para explorar o espaço de sequências de maneira eficiente, identificando combinações de aminoácidos que estabilizam estruturas desejadas. Trabalhos baseados em aprendizado por reforço, como AlphaFold e variantes de otimização estrutural, mostraram que algoritmos como o Proximal Policy Optimization (PPO) podem ser utilizados para gerar mutações direcionadas, otimizando métricas específicas, como a similaridade estrutural (TM-Score) ou a energia livre.
+
+%Além disso, abordagens de otimização baseadas em busca iterativa, como o método de Monte Carlo implementado no Rosetta, são frequentemente comparadas com estratégias modernas baseadas em aprendizado de máquina. Enquanto o Rosetta depende de mutações aleatórias e avaliação direta de energia, modelos baseados em redes neurais e aprendizado por reforço introduzem mutações de forma mais direcionada, baseando-se em predições probabilísticas e dados pré-treinados.
+
+%Em conjunto, esses trabalhos fornecem as bases conceituais e metodológicas para o desenvolvimento de novas variantes do FIX com propriedades otimizadas. A presente pesquisa combina ferramentas de aprendizado profundo, como o ProteinMPNN, e algoritmos de reforço, como PPO, para gerar sequências proteicas que mimetizem a estrutura do FIX com maior estabilidade, menor imunogenicidade e maior eficiência funcional. Este trabalho avança o estado da arte ao propor um pipeline integrado que incorpora metodologias modernas para superar as limitações dos métodos tradicionais de design de proteínas.
+

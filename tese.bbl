@@ -106,35 +106,6 @@
       \field{title}{Blood coagulation factor IX: structural insights impacting hemophilia B therapy}
       \field{year}{2024}
     \endentry
-    \entry{DeNovo}{article}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=94d72c55d22b4bea6f176f5208bccf07}{%
-           family={Anishchenko},
-           familyi={A\bibinitperiod},
-           given={et\bibnamedelima al.},
-           giveni={e\bibinitperiod\bibinitdelim a\bibinitperiod},
-           givenun=0,
-           suffix={I.},
-           suffixi={I\bibinitperiod},
-           suffixun=0}}%
-      }
-      \strng{namehash}{94d72c55d22b4bea6f176f5208bccf07}
-      \strng{fullhash}{94d72c55d22b4bea6f176f5208bccf07}
-      \strng{bibnamehash}{94d72c55d22b4bea6f176f5208bccf07}
-      \strng{authorbibnamehash}{94d72c55d22b4bea6f176f5208bccf07}
-      \strng{authornamehash}{94d72c55d22b4bea6f176f5208bccf07}
-      \strng{authorfullhash}{94d72c55d22b4bea6f176f5208bccf07}
-      \field{labelalpha}{Ani21}
-      \field{sortinit}{A}
-      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Nature}
-      \field{title}{De novo protein design by deep network hallucination}
-      \field{year}{2021}
-    \endentry
     \entry{Rosetta}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=eeedee582edf50b183fd2baeda9f33f6}{%
