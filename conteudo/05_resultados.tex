@@ -54,7 +54,7 @@ são sequências muito diferentes, tendo em média apenas 30\% de similaridade.
 \section{Resposta imunológica}
 
 Para mensurar a propensão das proteínas geradas provocarem uma resposta imunológica no organismo, 
-calculamos o \textit{binding affinity} de cada proteína com os epitopes de quatro grupos diferentes 
+calculamos o \textit{binding affinity} de cada proteína com os epítopos de quatro grupos diferentes 
 de alelos apresentados na tabela \ref{tab:alelo_grupos}
 
 
@@ -73,11 +73,11 @@ de alelos apresentados na tabela \ref{tab:alelo_grupos}
         \end{table}
 
 
-Para esta análise, levamos em consideração apenas epitopes associados a valores de \textit{binding affinity} 
+Para esta análise, levamos em consideração apenas epítopos associados a valores de \textit{binding affinity} 
 menores que 500nm, indicando ligação forte. 
 Nas figuras a seguir é possível visualizar a quantidade, \textit{binding affinity} e frequência de ocorrência 
-dos epitopes por cada grupo de alelo. Ao se comparar o resultado do FIX e da proteína de ID 63,
-é possível notar uma redução significativa da quantidade de epítopes com ligação forte, influênciado principalmente 
+dos epítopos por cada grupo de alelo. Ao se comparar o resultado do FIX e da proteína de ID 63,
+é possível notar uma redução significativa da quantidade de epítopos com ligação forte, influênciado principalmente 
 pelo resultado do grupo DRB1. 
 
 \begin{figure}%
@@ -89,7 +89,7 @@ pelo resultado do grupo DRB1.
     %\label{fig:example}%
 \end{figure}
 
-A propensão a provocar uma resposta imune não está apenas relacionada a quantidade de epitopes, 
+A propensão a provocar uma resposta imune não está apenas relacionada a quantidade de epítopos, 
 mas também é diretamente proporcional a frequência de ocorrência dos alelos e inversamente proporcional 
 ao \textit{binding affinity}. Neste sentido, para mensurar qual proteína induz a uma melhor resposta imune, propomos a 
 métrica $IM$, que consiste na média da razão entre \textit{binding affinity} (${Af}_{i}$) 
