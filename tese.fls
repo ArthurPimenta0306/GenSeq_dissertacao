@@ -1155,6 +1155,13 @@ INPUT ./conteudo/06_conclusao.tex
 INPUT ./conteudo/06_conclusao.tex
 INPUT ./conteudo/06_conclusao.tex
 INPUT conteudo/06_conclusao.tex
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/libertinus-type1/T1LibertinusSans-TLF.fd
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/libertinus-type1/T1LibertinusSans-TLF.fd
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/libertinus-type1/T1LibertinusSans-TLF.fd
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/libertinus-type1/LibertinusSans-Regular-tlf-t1.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/vf/public/libertinus-type1/LibertinusSans-Regular-tlf-t1.vf
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/libertinus-type1/LibertinusSans-Regular-tlf-t1--base.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_mfadfl.enc
 INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
 INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
 INPUT /usr/local/texlive/2024/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
@@ -1166,6 +1173,7 @@ INPUT ./tese.out
 INPUT ./tese.out
 INPUT tese.run.xml
 OUTPUT tese.run.xml
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/libertinus-type1/LibertinusSans-Regular.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/libertinus-type1/LibertinusSerif-Bold.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/libertinus-type1/LibertinusSerif-BoldItalic.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/libertinus-type1/LibertinusSerif-Italic.pfb

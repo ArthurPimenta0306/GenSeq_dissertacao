@@ -42,6 +42,7 @@
       \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
+      \field{extraalpha}{1}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Science}
@@ -105,6 +106,102 @@
       \field{journaltitle}{American Society for Hematology Journal BLOOD}
       \field{title}{Blood coagulation factor IX: structural insights impacting hemophilia B therapy}
       \field{year}{2024}
+    \endentry
+    \entry{ESMFold}{article}{}
+      \name{author}{1}{}{%
+        {{un=1,uniquepart=given,hash=85ea8fb562feedde647c93d4cac33ed5}{%
+           family={al},
+           familyi={a\bibinitperiod},
+           given={Zeming\bibnamedelima Lin},
+           giveni={Z\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=1,
+           prefix={et},
+           prefixi={e\bibinitperiod},
+           prefixun=0}}%
+      }
+      \strng{namehash}{85ea8fb562feedde647c93d4cac33ed5}
+      \strng{fullhash}{85ea8fb562feedde647c93d4cac33ed5}
+      \strng{bibnamehash}{85ea8fb562feedde647c93d4cac33ed5}
+      \strng{authorbibnamehash}{85ea8fb562feedde647c93d4cac33ed5}
+      \strng{authornamehash}{85ea8fb562feedde647c93d4cac33ed5}
+      \strng{authorfullhash}{85ea8fb562feedde647c93d4cac33ed5}
+      \field{labelalpha}{al22}
+      \field{sortinit}{a}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{extraalpha}{2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{bioRxiv}
+      \field{title}{Language models of protein sequences at the scale of evolution enable accurate structure prediction}
+      \field{year}{2022}
+    \endentry
+    \entry{Massimo}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=5b916762d5d9504aa5d70c18d7e1d7f8}{%
+           family={al.},
+           familyi={a\bibinitperiod},
+           given={Massimo\bibnamedelima Franchini},
+           giveni={M\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0,
+           prefix={et},
+           prefixi={e\bibinitperiod},
+           prefixun=0}}%
+      }
+      \strng{namehash}{5b916762d5d9504aa5d70c18d7e1d7f8}
+      \strng{fullhash}{5b916762d5d9504aa5d70c18d7e1d7f8}
+      \strng{bibnamehash}{5b916762d5d9504aa5d70c18d7e1d7f8}
+      \strng{authorbibnamehash}{5b916762d5d9504aa5d70c18d7e1d7f8}
+      \strng{authornamehash}{5b916762d5d9504aa5d70c18d7e1d7f8}
+      \strng{authorfullhash}{5b916762d5d9504aa5d70c18d7e1d7f8}
+      \field{labelalpha}{al13}
+      \field{sortinit}{a}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Biologics: Targets and Therapy}
+      \field{title}{Outcome of Clinical Trials with New Extended Half-Life FVIII/IX Concentrates.}
+      \field{year}{2013}
+    \endentry
+    \entry{DyNAPPO}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=2c00c4906be001f49fafaaceeeace070}{%
+           family={Angermueller\bibnamedelima C},
+           familyi={A\bibinitperiod\bibinitdelim C\bibinitperiod},
+           given={et\bibnamedelima al},
+           giveni={e\bibinitperiod\bibinitdelim a\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=8a0399b4286811fe567e63dce9db3562}{%
+           family={Learning\bibnamedelimb Representations\bibnamedelimb (ICLR\bibnamedelima 2020)},
+           familyi={L\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim (\bibinitperiod\bibinitdelim 2\bibinitperiod},
+           given={8th\bibnamedelimb International\bibnamedelima Conference},
+           giveni={8\bibinitperiod\bibinitdelim I\bibinitperiod\bibinitdelim C\bibinitperiod},
+           prefix={on},
+           prefixi={o\bibinitperiod}}}%
+      }
+      \strng{namehash}{2c00c4906be001f49fafaaceeeace070}
+      \strng{fullhash}{2c00c4906be001f49fafaaceeeace070}
+      \strng{bibnamehash}{2c00c4906be001f49fafaaceeeace070}
+      \strng{authorbibnamehash}{2c00c4906be001f49fafaaceeeace070}
+      \strng{authornamehash}{2c00c4906be001f49fafaaceeeace070}
+      \strng{authorfullhash}{2c00c4906be001f49fafaaceeeace070}
+      \strng{editorbibnamehash}{8a0399b4286811fe567e63dce9db3562}
+      \strng{editornamehash}{8a0399b4286811fe567e63dce9db3562}
+      \strng{editorfullhash}{8a0399b4286811fe567e63dce9db3562}
+      \field{labelalpha}{Ang19}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Model-based reinforcement learning for biological sequence design}
+      \field{year}{2019}
     \endentry
     \entry{Rosetta}{article}{}
       \name{author}{1}{}{%
@@ -275,6 +372,53 @@
       \field{title}{R. In Structural Approaches to Sequence Evolution}
       \field{year}{2007}
     \endentry
+    \entry{COHEN1995675}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=a1e328461df0ce13291e5cc2e778b40d}{%
+           family={Cohen},
+           familyi={C\bibinitperiod},
+           given={Alice\bibnamedelima J.},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4f4fe4f9edf3accf3cddcdfc364a3001}{%
+           family={Kessler},
+           familyi={K\bibinitperiod},
+           given={Craig\bibnamedelima M.},
+           giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a3fbf687055aaa419270ab8eee28afef}
+      \strng{fullhash}{a3fbf687055aaa419270ab8eee28afef}
+      \strng{bibnamehash}{a3fbf687055aaa419270ab8eee28afef}
+      \strng{authorbibnamehash}{a3fbf687055aaa419270ab8eee28afef}
+      \strng{authornamehash}{a3fbf687055aaa419270ab8eee28afef}
+      \strng{authorfullhash}{a3fbf687055aaa419270ab8eee28afef}
+      \field{labelalpha}{CK95}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Inherited coagulation protein deficiencies associated with bleeding diatheses may present with spontaneous bleeding early in life, or may not be recognized until the development of hemorrhage after trauma or surgery. Diagnostic evaluation with coagulation screening tests, followed by confirmation with coagulation factor assays, is essential for appropriate management. For moderate-to-severe hemophilia, treatment includes coagulation factor replacement with purified, plasma-derived coagulation factor, or in the case of hemophilia A, factor VIII concentrate produced with recombinant techniques. Increased use of pharmacologic agents such as desmopressin acetate for patients with mild hemophilia A or type 1 von Willebrand's disease has allowed physicians to treat patients without the risk of infectious complications from plasma-derived factor concentrates. In addition to the management of the inherited bleeding disorders, patients may also require management of human immunodeficiency virus infection, hepatitis, and coagulation factor inhibitors. Issues for the coming years will include continued work to ensure product safety, the role of prophylactic treatment to prevent long-term disabilities, and the application of gene therapy to the management of bleeding disorders.}
+      \field{issn}{0002-9343}
+      \field{journaltitle}{The American Journal of Medicine}
+      \field{number}{6}
+      \field{title}{Treatment of inherited coagulation disorders}
+      \field{volume}{99}
+      \field{year}{1995}
+      \field{pages}{675\bibrangedash 682}
+      \range{pages}{8}
+      \verb{doi}
+      \verb https://doi.org/10.1016/S0002-9343(99)80256-3
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0002934399802563
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0002934399802563
+      \endverb
+    \endentry
     \entry{Docking}{thesis}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=7a8447e9d417158bdc499df8b9e7b775}{%
@@ -384,6 +528,35 @@
       \field{journaltitle}{New England Journal of Medicine}
       \field{title}{Factor VIII products and inhibitor development in severe hemophilia A}
       \field{year}{2013}
+    \endentry
+    \entry{Alphafold2}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=0f940c681e519b4d3e685337ec57cef6}{%
+           family={Jumper},
+           familyi={J\bibinitperiod},
+           given={et\bibnamedelima al.},
+           giveni={e\bibinitperiod\bibinitdelim a\bibinitperiod},
+           givenun=0,
+           suffix={J.},
+           suffixi={J\bibinitperiod},
+           suffixun=0}}%
+      }
+      \strng{namehash}{0f940c681e519b4d3e685337ec57cef6}
+      \strng{fullhash}{0f940c681e519b4d3e685337ec57cef6}
+      \strng{bibnamehash}{0f940c681e519b4d3e685337ec57cef6}
+      \strng{authorbibnamehash}{0f940c681e519b4d3e685337ec57cef6}
+      \strng{authornamehash}{0f940c681e519b4d3e685337ec57cef6}
+      \strng{authorfullhash}{0f940c681e519b4d3e685337ec57cef6}
+      \field{labelalpha}{Jum21}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nature}
+      \field{title}{Highly accurate protein structure prediction with AlphaFold}
+      \field{year}{2021}
     \endentry
     \entry{AC}{article}{}
       \name{author}{2}{}{%
@@ -502,6 +675,32 @@
       \field{journaltitle}{Haematologica}
       \field{title}{Environmental risk factors for inhibitor development in children with hemophilia A: a case–control study}
       \field{year}{2005}
+    \endentry
+    \entry{Mancuso2}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3e08e4c11074bd079bb24af5e86ce0af}{%
+           family={Mancuso\bibnamedelima ME},
+           familyi={M\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={Santagostino\bibnamedelima E.},
+           giveni={S\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{3e08e4c11074bd079bb24af5e86ce0af}
+      \strng{fullhash}{3e08e4c11074bd079bb24af5e86ce0af}
+      \strng{bibnamehash}{3e08e4c11074bd079bb24af5e86ce0af}
+      \strng{authorbibnamehash}{3e08e4c11074bd079bb24af5e86ce0af}
+      \strng{authornamehash}{3e08e4c11074bd079bb24af5e86ce0af}
+      \strng{authorfullhash}{3e08e4c11074bd079bb24af5e86ce0af}
+      \field{labelalpha}{Man17}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{J Clin Med.}
+      \field{title}{Outcome of Clinical Trials with New Extended Half-Life FVIII/IX Concentrates.}
+      \field{year}{2017}
     \endentry
     \entry{MDP}{book}{}
       \name{author}{1}{}{%
