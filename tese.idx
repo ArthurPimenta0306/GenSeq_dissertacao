@@ -1,14 +1,14 @@
-\indexentry{Inglês|hyperindexformat{\see{Língua estrangeira}}}{vi}
-\indexentry{Figuras|hyperindexformat{\see{Floats}}}{vi}
-\indexentry{Tabelas|hyperindexformat{\see{Floats}}}{vi}
-\indexentry{Código-fonte|hyperindexformat{\see{Floats}}}{vi}
-\indexentry{Subcaptions|hyperindexformat{\see{Subfiguras}}}{vi}
-\indexentry{Sublegendas|hyperindexformat{\see{Subfiguras}}}{vi}
-\indexentry{Equações|hyperindexformat{\see{Modo matemático}}}{vi}
-\indexentry{Fórmulas|hyperindexformat{\see{Modo matemático}}}{vi}
-\indexentry{Rodapé, notas|hyperindexformat{\see{Notas de rodapé}}}{vi}
-\indexentry{Captions|hyperindexformat{\see{Legendas}}}{vi}
-\indexentry{Versão original|hyperindexformat{\see{Tese/Dissertação, versões}}}{vi}
-\indexentry{Versão corrigida|hyperindexformat{\see{Tese/Dissertação, versões}}}{vi}
-\indexentry{Palavras estrangeiras|hyperindexformat{\see{Língua estrangeira}}}{vi}
-\indexentry{Floats!Algoritmo|hyperindexformat{\see{Floats, ordem}}}{vi}
+\indexentry{Inglês|see{Língua estrangeira}}{vi}
+\indexentry{Figuras|see{Floats}}{vi}
+\indexentry{Tabelas|see{Floats}}{vi}
+\indexentry{Código-fonte|see{Floats}}{vi}
+\indexentry{Subcaptions|see{Subfiguras}}{vi}
+\indexentry{Sublegendas|see{Subfiguras}}{vi}
+\indexentry{Equações|see{Modo matemático}}{vi}
+\indexentry{Fórmulas|see{Modo matemático}}{vi}
+\indexentry{Rodapé, notas|see{Notas de rodapé}}{vi}
+\indexentry{Captions|see{Legendas}}{vi}
+\indexentry{Versão original|see{Tese/Dissertação, versões}}{vi}
+\indexentry{Versão corrigida|see{Tese/Dissertação, versões}}{vi}
+\indexentry{Palavras estrangeiras|see{Língua estrangeira}}{vi}
+\indexentry{Floats!Algoritmo|see{Floats, ordem}}{vi}

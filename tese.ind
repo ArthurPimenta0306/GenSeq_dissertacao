@@ -1,55 +1,52 @@
 \begin{theindex}
 {\bfseries C}\nopagebreak
 
-  \item Captions, \hyperindexformat{\see{Legendas}}{vi}
-  \item Código-fonte, \hyperindexformat{\see{Floats}}{vi}
+  \item Captions, \see{Legendas}{vi}
+  \item Código-fonte, \see{Floats}{vi}
 
   \indexspace
 {\bfseries E}\nopagebreak
 
-  \item Equações, \hyperindexformat{\see{Modo matemático}}{vi}
+  \item Equações, \see{Modo matemático}{vi}
 
   \indexspace
 {\bfseries F}\nopagebreak
 
-  \item Figuras, \hyperindexformat{\see{Floats}}{vi}
+  \item Figuras, \see{Floats}{vi}
   \item Floats
-    \subitem Algoritmo, \hyperindexformat{\see{Floats, ordem}}{vi}
-  \item Fórmulas, \hyperindexformat{\see{Modo matemático}}{vi}
+    \subitem Algoritmo, \see{Floats, ordem}{vi}
+  \item Fórmulas, \see{Modo matemático}{vi}
 
   \indexspace
 {\bfseries I}\nopagebreak
 
-  \item Inglês, \hyperindexformat{\see{Língua estrangeira}}{vi}
+  \item Inglês, \see{Língua estrangeira}{vi}
 
   \indexspace
 {\bfseries P}\nopagebreak
 
-  \item Palavras estrangeiras, 
-		\hyperindexformat{\see{Língua estrangeira}}{vi}
+  \item Palavras estrangeiras, \see{Língua estrangeira}{vi}
 
   \indexspace
 {\bfseries R}\nopagebreak
 
-  \item Rodapé, notas, \hyperindexformat{\see{Notas de rodapé}}{vi}
+  \item Rodapé, notas, \see{Notas de rodapé}{vi}
 
   \indexspace
 {\bfseries S}\nopagebreak
 
-  \item Subcaptions, \hyperindexformat{\see{Subfiguras}}{vi}
-  \item Sublegendas, \hyperindexformat{\see{Subfiguras}}{vi}
+  \item Subcaptions, \see{Subfiguras}{vi}
+  \item Sublegendas, \see{Subfiguras}{vi}
 
   \indexspace
 {\bfseries T}\nopagebreak
 
-  \item Tabelas, \hyperindexformat{\see{Floats}}{vi}
+  \item Tabelas, \see{Floats}{vi}
 
   \indexspace
 {\bfseries V}\nopagebreak
 
-  \item Versão corrigida, 
-		\hyperindexformat{\see{Tese/Dissertação, versões}}{vi}
-  \item Versão original, 
-		\hyperindexformat{\see{Tese/Dissertação, versões}}{vi}
+  \item Versão corrigida, \see{Tese/Dissertação, versões}{vi}
+  \item Versão original, \see{Tese/Dissertação, versões}{vi}
 
 \end{theindex}

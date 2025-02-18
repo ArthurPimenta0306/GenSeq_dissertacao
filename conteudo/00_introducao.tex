@@ -94,7 +94,7 @@ para fazer predições \cite{ProteinMPNN}.
 
 Além de suscitar uma possível resposta imunológica, 
 o tratamento da hemofilia tipo B baseado na infusão de fator IX
-é custoso devido ao pouco tempo de vida do Fator IX na corrente sanguínea, demandando infusões frequentes. 
+é custoso devido ao pouco tempo de vida da proteína na corrente sanguínea, demandando infusões frequentes. 
 Neste sentido, este trabalho busca responder à seguinte pergunta científica: 
 É possível, através de projeto de sequências, projetar uma proteína que desempenhe a mesma função do fator IX, 
 mas com maior estabilidade, menor imunogenicidade e menos necessidade de infusões?
@@ -106,20 +106,32 @@ Assim, o objetivo será identificar proteínas estruturalmente semelhantes que a
 Para simplificar o problema, focaremos no projeto do domínio protease, 
 reconhecido como o mais relevante para a função do fator IX.
 
-Propomos o desenvolvimento de um pipeline que combina estratégias de busca com aprendizado profundo. 
-O pipeline será dividido em três módulos principais: Condições Iniciais, Treinamento e Geração de Sequências.
+Nossa proposta consiste no desenvolvimento de um \textit{pipeline} que combina estratégias de busca 
+com aprendizado profundo para otimização de sequências proteicas. 
+Esse \textit{pipeline} será estruturado em três módulos principais: Condições Iniciais, 
+Treinamento e Geração de Sequências.
 
-O módulo de Condições iniciais consiste na obtenção da sequência inicial de aminoácidos através da heurística $H$,
-bem como o cálculo do erro inicial associado a esta sequência, usando a função objetivo $F_{obj}$. 
-Vamos utilizar o \textit{ProteinMPNN} como heurística $H$ e o TMScore como função objetivo.
+
+
+
+
+
+O módulo de Condições Iniciais tem como objetivo obter a sequência inicial de aminoácidos 
+por meio da heurística \( H \), além de calcular o erro inicial associado a essa sequência 
+utilizando a função objetivo \( F_{\text{obj}} \). 
+Para isso, empregaremos o \textit{ProteinMPNN} como heurística \( H \) 
+e o TMScore como métrica de avaliação estrutural \( F_{\text{obj}} \).  
 
 Diferente do uso de agentes que realizam mutações aleatórias, como no \textit{Rosetta},
 no módulo de Treinamento treinaremos uma rede neural profunda, o \textit{GenSeq}, para atuar como o Agente $A$,
 sendo capaz de realizar mutações que otimizem a similaridade com a estrutura alvo, isto é, o Fator IX.
 
-Após o treinamento, no módulo de Geração de Sequências
-espera-se que o Agente seja capaz de gerar várias proteínas estruturalmente semelhantes à estrutura alvo por meio de mutações direcionadas. 
-A partir das sequências geradas, avaliaremos a existência de candidatas viáveis para substituir o Fator IX no tratamento da hemofilia tipo B.
+Por fim, no módulo de Geração de Sequências, 
+o agente treinado será utilizado para produzir um conjunto variantes proteicas estruturalmente semelhantes ao Fator IX,
+por meio de um processo de mutação orientado. 
+As sequências geradas serão então avaliadas para identificar possíveis candidatas viáveis 
+que possam substituir o Fator IX no tratamento da hemofilia tipo B.
+
 
 
 \begin{figure}[H]
