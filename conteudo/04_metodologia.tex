@@ -5,14 +5,6 @@ Condições Iniciais, Treinamento e Geração de Sequências.
 Além disso, será apresentado os métodos de avaliação das proteínas geradas,
 bem como as especificações de hardware e software utilizados. 
 
-\section{Especificações de hardware e software}
-{\color{red} Em andamento}
-{\color{red} Explicar que o ProteinMPNN foi baixado}
-{\color{red} Explicar que o ESMFold é usado via API}
-{\color{red} Explicar que o TMScore é USalign}
-{\color{red} Explicar que o MDS é sklearn}
-{\color{red} Explicar que o PPO é stable baselines}
-{\color{red} Explicar que o env é GYM}
 
 \section{Condições iniciais}
 O objetivo do primeiro módulo (figura \ref{fig:cond_iniciais}) é obter a sequência ($S_{ini}$) e o erro ($Er_{0}$) iniciais. 
@@ -361,7 +353,6 @@ O \textit{loop} se repete até que seja atingido $N_{iter}$ iterações.
   \State         matriz de similaridade entre aminoácidos $\textit{AminoDist}$,
   \State         função de score de conservação $CS$,
   \State         número máximo de repetições do mesmo aminoácido por episódio $N_{rep}$,
-  \State         ambiente de aprendizado estágio I $EnvI$,
   \State         tamanho do batch $batch_size$
   \Ensure Agente pré-treinado \textit{GenSeq}
   \State $env \gets EnvI(S_{ini}, Encoder, \textit{AminoDist}, CS, M_{max}, N_{rep})$ 
@@ -384,7 +375,9 @@ O \textit{loop} se repete até que seja atingido $N_{iter}$ iterações.
   \end{algorithmic}
 \end{algorithm}
 
-A figura a seguir ilustra uma visão geral da relação entre o ambiente de aprendizagem e o agente durante o primeiro estágio de treinamento.
+A implementação do $EnvI$\footnote{Disponível em: \url{https://github.com/ArthurPimenta0306/Hallucination/blob/main/hpd/src/hpd/pipelines/RLenvs/nodes.py}}
+bem como do primeiro estágio de treinamento\footnote{Disponível em: \url{https://github.com/ArthurPimenta0306/Hallucination/blob/main/hpd/src/hpd/pipelines/Modeling/nodes.py}}
+estão disponíveis. A figura a seguir ilustra uma visão geral da relação entre o ambiente de aprendizagem e o agente durante o primeiro estágio de treinamento.
 
 \begin{figure}[H]
   \centering
@@ -482,7 +475,7 @@ Isso desestimula fortemente trajetórias em que o erro excede $Er_{max}$ precoce
 
 A inicialização do segundo ambiente $EnvII$ é feita da mesma forma que $EnvI$, porém com a inclusão da definição de $Er_{i}$ e $Er_{i-1}$ que 
 iniciam iguais ao erro inicial $Er_{0}$. O ambiente é dependente de parâmetros como $S_{ini}$, a estrutura do FIX 
-$E_{FIX}$, o erro inicial $E_r{0}$, os limiares de erro $Er_{max}$ e $Er_{min}$, o \textit{Encoder},
+($E_{FIX}$), o erro inicial ($E_r{0}$), os limiares de erro $Er_{max}$ e $Er_{min}$, o \textit{Encoder},
 $M_{max}$, $N_{rep}$ e os coeficientes da função de recompensa $(a, b, c)$.
 
 O método \textit{step} do $EnvII$, assim como no primeiro ambiente, recebe como entrada uma ação $(p, r)$
@@ -492,7 +485,7 @@ em uma representação codificada pelo $Encoder$, originando a $S_{enc}$.
 É feita então a predição da estrutura tridimensional $E_S$ associada a sequência $S$ utilizando o modelo \textit{ESMFold}.
 O erro da iteração anterior recebe o erro atual, que por sua vez, é atualizado com o resultado de $1-TMScore(E_{FIX}, E_{S})$.
 Tendo $Er_{i}$ e $Er_{i-1}$, é calculado a recompensa $R_{II}$ seguindo a equação \ref{eq:eqR2}.
-A atualização de $P_{val}$ e $R_{val}$ é realizada com a mesma lógica utilizada em $R_{I}$.
+A atualização de $P_{val}$ e $R_{val}$ é realizada com a mesma lógica utilizada em $EnvII$.
 Já o método \textit{reset} pouco difere do método implementado em $EnvI$. A única alteração consiste na atribuição do erro inicial 
 para $Er_{i}$ e $Er_{i-1}$.
 
@@ -571,22 +564,22 @@ Além disso, o treinamento se inicia com os pesos do \textit{GenSeq} pré treina
   \begin{algorithmic}[1]
   \Require Número total de iterações $N_{iter}$, 
   \State         número máximo de mutações por episódio $M_{max}$, 
-  \State         sequência inicial $S_{ini}$,
+  \State         Condições iniciais $S_{ini}$ e $Er_{0}$
   \State         encoder $Encoder$,
-  \State         ambiente de aprendizado $EnvII$,
   \State         tamanho do batch $batch_size$,
   \State         coeficientes da função de recompensa $(a, b, c)$,
   \State         número máximo de repetições do mesmo aminoácido por episódio $N_{rep}$
+  \State         Estrutura do FIX $E_{FIX}$, 
+  \State         Limiares de erro $Er_{min}$ e $Er_{max}$,
   \State         Agente pré treinado \textit{GenSeq}
   \Ensure Agente treinado \textit{GenSeq}
-  \State $env \gets EnvII(S_{ini}, Encoder, ESMFold, TMScore, M_{max}, N_{rep})$ 
+  \State $env \gets EnvII(S_{ini}, Er_{0}, Encoder, (a, b, c), E_{FIX}, Er_{min},Er_{max}, M_{max}, N_{rep})$ 
   \State $S_{enc} \gets Encoder(S_{ini})$ 
   \State $R_{hist} \gets []$ 
   \For{$i = 1$ to $N_{iter}$}
       \State $(p,r) \gets GenSeq(S_{enc})$ 
-      \State Inserir $r$ na posição $p$ de $S$
-      \State $(S_{enc}, R_{I}, done) \gets env.step(p, r)$ 
-      \State Adiciona $R_{I}$ ao $R_{hist}$ 
+      \State $(S_{enc}, R_{II}, done) \gets env.step(p, r)$ 
+      \State Adiciona $R_{II}$ ao $R_{hist}$ 
       \If{done = True}
           \State $env.reset()$ 
       \EndIf
@@ -599,6 +592,9 @@ Além disso, o treinamento se inicia com os pesos do \textit{GenSeq} pré treina
   \end{algorithmic}
 \end{algorithm}
 
+A implementação do $EnvII$\footnote{Disponível em: \url{https://github.com/ArthurPimenta0306/Hallucination/blob/main/hpd/src/hpd/pipelines/RLenvs/nodes.py}}
+bem como do segundo estágio de treinamento\footnote{Disponível em: \url{https://github.com/ArthurPimenta0306/Hallucination/blob/main/hpd/src/hpd/pipelines/Modeling/nodes.py}}
+estão disponíveis. 
 A figura a seguir ilustra uma visão geral da relação entre o segundo ambiente de aprendizagem e o 
 agente durante o segundo estágio de treinamento.
 
@@ -650,6 +646,46 @@ Neste estágio, o Agente foi treinado com um total de 60 mil de iterações, pod
 \section{Geração de sequências}
 Por fim, o módulo de Geração de Sequências utiliza o agente treinado para gerar novas 
 sequências que sejam capazes de mimetizar a estrutura alvo melhor do que a sequência inicial, em termos de \textit{TMScore}.  
+Para isso, o ambiente $EnvII$ é inicializado com as mesmas condições utilizadas no segundo estágio de treinamento,
+incluindo a sequência inicial $S_{ini}$, o erro inicial $Er_{0}$, o $Encoder$, os coeficientes $(a, b, c)$ 
+e a estrutura alvo $E_{FIX}$.
+Para maximizar a diversidade de sequências geradas,
+as restrições impostas pelos limiares de erro $Er_{min}$ e $Er_{max}$ são removidas, 
+sendo definidos como 0 e 1, respectivamente. 
+Além disso, a geração de sequências é configurada para produzir um total de 235 novas variantes, 
+fixando os parâmetros $N_{iter}$ e $M_{max}$ em 235.
+O processo de geração consiste em iterativamente obter uma ação com o \textit{GenSeq} 
+e com ela executar o método \textit{step} no $EnvII$.
+
+\begin{algorithm}[H]
+  \caption{Geração de sequências}
+  \label{alg:gerseq}
+  \begin{algorithmic}[1]
+  \Require Número total de iterações $N_{iter}$, %235
+  \State         número máximo de mutações por episódio $M_{max}$, %235
+  \State         Condições iniciais $S_{ini}$ e $Er_{0}$
+  \State         encoder $Encoder$,
+  \State         coeficientes da função de recompensa $(a, b, c)$,
+  \State         número máximo de repetições do mesmo aminoácido por episódio $N_{rep}$
+  \State         Estrutura do FIX $E_{FIX}$, 
+  \State         Limiares de erro $Er_{min}$ e $Er_{max}$, %0 e 1
+  \State         Agente treinado \textit{GenSeq}
+  \Ensure Novas sequências $Seqs$
+  \State $env \gets EnvII(S_{ini}, Er_{0}, Encoder, (a, b, c), E_{FIX}, Er_{min},Er_{max}, M_{max}, N_{rep})$ 
+  \State $S_{enc} \gets Encoder(S_{ini})$ 
+  \State $Seqs \gets []$ 
+  \For{$i = 1$ to $N_{iter}$}
+      \State $(p,r) \gets GenSeq(S_{enc})$ 
+      \State $(S_{enc}, R_{II}, done) \gets env.step(p, r)$ 
+      \State Adiciona $env.S$ ao $Seqs$ 
+  \EndFor
+  \State \Return $Seqs$
+  \end{algorithmic}
+\end{algorithm}
+
+A implementação da geração de sequências está disponível\footnote{Disponível em: \url{https://github.com/ArthurPimenta0306/Hallucination/blob/main/hpd/src/hpd/pipelines/Evaluation/nodes.py}}.
+A figura a seguir representa um esquemático do \textit{loop} de geração de sequências descrito.
+
 \begin{figure}[H]
   \centering
   \includegraphics[width=.8\textwidth]{figuras/metodologia-Generating.jpg}
@@ -657,8 +693,6 @@ sequências que sejam capazes de mimetizar a estrutura alvo melhor do que a sequ
   \label{fig:geradorseq}
 \end{figure}
 
-{\color{red} Pseudo código}
-{\color{red} Instruções de replicabilidade}
 
 \section{Métodos de avaliação}
 {\color{red} Em andamento}

@@ -16,7 +16,7 @@
 \contentsline {figure}{\numberline {2.9}{\ignorespaces Arquitetura de uma rede neural - \blx@tocontentsinit {0}\cite {Bishop} adaptado}}{19}{figure.caption.19}%
 \contentsline {figure}{\numberline {2.10}{\ignorespaces Neurônio processando sinal \blx@tocontentsinit {0}\cite {Figueiredo}}}{19}{figure.caption.20}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Obtenção das condições iniciais}}{24}{figure.caption.21}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Obtenção das condições iniciais}}{23}{figure.caption.21}%
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Construção e uso do \textit {Encoder}. }}{26}{figure.caption.23}%
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Escolha da dimensionalidade dos Embeddings}}{27}{figure.caption.24}%
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Exemplo de mutação. O aminoácido A na posição 3 está sendo substituído pelo o aminoácido C}}{27}{figure.caption.25}%
@@ -27,11 +27,11 @@
 \contentsline {figure}{\numberline {3.9}{\ignorespaces Segundo estágio - Treino}}{39}{figure.caption.36}%
 \contentsline {figure}{\numberline {3.10}{\ignorespaces Comparação do Agente treinado com um Agente aleatório}}{40}{figure.caption.38}%
 \contentsline {figure}{\numberline {3.11}{\ignorespaces Média móvel das recompensas por episódio - treino}}{40}{figure.caption.39}%
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Gerando sequência otimizada}}{41}{figure.caption.40}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Gerando sequência otimizada}}{42}{figure.caption.41}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Variação da similaridade entre as sequências geradas e o FIX }}{43}{figure.caption.41}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Alinhamento entre FIX (em azul) e a proteína ID 34 (em vermelho)}}{44}{figure.caption.42}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Comparação do IM entre as proteínas geradas e o FIX}}{45}{figure.caption.46}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces IM calculado para cada grupo de alelo}}{46}{figure.caption.47}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Resultado do \textit {Docking} entre as proteínas geradas e o fator VII}}{48}{figure.caption.48}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Variação da similaridade entre as sequências geradas e o FIX }}{43}{figure.caption.42}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Alinhamento entre FIX (em azul) e a proteína ID 34 (em vermelho)}}{44}{figure.caption.43}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Comparação do IM entre as proteínas geradas e o FIX}}{45}{figure.caption.47}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces IM calculado para cada grupo de alelo}}{46}{figure.caption.48}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Resultado do \textit {Docking} entre as proteínas geradas e o fator VII}}{48}{figure.caption.49}%
 \addvspace {10\p@ }
