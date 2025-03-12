@@ -36,10 +36,13 @@
 \contentsline {subsection}{\numberline {3.2.4}Treinamento - Estágio II}{34}{subsection.3.2.4}%
 \contentsline {section}{\numberline {3.3}Geração de sequências}{41}{section.3.3}%
 \contentsline {section}{\numberline {3.4}Métodos de avaliação}{42}{section.3.4}%
-\contentsline {chapter}{\numberline {4}Resultados e Discussões}{43}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Resposta imunológica}{44}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Docking}{47}{section.4.2}%
-\contentsline {chapter}{\numberline {5}Conclusão}{49}{chapter.5}%
+\contentsline {subsection}{\numberline {3.4.1}Análise Estrutural}{42}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Avaliação de Interação com o Fator VIII (Docking Molecular)}{43}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Avaliação da Imunogenicidade das Proteínas Geradas}{45}{subsection.3.4.3}%
+\contentsline {chapter}{\numberline {4}Resultados e Discussões}{47}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Resposta imunológica}{48}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Docking}{51}{section.4.2}%
+\contentsline {chapter}{\numberline {5}Conclusão}{53}{chapter.5}%
 {\protect \large \protect \vspace {0pt plus 2\baselineskip minus 0pt}}
 \protect \pagebreak [2]
 \protect \vspace {.8\baselineskip }
@@ -51,4 +54,4 @@
 {\protect \large \protect \bfseries \protect \hspace {-1.3em}Anexos\par }
 \protect \@afterheading 
 \vspace {2\baselineskip plus .5\baselineskip minus .5\baselineskip }
-\contentsline {chapter}{Refer\^encias}{51}{annex*.50}%
+\contentsline {chapter}{Refer\^encias}{55}{annex*.53}%

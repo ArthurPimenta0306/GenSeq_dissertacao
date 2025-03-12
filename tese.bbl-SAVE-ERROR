@@ -474,6 +474,32 @@
       \field{title}{Where did the BLOSUM62 alignment score matrix come from?}
       \field{year}{2004}
     \endentry
+    \entry{ChimeraX}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3df9208586d37c3cb78860cc6c4736b2}{%
+           family={Elaine\bibnamedelimb C.\bibnamedelimi Meng},
+           familyi={E\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={et\bibnamedelima al.},
+           giveni={e\bibinitperiod\bibinitdelim a\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{3df9208586d37c3cb78860cc6c4736b2}
+      \strng{fullhash}{3df9208586d37c3cb78860cc6c4736b2}
+      \strng{bibnamehash}{3df9208586d37c3cb78860cc6c4736b2}
+      \strng{authorbibnamehash}{3df9208586d37c3cb78860cc6c4736b2}
+      \strng{authornamehash}{3df9208586d37c3cb78860cc6c4736b2}
+      \strng{authorfullhash}{3df9208586d37c3cb78860cc6c4736b2}
+      \field{labelalpha}{Ela23}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Protein Science}
+      \field{title}{UCSF ChimeraX: Tools for structure building and analysis}
+      \field{year}{2023}
+    \endentry
     \entry{Figueiredo}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=127d9bce63292caccfb271dd137c0591}{%
@@ -557,6 +583,32 @@
       \field{journaltitle}{Nature}
       \field{title}{Highly accurate protein structure prediction with AlphaFold}
       \field{year}{2021}
+    \endentry
+    \entry{Jensen2018NetMHCIIpan}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d2b82834c307c6a045d192fe5446de28}{%
+           family={K.\bibnamedelimi K.\bibnamedelimi Jensen},
+           familyi={K\bibinitperiod\bibinitdelim K\bibinitperiod\bibinitdelim J\bibinitperiod},
+           given={et\bibnamedelima al.},
+           giveni={e\bibinitperiod\bibinitdelim a\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d2b82834c307c6a045d192fe5446de28}
+      \strng{fullhash}{d2b82834c307c6a045d192fe5446de28}
+      \strng{bibnamehash}{d2b82834c307c6a045d192fe5446de28}
+      \strng{authorbibnamehash}{d2b82834c307c6a045d192fe5446de28}
+      \strng{authornamehash}{d2b82834c307c6a045d192fe5446de28}
+      \strng{authorfullhash}{d2b82834c307c6a045d192fe5446de28}
+      \field{labelalpha}{K K18}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Immunology}
+      \field{title}{Improved methods for predicting peptide binding affinity to MHC class II molecules}
+      \field{year}{2018}
     \endentry
     \entry{AC}{article}{}
       \name{author}{2}{}{%
