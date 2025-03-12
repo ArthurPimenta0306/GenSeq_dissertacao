@@ -2437,6 +2437,7 @@
     <bcf:citekey order="80" intorder="1">aminodist</bcf:citekey>
     <bcf:citekey order="81" intorder="1">ChimeraX</bcf:citekey>
     <bcf:citekey order="82" intorder="1">Jensen2018NetMHCIIpan</bcf:citekey>
+    <bcf:citekey order="83" intorder="1">Jensen2018NetMHCIIpan</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">
