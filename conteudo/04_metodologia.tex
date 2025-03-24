@@ -2,7 +2,7 @@
 Neste capítulo será detalhado os três módulos propostos na figura \ref{fig:proposta}: 
 Condições Iniciais, Treinamento e Geração de Sequências. 
 Além disso, será apresentado os métodos de avaliação das proteínas geradas,
-bem como as especificações de hardware e software utilizados. 
+bem como as especificações de software utilizados. 
 
 
 \section{Condições iniciais}
@@ -743,7 +743,7 @@ que alinha a estrutura gerada ao FIX presente no complexo tenase.
 O procedimento segue os seguintes passos: (i) carregamento do PDB do complexo tenase, 
 (ii) carregamento do PDB da estrutura gerada, (iii) alinhamento da estrutura gerada sobrepondo-a ao FIX do complexo tenase 
 e (iv) remoção do FIX original, mantendo apenas a estrutura gerada alinhada ao FVIII.
-Está implementação\footnote{Disponível em: \url{https://github.com/ArthurPimenta0306/Hallucination/blob/main/hpd/src/docking/ChimeraX_run_script.py}} está disponível
+Esta implementação\footnote{Disponível em: \url{https://github.com/ArthurPimenta0306/Hallucination/blob/main/hpd/src/docking/ChimeraX_run_script.py}} está disponível
 no repositório do projeto.
 
 \begin{algorithm}
@@ -814,12 +814,11 @@ a qualidade da interação entre as proteínas geradas e o FVIII utilizando o \t
 
 \subsection{Avaliação da Imunogenicidade das Proteínas Geradas}
 
-A avaliação da imunogenicidade das proteínas geradas é uma etapa essencial para garantir a segurança de potenciais candidatos a substitutos do Fator IX (FIX). 
 O objetivo desta etapa é identificar possíveis epítopos imunogênicos presentes nas sequências geradas, 
-os quais poderiam desencadear respostas imunes indesejadas em pacientes.
-
+os quais poderiam desencadear respostas imunes indesejadas nos pacientes.
 Para realizar esta análise, foi utilizado o \textit{NetMHCIIpan} versão 4.1 \cite{Jensen2018NetMHCIIpan}, 
-um dos algoritmos mais avançados para predição de ligação de peptídeos a moléculas do Complexo Principal de Histocompatibilidade de classe II (MHC II). 
+um dos algoritmos mais avançados para predição de ligação de peptídeos a moléculas 
+do Complexo Principal de Histocompatibilidade de classe II (MHC II). 
 O \textit{NetMHCIIpan} emprega técnicas de aprendizado de máquina para prever a afinidade de ligação de peptídeos 
 derivados das proteínas analisadas às diferentes variantes alélicas de MHC II. 
 
@@ -827,11 +826,11 @@ O procedimento de execução do \textit{NetMHCIIpan} foi organizado em um \texti
 que automatiza a análise de todas as sequências de proteínas geradas pelo modelo de otimização. 
 Primeiramente, foi criado um arquivo denominado \texttt{selected\_alleles.txt}, 
 o qual contém a lista dos alelos de MHC II humanos escolhidos para a análise. 
-Estes alelos foram selecionados com o intuito de representar a diversidade populacional e garantir uma avaliação abrangente da imunogenicidade das variantes propostas.
-Foram utilizados 46 alelos de MHC II frequentes na população humana, pertencentes aos grupos DP, DQ, DRB1 DRB3, DRB4 e DRB5.
+Estes alelos foram selecionados com o intuito de representar a diversidade populacional e garantir uma avaliação 
+abrangente da imunogenicidade das variantes propostas.
+Foram utilizados 46 alelos de MHC II frequentes na população humana, 
+pertencentes aos grupos DP, DQ, DRB1 DRB3, DRB4 e DRB5.
 Para cada alelo,
-o \texttt{NetMHCIIpan} foi executado sobre cada sequência gerada,
-realizando a predição dos epítopos candidatos. 
 O \textit{script} itera sobre cada alelo presente no arquivo \texttt{selected\_alleles.txt}, 
 invocando o \texttt{NetMHCIIpan} para todas as proteínas geradas.
 
@@ -855,11 +854,13 @@ invocando o \texttt{NetMHCIIpan} para todas as proteínas geradas.
 
 Os arquivos gerados contêm a sequência do peptídeo analisado e
 o valor de afinidade de ligação (IC50 em nM).
-A partir desses resultados, foi realizada uma análise comparativa entre os peptídeos derivados das proteínas otimizadas e do FIX nativo.
+A partir desses resultados, foi realizada uma análise comparativa entre os 
+peptídeos derivados das proteínas otimizadas e do FIX nativo.
 Considerou-se como potenciais epítopos imunogênicos fortes aqueles peptídeos com valores de IC50 inferiores a 500 nM,
 conforme recomendado por \cite{Jensen2018NetMHCIIpan}.
 O número total de epítopos fortes, o \textit{Binding Affinity} 
-e a frequência com que os alelos ocorrem na natureza são as métricas utilizadas para avaliar e comparar a imunogenicidade das proteínas geradas com a proteína nativa \ref{section:imuno_resultados}. 
+e a frequência com que os alelos ocorrem na natureza são as métricas utilizadas
+para avaliar e comparar a imunogenicidade das proteínas geradas com a proteína nativa \ref{section:imuno_resultados}. 
 
 
 

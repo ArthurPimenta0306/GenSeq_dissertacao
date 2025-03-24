@@ -1,52 +1,52 @@
 \begin{theindex}
 {\bfseries C}\nopagebreak
 
-  \item Captions, \see{Legendas}{vi}
-  \item Código-fonte, \see{Floats}{vi}
+  \item Captions, \see{Legendas}{x}
+  \item Código-fonte, \see{Floats}{x}
 
   \indexspace
 {\bfseries E}\nopagebreak
 
-  \item Equações, \see{Modo matemático}{vi}
+  \item Equações, \see{Modo matemático}{x}
 
   \indexspace
 {\bfseries F}\nopagebreak
 
-  \item Figuras, \see{Floats}{vi}
+  \item Figuras, \see{Floats}{x}
   \item Floats
-    \subitem Algoritmo, \see{Floats, ordem}{vi}
-  \item Fórmulas, \see{Modo matemático}{vi}
+    \subitem Algoritmo, \see{Floats, ordem}{x}
+  \item Fórmulas, \see{Modo matemático}{x}
 
   \indexspace
 {\bfseries I}\nopagebreak
 
-  \item Inglês, \see{Língua estrangeira}{vi}
+  \item Inglês, \see{Língua estrangeira}{x}
 
   \indexspace
 {\bfseries P}\nopagebreak
 
-  \item Palavras estrangeiras, \see{Língua estrangeira}{vi}
+  \item Palavras estrangeiras, \see{Língua estrangeira}{x}
 
   \indexspace
 {\bfseries R}\nopagebreak
 
-  \item Rodapé, notas, \see{Notas de rodapé}{vi}
+  \item Rodapé, notas, \see{Notas de rodapé}{x}
 
   \indexspace
 {\bfseries S}\nopagebreak
 
-  \item Subcaptions, \see{Subfiguras}{vi}
-  \item Sublegendas, \see{Subfiguras}{vi}
+  \item Subcaptions, \see{Subfiguras}{x}
+  \item Sublegendas, \see{Subfiguras}{x}
 
   \indexspace
 {\bfseries T}\nopagebreak
 
-  \item Tabelas, \see{Floats}{vi}
+  \item Tabelas, \see{Floats}{x}
 
   \indexspace
 {\bfseries V}\nopagebreak
 
-  \item Versão corrigida, \see{Tese/Dissertação, versões}{vi}
-  \item Versão original, \see{Tese/Dissertação, versões}{vi}
+  \item Versão corrigida, \see{Tese/Dissertação, versões}{x}
+  \item Versão original, \see{Tese/Dissertação, versões}{x}
 
 \end{theindex}

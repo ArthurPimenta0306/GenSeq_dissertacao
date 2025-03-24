@@ -1,6 +1,4 @@
-\chapter{Resultados e Discussões}
-
-{\color{red} Em andamento}
+\chapter{Resultados}
 
 Com o Agente treinado, é possível gerar novas sequências seguindo a arquitetura 
 ilustrada na figura \ref{fig:geradorseq}. 
@@ -28,6 +26,10 @@ tendo TMScore igual a 94.48\% e RMSD de 1.485 angstroms.
     \label{fig:FIX_vs_ID34}
 \end{figure}
 
+Os resultados obtidos demonstram que o agente \textit{GenSeq} foi capaz de gerar sequências de aminoácidos que
+estão associadas a estruturas com elevado grau de similaridade ao FIX nativo.
+Considerando que o valor de \textit{TMScore} superior a 0.5 já indica similaridade estrutural significativa \cite{05TMScore},
+os valores obtidos sugerem que as proteínas geradas mantêm a conformação global e o dobramento necessários para funcionalidade.
 
 É interessante notar que, apesar da forte semelhança estrutural entre as proteínas,
 em termos de IS (Idêntidade de Sequência)
@@ -92,17 +94,16 @@ pelo resultado do grupo DRB1.
 A propensão a provocar uma resposta imune não está apenas relacionada a quantidade de epítopos, 
 mas também é diretamente proporcional a frequência de ocorrência dos alelos e inversamente proporcional 
 ao \textit{binding affinity}. Neste sentido, para mensurar qual proteína induz a uma melhor resposta imune, propomos a 
-métrica $IM$, que consiste na média da razão entre \textit{binding affinity} (${Af}_{i}$) 
+métrica $IMI$ (Imuno Índice), que consiste na média da razão entre \textit{binding affinity} (${Af}_{i}$) 
 e frequência ($Fr_{i}$), 
 dividido pela quantidade de epítopos (N):
 
 \begin{equation}
-    IM = \frac{1}{N} \sum_{i=1}^{N} \frac{1}{N} \frac{{Af}_{i}}{Fr_{i}}
+    IMI = \frac{1}{N} \sum_{i=1}^{N} \frac{1}{N} \frac{{Af}_{i}}{Fr_{i}}
 \end{equation}
 
-Desta forma, a proteína associada ao maior IM possui o menor risco de induzir a uma resposta imune, i.e,
-possui a resposta imune mais favorável. 
-De modo geral, as 4 últimas sequências geradas possuem um IM superior ao do FIX: IDs 60, 61, 62 e 63.
+Desta forma, a proteína associada ao maior IMI possui o menor risco de induzir a uma resposta imune.
+De modo geral, as 4 últimas sequências geradas possuem um IMI superior ao do FIX: IDs 60, 61, 62 e 63.
 
 \begin{figure}[H]
     \centering
@@ -111,12 +112,12 @@ De modo geral, as 4 últimas sequências geradas possuem um IM superior ao do FI
     \label{fig:immuno_tscore}
 \end{figure}
 
-Calculando o IM para cada grupo de alelo separadamente, observa-se que grande parte das sequências geradas possuem uma resposta 
+Calculando o IMI para cada grupo de alelo separadamente, observa-se que grande parte das sequências geradas possuem uma resposta 
 imune mais favorável que o FIX para os grupos DRB3, DRB4 e DRB5. 
-Para o grupo DRB1, as sequências a partir do ID 48 em diante obtiveram IM superior ao FIX. 
-Já para os grupos DQ e DP, nenhuma sequência superou o IM do FIX. 
+Para o grupo DRB1, as sequências a partir do ID 48 em diante obtiveram IMI superior ao FIX. 
+Já para os grupos DQ e DP, nenhuma sequência superou o IMI do FIX. 
 
-\begin{figure}[htbp]
+\begin{figure}[H]
     \centering
     \begin{minipage}{0.9\textwidth}
         \centering
@@ -148,40 +149,48 @@ Ao projetar proteínas capazes de substituir o FIX no tratamento da Hemofilia B,
 proteínas geradas possuem uma interação eficaz ou até mais favorável com o FVIII se comparado ao FIX.
 Para isto, realizamos análises de \textit{docking} molecular de cada sequência gerada com o FVIII,
 calculando métricas que capturam diferentes características da interface proteína-proteína. 
+Ilustramos a seguir os resultados obtidos para as métricas \textit{CMS}, \textit{IBSASA}, \textit{SAP Score} e \textit{DDG}.
+Estão destacadas em azul as proteínas que superaram o FIX em cada métrica.
+Em termos de \textit{CMS}, obtivemos 56 proteínas (89\% do total) superiores ao FIX, 
+sugerindo interfaces de ligação maiores para essas sequências.
+O \textit{DDG}, que mede a estabilidade da interação, indicou que 46 proteínas (73\% do total) 
+são mais estáveis (DDG menor) do que o FIX.
+O \textit{IBSASA}, que mede a área de superfície enterrada na interface, indicou que 51 proteínas (81\% do total)
+foram superiores ao FIX.
+Por fim, em termos de \textit{SAP Score}, praticamente todas as proteínas geradas obtiveram valores muito próximos ao 
+calculado para o FIX, tendo 51 proteínas levemente mais favoráveis (81\% do total), i.e., formando complexos menos propensos à agregação.
+Em geral, 30 proteínas (48\% do total) superaram o FIX em todas as métricas,
+sugerindo que as proteínas geradas podem formar complexos eficientes com o FVIII.
 
-\begin{itemize}
-    \item \textit{Contact Molecular Surface}: obtivemos 56 proteínas (89\% do total) superiores ao FIX em termos de CMS, 
-    sugerindo interfaces de ligação maiores para essas sequências.
-    \item DDG: 46 proteínas (73\% do total) atingiram um DDG mais favorável (menor) do que o FIX, indicando ligações mais estáveis.   
-    \item \textit{Interface Buried Sasa}: 51 proteínas (81\% do total) obtiveram um SASA superior ao FIX.
-    \item \textit{SAP Score Target}: apenas 3\% das sequências projetadas atingiram valores superiores ao FIX em termos de SAP.
-  \end{itemize}
-
-
-\begin{figure}[htbp]
+\begin{figure}[H]
     \centering
-    \begin{minipage}{0.9\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{figuras/plot_contact_molecular_surface.png}
-        %\caption{IM do grupo DRB1}
-    \end{minipage} \\[1ex]%
-    \begin{minipage}{0.9\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{figuras/plot_interface_buried_sasa.png}
-        %\caption{IM dos grupos DRB3, DRB4 e DRB5}
-    \end{minipage} \\[1ex] %
-    \begin{minipage}{0.9\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{figuras/plot_sap_score_target.png}
-        %\caption{IM do grupo DP}
-    \end{minipage} \\[1ex]%
-    \begin{minipage}{0.9\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{figuras/plot_ddg.png}
-        %\caption{IM do grupo DQ}
-    \end{minipage} 
-    \caption{Resultado do \textit{Docking} entre as proteínas geradas e o fator VII}
+    \includegraphics[width=.9\linewidth]{figuras/plot_contact_molecular_surface.png}    
+    \caption{Resultado do \textit{CMS} entre as proteínas geradas e o fator VIII}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=.9\linewidth]{figuras/plot_interface_buried_sasa.png}    
+    \caption{Resultado do \textit{IBSASA} entre as proteínas geradas e o fator VIII}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=.9\linewidth]{figuras/plot_sap_score.png}    
+    \caption{Resultado do \textit{SAP Score} entre as proteínas geradas e o fator VIII}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=.9\linewidth]{figuras/plot_ddg.png}    
+    \caption{Resultado do \textit{DDG} entre as proteínas geradas e o fator VIII}
 \end{figure}
 
 
-{\color{red} Discussão sobre como o pipeline foi capaz de otimizar metricas que não foi treinado}
+
+
+
+
+
+
+

@@ -40,6 +40,7 @@
 \usepackage{xcolor} 
 
 
+
 \geometry{
   textwidth=152mm,
   hmarginratio=12:17, % 24:34 -> com papel A4, 24mm + 152mm + 34mm = 210mm
@@ -116,11 +117,12 @@
 % armazenados nos metadados do PDF.
 \title{
     % Obrigatório nas duas línguas
-    titlept={Gerador de proteínas para o tratamento da Hemofilia tipo B baseado em \textit{Deep Reinforcement Learning}},
-    titleen={Title of the document},
+    %titlept={Gerador de proteínas para o tratamento da Hemofilia tipo B baseado em \textit{Deep Reinforcement Learning}},
+    titlept={Design de Proteínas e Aprendizado Profundo: Uma nova fronteira no tratamento da Hemofilia B},
+    titleen={Protein Design and Deep Learning: A New Frontier in Hemophilia B Management},
     % Opcional, mas se houver deve existir nas duas línguas
     subtitlept={},
-    subtitleen={a subtitle},
+    subtitleen={},
 }
 
 \author[masc]{Arthur Moriggi Pimenta}
@@ -130,7 +132,7 @@
 
 % Se não houver, remova; se houver mais de um, basta
 % repetir o comando quantas vezes forem necessárias
-%\coorientador{Dr. Tiago Jose da Silva Lopes}
+\coorientador{Dr. Tiago Jose da Silva Lopes}
 %\coorientador[fem]{Profª. Drª. Beltrana de Tal}
 
 % A página de rosto da versão para depósito (ou seja, a versão final
@@ -174,7 +176,7 @@
   %
   apoio={},
   local={São Paulo},
-  data=2023-11-10, % YYYY-MM-DD
+  data=2025-03-30, % YYYY-MM-DD
   % A licença do seu trabalho. Use CC-BY, CC-BY-NC, CC-BY-ND, CC-BY-SA,
   % CC-BY-NC-SA ou CC-BY-NC-ND para escolher a licença Creative Commons
   % correspondente (o sistema insere automaticamente o texto da licença).
@@ -243,7 +245,8 @@
 %texto texto texto texto texto texto texto %texto texto texto texto texto texto
 %texto texto texto texto. Texto opcional.
 
-%\input{conteudo/resumoabstract}
+
+\input{conteudo/resumoabstract}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%% LISTAS DE FIGURAS ETC. %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -279,15 +282,55 @@
 %\chapter*{Lista de abreviaturas}
 \disablenewpage{\chapter*{Lista de abreviaturas}}
 
-\begin{tabular}{rl}
-   MSA & Alinhamento múltiplo de sequências (\emph{Multiple Sequence Alignment})\\
-   IS & Idêntidade de Sequência\\
-  TM-Score & Escores de Modelagem de Template (\emph{Template Modeling Score})\\
+\begin{longtable}{rl}
+  RL & Aprendizado por Reforço (\emph{Reinforcement Learning})\\
+  DRL & Aprendizado Profundo por Reforço (\emph{Deep Reinforcement Learning})\\
+  MSA & Alinhamento múltiplo de sequências (\emph{Multiple Sequence Alignment})\\
+  IS & Idêntidade de Sequência\\
+  TMScore & Escores de Modelagem de Template (\emph{Template Modeling Score})\\
   LLM & Modelo Grande de Linguagem (\emph{Large Language Model})\\
-    PPO & Otimização de Política Proxima (\emph{Proximal Policy Optimization})\\
-   IME & Instituto de Matemática e Estatística\\
-   USP & Universidade de São Paulo
-\end{tabular}
+  PPO & (\emph{Proximal Policy Optimization})\\
+  IMI & Imuno Índice\\
+  Af & \textit{Binding affinity}\\
+  Fr & Frequência de ocorrência de um alelo na humanidade\\
+  $F_{seq}$ & Função que mapeia uma estrutura proteica em uma sequência de aminoácidos\\
+  $F_{obj}$ & Função objetivo\\
+  $H$ & Heurística\\
+  $A$ & Agente\\
+  MMC & Método de Monte Carlo\\
+  MPNN & Rede Neural de Passagem de Mensagem (\emph{Message Passing Neural Network})\\
+  RMSD & Raiz do Erro Quadrático Médio (\emph{Root Mean Square Deviation})\\
+  FIX & Fator IX\\
+  FVIII & Fator VIII\\
+  FIXa & Fator IX ativado\\
+  FVIIIa & Fator VIII ativado\\
+  $E_{FIX}$ & Estrutura do Fator IX\\
+  $E_{ini}$ & Estrutura inicial vinculada à sequência gerada pelo \textit{ProteinMPNN}\\
+  $S_{ini}$ & Sequência inicial vinculada à estrutura $E_{ini}$\\
+  $Er_{0}$ & Erro inicial\\
+  $P_{val}$ & Conjunto de posições válidas na sequência de aminoácidos para sofrer mutação durante o treinamento \\
+  $R_{val}$ & Conjunto de resíduos válidos para serem utilizados na mutação durante o treinamento\\
+  $N_{rep}$ & Número máximo de vezes que um resíduo pode ser utilizado em uma mutação ao longo de um mesmo episódio durante o treinamento\\
+  $M_{max}$ & Número máximo de mutações que podem ser realizadas em um mesmo episódio durante o treinamento\\
+  $CS$ & \textit{Conservation Score} \\
+  $AminoDist$ & Função de distância ou similaridade entre dois aminoácidos\\
+  $Encoder$ & Dicionário que mapeia um aminoácido em um vetor de características\\
+  $MDS$ & \textit{Multi Dimensional Scaling}\\
+  $S_{enc}$ & Sequência codificada\\
+  $Env_{I}$ & Ambiente de aprendizado no primeiro estágio de treinamento\\
+  $Env_{II}$ & Ambiente de aprendizado no segundo estágio de treinamento\\
+  $R_{I}$ & Recompensa no primeiro estágio de treinamento\\
+  $R_{II}$ & Recompensa no segundo estágio de treinamento\\
+  $CMS$ & \textit{Contact Molecular Surface}\\
+  $IBSASA$ & \textit{Interface Buried Solvent Accessible Surface Area}\\
+  $SASA$ & \textit{Solvent Accessible Surface Area}\\
+  $DDG$ & \textit{Delta Gibbs Free Energy of Binding}\\
+  $SAP$ & \textit{Spatial Aggregation Propensity Score}\\
+  PDB & \textit{Protein Data Bank}\\
+  IME & Instituto de Matemática e Estatística\\
+  USP & Universidade de São Paulo
+
+\end{longtable}
 
 %\chapter*{Lista de símbolos}
 %\disablenewpage{\chapter*{Lista de símbolos}}
@@ -353,7 +396,6 @@
 
 % Espaçamento simples
 \singlespacing
-
 \input{conteudo/00_introducao.tex}
 \input{conteudo/01_revisaobibliografica.tex}
 \input{conteudo/02_background}

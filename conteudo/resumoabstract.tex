@@ -4,42 +4,67 @@
 
 % As palavras-chave são obrigatórias, em português e em inglês, e devem ser
 % definidas antes do resumo/abstract. Acrescente quantas forem necessárias.
-\palavraschave{Palavra-chave1, Palavra-chave2, Palavra-chave3}
 
-\keywords{Keyword1,Keyword2,Keyword3}
+
+%\palavraschave{Palavra-chave1, Palavra-chave2, Palavra-chave3}
+
+%\keywords{Keyword1,Keyword2,Keyword3}
 
 % O resumo é obrigatório, em português e inglês. Estes comandos também
 % geram automaticamente a referência para o próprio documento, conforme
 % as normas sugeridas da USP.
+
+
+
+
+%\palavraschave{Hemofilia B, Fator IX, Design de proteínas, Aprendizado por Reforço, PPO, Proximal Policy Optimization, Imunogenicidade, Docking Molecular}
+
+%\keywords{Hemophilia B, Factor IX, Protein Design, Reinforcement Learning, PPO, Immunogenicity, Molecular Docking}
+\palavrachave{Hemofilia B, Fator IX, Design de proteínas, Aprendizado por Reforço, PPO, Imunogenicidade, Docking Molecular}
+\keyword{Hemophilia B, Factor IX, Protein Design, Reinforcement Learning, PPO, Immunogenicity, Molecular Docking}
+
 \resumo{
-Elemento obrigatório, constituído de uma sequência de frases concisas e
-objetivas, em forma de texto. Deve apresentar os objetivos, métodos empregados,
-resultados e conclusões. O resumo deve ser redigido em parágrafo único, conter
-no máximo 500 palavras e ser seguido dos termos representativos do conteúdo do
-trabalho (palavras-chave). Deve ser precedido da referência do documento.
-Texto texto texto texto texto texto texto texto texto texto texto texto texto
-texto texto texto texto texto texto texto texto texto texto texto texto texto
-texto texto texto texto texto texto texto texto texto texto texto texto texto
-texto texto texto texto texto texto texto texto texto texto texto texto texto
-texto texto texto texto texto texto texto texto texto texto texto texto texto
-texto texto texto texto texto texto texto texto.
-Texto texto texto texto texto texto texto texto texto texto texto texto texto
-texto texto texto texto texto texto texto texto texto texto texto texto texto
-texto texto texto texto texto texto texto texto texto texto texto texto texto
-texto texto texto texto texto texto texto texto texto texto texto texto texto
-texto texto.
+    Neste trabalho, propomos o desenvolvimento de um pipeline computacional
+    para o design de proteínas substitutas ao Fator IX (FIX), 
+    com o objetivo de otimizar seu uso terapêutico no tratamento da hemofilia B. 
+    A metodologia combina aprendizado por reforço profundo com técnicas avançadas de modelagem estrutural 
+    e análise de interação molecular. 
+    O pipeline é dividido em três módulos principais: (i) Condições Iniciais, 
+    responsável por gerar a sequência inicial de aminoácidos com o \textit{ProteinMPNN} 
+    e avaliar sua estrutura via \textit{ESMFold}; 
+    (ii) Treinamento, no qual um agente \textit{GenSeq} é treinado por Proximal Policy Optimization (PPO) 
+    para realizar mutações que maximizem a similaridade estrutural com o FIX; 
+    e (iii) Geração de Sequências, que utiliza o agente treinado para explorar o espaço de sequências. 
+    A avaliação das proteínas geradas inclui a análise de similaridade estrutural via \textit{TMScore}, 
+    o estudo das interações moleculares com o Fator VIII (FVIII) através de \textit{Rosetta Docking},
+    e a predição de imunogenicidade com o \textit{NetMHCIIpan}. 
+    Os resultados demonstram que as proteínas propostas apresentam alta similaridade estrutural com o FIX nativo, 
+    interações moleculares eficientes com o FVIII e perfis imunogênicos comparáveis ou mais favoráveis que o FIX.
+    O pipeline mostrou-se promissor como ferramenta para o design de proteínas terapêuticas personalizadas 
+    e de baixo risco imunológico para aplicação clínica no tratamento da hemofilia B.
 }
 
 \abstract{
-Elemento obrigatório, elaborado com as mesmas características do resumo em
-língua portuguesa. De acordo com o Regimento da Pós-Graduação da USP (Artigo
-99), deve ser redigido em inglês para fins de divulgação. É uma boa ideia usar
-o sítio \url{www.grammarly.com} na preparação de textos em inglês.
-Text text text text text text text text text text text text text text text text
-text text text text text text text text text text text text text text text text
-text text text text text text text text text text text text text text text text
-text text text text text text text text text text text text.
-Text text text text text text text text text text text text text text text text
-text text text text text text text text text text text text text text text text
-text text text.
+    This work proposes the development of a computational pipeline for 
+    designing substitute proteins for Coagulation Factor IX (FIX),
+    aiming to optimize their therapeutic application in the treatment of hemophilia B. 
+    The methodology combines deep reinforcement learning with advanced structural modeling 
+    and molecular interaction analysis techniques. 
+    The pipeline is divided into three main modules: (i) Initial Conditions, 
+    responsible for generating the initial amino acid sequence using \textit{ProteinMPNN} 
+    and predicting its structure via \textit{ESMFold}; 
+    (ii) Training, where an agent named \textit{GenSeq} is trained by 
+    Proximal Policy Optimization (PPO) to perform mutations that maximize structural similarity to FIX; 
+    and (iii) Sequence Generation, where the trained agent explores the space of sequences. 
+    The evaluation of the generated proteins includes structural similarity analysis using \textit{TMScore},
+    molecular docking studies with Factor VIII (FVIII) through \textit{Rosetta Docking},
+    and immunogenicity prediction using NetMHCIIpan. 
+    The results demonstrate that the designed proteins present high structural similarity to the native FIX, 
+    efficient molecular interactions with FVIII, and immunogenicity profiles comparable to or lower than the reference FIX.
+    The proposed pipeline proved to be a promising tool for the design of personalized therapeutic proteins 
+    with reduced immunogenic risk for clinical application in the treatment of hemophilia B.
 }
+
+
+
+    

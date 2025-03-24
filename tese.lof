@@ -1,4 +1,8 @@
 \babel@toc {brazilian}{}\relax 
+\babel@toc {brazilian}{}\relax 
+\babel@toc {brazilian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {brazilian}{}\relax 
 \contentsline {figure}{\numberline {1}{\ignorespaces O projeto de sequências se resume a desenvolver uma função $F_{seq}$ que mapeia uma estrutura proteica tridimensional em uma sequência de aminoácidos.}}{1}{figure.caption.7}%
 \contentsline {figure}{\numberline {2}{\ignorespaces O projeto de sequências baseado em busca define $F_{seq}$ como um processo iterativo que combina uma heurística inicial $H$, a avaliação por $F_{obj}$ e as modificações realizadas pelo Agente $A$. O processo é repetido até atingir um limiar calculado por $F_{obj}$.}}{2}{figure.caption.8}%
 \contentsline {figure}{\numberline {3}{\ignorespaces Projeto de Sequências baseado em aprendizado profundo.}}{3}{figure.caption.9}%
@@ -34,5 +38,8 @@
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Alinhamento entre FIX (em azul) e a proteína ID 34 (em vermelho)}}{48}{figure.caption.46}%
 \contentsline {figure}{\numberline {4.4}{\ignorespaces Comparação do IM entre as proteínas geradas e o FIX}}{49}{figure.caption.50}%
 \contentsline {figure}{\numberline {4.5}{\ignorespaces IM calculado para cada grupo de alelo}}{50}{figure.caption.51}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Resultado do \textit {Docking} entre as proteínas geradas e o fator VII}}{52}{figure.caption.52}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Resultado do \textit {CMS} entre as proteínas geradas e o fator VIII}}{51}{figure.caption.52}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Resultado do \textit {IBSASA} entre as proteínas geradas e o fator VIII}}{51}{figure.caption.53}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Resultado do \textit {SAP Score} entre as proteínas geradas e o fator VIII}}{52}{figure.caption.54}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Resultado do \textit {DDG} entre as proteínas geradas e o fator VIII}}{52}{figure.caption.55}%
 \addvspace {10\p@ }

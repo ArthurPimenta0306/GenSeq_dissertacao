@@ -2398,32 +2398,32 @@
     <bcf:citekey order="41" intorder="1">Docking</bcf:citekey>
     <bcf:citekey order="42" intorder="1">Docking</bcf:citekey>
     <bcf:citekey order="43" intorder="1">Docking</bcf:citekey>
-    <bcf:citekey order="44" intorder="1">Imuno</bcf:citekey>
+    <bcf:citekey order="44" intorder="1">Docking</bcf:citekey>
     <bcf:citekey order="45" intorder="1">Imuno</bcf:citekey>
     <bcf:citekey order="46" intorder="1">Imuno</bcf:citekey>
-    <bcf:citekey order="47" intorder="1">tmscore</bcf:citekey>
+    <bcf:citekey order="47" intorder="1">Imuno</bcf:citekey>
     <bcf:citekey order="48" intorder="1">tmscore</bcf:citekey>
     <bcf:citekey order="49" intorder="1">tmscore</bcf:citekey>
     <bcf:citekey order="50" intorder="1">tmscore</bcf:citekey>
     <bcf:citekey order="51" intorder="1">tmscore</bcf:citekey>
-    <bcf:citekey order="52" intorder="1">USalign</bcf:citekey>
-    <bcf:citekey order="53" intorder="1">Eddy</bcf:citekey>
-    <bcf:citekey order="54" intorder="1">ConsurfDB</bcf:citekey>
-    <bcf:citekey order="55" intorder="1">aminodist</bcf:citekey>
-    <bcf:citekey order="56" intorder="1">seqinR</bcf:citekey>
-    <bcf:citekey order="57" intorder="1">aminodist</bcf:citekey>
+    <bcf:citekey order="52" intorder="1">tmscore</bcf:citekey>
+    <bcf:citekey order="53" intorder="1">USalign</bcf:citekey>
+    <bcf:citekey order="54" intorder="1">Eddy</bcf:citekey>
+    <bcf:citekey order="55" intorder="1">ConsurfDB</bcf:citekey>
+    <bcf:citekey order="56" intorder="1">aminodist</bcf:citekey>
+    <bcf:citekey order="57" intorder="1">seqinR</bcf:citekey>
     <bcf:citekey order="58" intorder="1">aminodist</bcf:citekey>
     <bcf:citekey order="59" intorder="1">aminodist</bcf:citekey>
-    <bcf:citekey order="60" intorder="1">MDP</bcf:citekey>
-    <bcf:citekey order="61" intorder="1">Bishop</bcf:citekey>
+    <bcf:citekey order="60" intorder="1">aminodist</bcf:citekey>
+    <bcf:citekey order="61" intorder="1">MDP</bcf:citekey>
     <bcf:citekey order="62" intorder="1">Bishop</bcf:citekey>
     <bcf:citekey order="63" intorder="1">Bishop</bcf:citekey>
     <bcf:citekey order="64" intorder="1">Bishop</bcf:citekey>
-    <bcf:citekey order="65" intorder="1">Figueiredo</bcf:citekey>
+    <bcf:citekey order="65" intorder="1">Bishop</bcf:citekey>
     <bcf:citekey order="66" intorder="1">Figueiredo</bcf:citekey>
-    <bcf:citekey order="67" intorder="1">Bishop</bcf:citekey>
-    <bcf:citekey order="68" intorder="1">AC</bcf:citekey>
-    <bcf:citekey order="69" intorder="1">PPO</bcf:citekey>
+    <bcf:citekey order="67" intorder="1">Figueiredo</bcf:citekey>
+    <bcf:citekey order="68" intorder="1">Bishop</bcf:citekey>
+    <bcf:citekey order="69" intorder="1">AC</bcf:citekey>
     <bcf:citekey order="70" intorder="1">PPO</bcf:citekey>
     <bcf:citekey order="71" intorder="1">PPO</bcf:citekey>
     <bcf:citekey order="72" intorder="1">PPO</bcf:citekey>
@@ -2431,13 +2431,15 @@
     <bcf:citekey order="74" intorder="1">PPO</bcf:citekey>
     <bcf:citekey order="75" intorder="1">PPO</bcf:citekey>
     <bcf:citekey order="76" intorder="1">PPO</bcf:citekey>
-    <bcf:citekey order="77" intorder="1">aminodist</bcf:citekey>
-    <bcf:citekey order="78" intorder="1">mds</bcf:citekey>
+    <bcf:citekey order="77" intorder="1">PPO</bcf:citekey>
+    <bcf:citekey order="78" intorder="1">aminodist</bcf:citekey>
     <bcf:citekey order="79" intorder="1">mds</bcf:citekey>
-    <bcf:citekey order="80" intorder="1">aminodist</bcf:citekey>
-    <bcf:citekey order="81" intorder="1">ChimeraX</bcf:citekey>
-    <bcf:citekey order="82" intorder="1">Jensen2018NetMHCIIpan</bcf:citekey>
+    <bcf:citekey order="80" intorder="1">mds</bcf:citekey>
+    <bcf:citekey order="81" intorder="1">aminodist</bcf:citekey>
+    <bcf:citekey order="82" intorder="1">ChimeraX</bcf:citekey>
     <bcf:citekey order="83" intorder="1">Jensen2018NetMHCIIpan</bcf:citekey>
+    <bcf:citekey order="84" intorder="1">Jensen2018NetMHCIIpan</bcf:citekey>
+    <bcf:citekey order="85" intorder="1">05TMScore</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">

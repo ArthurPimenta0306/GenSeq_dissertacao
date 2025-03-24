@@ -1,19 +1,19 @@
 # Fdb version 4
-["biber tese"] 1741754284.57527 "tese.bcf" "tese.bbl" "tese" 1741754476.36064 0
-  "bibliografia.bib" 1740710437.62379 19575 ab3d90ac7c6d7185798241e0e7d9dd2b ""
-  "tese.bcf" 1741754476.15062 112494 7bd69d0d6d1af957a07863446b8c3134 "pdflatex"
+["biber tese"] 1742771392.62384 "tese.bcf" "tese.bbl" "tese" 1742786197.28595 0
+  "bibliografia.bib" 1742182437.59496 19777 a7ef4d7ff3fe90580a0edbe35de1a499 ""
+  "tese.bcf" 1742786197.0766 112622 9b5fd43d9440e2b11be67de61b1ee8bc "pdflatex"
   (generated)
   "tese.bbl"
   "tese.blg"
   (rewritten before read)
-["makeindex tese.idx"] 1740711816.67842 "tese.idx" "tese.ind" "tese" 1741754476.36056 0
-  "tese.idx" 1741754476.15121 704 2544bbfbb699c8fde65cf47d8cd20ebd "pdflatex"
+["makeindex tese.idx"] 1742771392.55805 "tese.idx" "tese.ind" "tese" 1742786197.28587 0
+  "tese.idx" 1742786197.07728 690 c44a99c7526830e78cc350645063a5bc "pdflatex"
   (generated)
   "tese.ilg"
   "tese.ind"
   (rewritten before read)
-["pdflatex"] 1741754471.40907 "/Users/arthurmoriggipimenta/Desktop/GenSeq_dissertacao/tese.tex" "tese.pdf" "tese" 1741754476.36082 0
-  "/Users/arthurmoriggipimenta/Desktop/GenSeq_dissertacao/tese.tex" 1740017502.48454 17872 c8efc1c7c197ee707e31edf5304beaa2 ""
+["pdflatex"] 1742786190.82112 "/Users/arthurmoriggipimenta/Desktop/GenSeq_dissertacao/tese.tex" "tese.pdf" "tese" 1742786197.28612 0
+  "/Users/arthurmoriggipimenta/Desktop/GenSeq_dissertacao/tese.tex" 1742786190.72267 20327 b826bc1b3af50e3a44cfc96b6577e536 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_75t36g.enc" 1667852677 3022 13dbae1db4ca7b6d6a3611a22a194cb8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_cb34qf.enc" 1667852677 3498 97969c5bc9b87f369104f937c6467737 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_mfadfl.enc" 1667852677 3039 b94e5746763ffece6312a6e9abac298f ""
@@ -428,10 +428,11 @@
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
   "conteudo/00_introducao.tex" 1740017502.45886 7864 73ad9ba2f535fa9c973b3d1f2e3797a0 ""
   "conteudo/01_revisaobibliografica.tex" 1740017502.45898 10592 d368ab9818af0a500eddf19c06918895 ""
-  "conteudo/02_background.tex" 1741754279.33858 30952 7c594922524556034c4baa6da92b00d4 ""
-  "conteudo/04_metodologia.tex" 1741754471.19865 45771 387d9ebae4f98babd0c0fde065c1b43f ""
-  "conteudo/05_resultados.tex" 1741754279.3396 8535 406e37c3e47d095908ba2791ae4cf5c4 ""
-  "conteudo/06_conclusao.tex" 1740017502.45955 2376 0fc3026339d7089bba1b9c36d94d5a8a ""
+  "conteudo/02_background.tex" 1742783247.71243 31089 6114c5b255d149a77915894f99a4aad2 ""
+  "conteudo/04_metodologia.tex" 1742765203.75349 45480 70c39e22f0097fcef9381bb6a90658b1 ""
+  "conteudo/05_resultados.tex" 1742786190.61652 9207 2db4b86da879f06168c37092d41a4573 ""
+  "conteudo/06_conclusao.tex" 1742766226.62849 2335 fb5d77a15f1c6576a0d5ceacecc72905 ""
+  "conteudo/resumoabstract.tex" 1742185798.45675 4324 52dd6a65dcede8e725368c82e2ca80e0 ""
   "extras/basics.tex" 1740017502.45985 21858 e8ebcf37eadf449319a17242b7094977 ""
   "extras/bibconfig.tex" 1740017502.45993 4132 2896d8e8e6ab0b32113a40e44ab486ef ""
   "extras/floats.tex" 1740017502.46001 14083 111f6a2e0242f1dd5a1fd8f87ed1e9d9 ""
@@ -483,22 +484,22 @@
   "figuras/plot_imuno_IMscore_geral.png" 1740017502.47867 182342 96a07e9f9901c012857c72c03cf22b69 ""
   "figuras/plot_interface_buried_sasa.png" 1740017502.47911 194586 df667a30452dcbef67617ad498509ec5 ""
   "figuras/plot_pre_train_reward.jpg" 1740017502.47927 47571 1a4e47fdae6142f4aa3981fdb2846941 ""
-  "figuras/plot_sap_score_target.png" 1740017502.47967 173656 293e0ab1b5c39a45b0355c08d268fd9f ""
+  "figuras/plot_sap_score.png" 1742782947.41145 175280 a87a8affcc884307b2ad39a29d3a1773 ""
   "figuras/plot_tmscore_decreasing.png" 1740017502.47995 43176 08903b7e0adc66923820478c7ced16cb ""
   "figuras/plot_train_reward.jpg" 1740017502.48013 49532 63c4ae79d9eb2a2f8de03ea5dc4619c0 ""
   "hyperxindy.xdy" 1740017502.4802 301 e1a1e2f569821a37ccf6e0c8ec8620ec ""
   "imagechapter.sty" 1740017502.48026 6292 df5a2992b4ef39fd6e7a93b6da37f445 ""
   "lstpseudocode.sty" 1740017502.48069 8773 ee54807d51c2d1bcdf9ca65307b1e611 ""
   "mkidxhead.ist" 1740017502.48086 80 c56667d514c1ae5929d36d5c24f727ad ""
-  "tese.aux" 1741754476.14493 28838 e76f1ad3a4b42fc9b651f21da64c94ac "pdflatex"
-  "tese.bbl" 1741754298.7006 40193 8890d38e1992ac613017ab6e4077e4b9 "biber tese"
-  "tese.ind" 1740711816.74205 1071 376a9a97eadcc30048ebc77e4c26075b "makeindex tese.idx"
-  "tese.lof" 1741754476.15122 5016 d5f1676c018defe01f34396b0af6951f "pdflatex"
-  "tese.lot" 1741754476.15124 700 0eafd8e3dfe3a93782c3ca901a51a770 "pdflatex"
-  "tese.out" 1741754476.14847 6606 dd9a050c15b3cfab303c45278c9cc1be "pdflatex"
-  "tese.run.xml" 1741754476.15115 2466 3ee5bd278abc846af94930ead8952602 "pdflatex"
-  "tese.tex" 1740017502.48454 17872 c8efc1c7c197ee707e31edf5304beaa2 ""
-  "tese.toc" 1741754476.15126 4365 3de33b0c0648e9e519c7b6f31021d96b "pdflatex"
+  "tese.aux" 1742786197.06725 29891 45bdee243b4d1d645939299f7a392001 "pdflatex"
+  "tese.bbl" 1742771394.31298 41384 01c60c911fa666ee3e99e85a753c7c16 "biber tese"
+  "tese.ind" 1742771392.62289 1057 f77d4f461c5bdcdf3e96a78f53951265 "makeindex tese.idx"
+  "tese.lof" 1742786197.07729 5601 0188fc22988438576b0e9b10d0cdb93f "pdflatex"
+  "tese.lot" 1742786197.07731 826 7bf31bfaf889eecd270d4afa070517c8 "pdflatex"
+  "tese.out" 1742786197.07426 6532 b0603565b997416f15857b17166d99be "pdflatex"
+  "tese.run.xml" 1742786197.07721 2466 3ee5bd278abc846af94930ead8952602 "pdflatex"
+  "tese.tex" 1742786190.72267 20327 b826bc1b3af50e3a44cfc96b6577e536 ""
+  "tese.toc" 1742786197.07733 4477 f29e3bb8d3241914884801d36becdf89 "pdflatex"
   (generated)
   "tese.aux"
   "tese.bcf"

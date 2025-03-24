@@ -841,6 +841,32 @@
       \field{title}{Protein design via deep learning}
       \field{year}{2022}
     \endentry
+    \entry{05TMScore}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=0e4dfcc2a660bcd69a7698d3011c1c66}{%
+           family={Yang\bibnamedelima Zhang},
+           familyi={Y\bibinitperiod\bibinitdelim Z\bibinitperiod},
+           given={et\bibnamedelima al.},
+           giveni={e\bibinitperiod\bibinitdelim a\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0e4dfcc2a660bcd69a7698d3011c1c66}
+      \strng{fullhash}{0e4dfcc2a660bcd69a7698d3011c1c66}
+      \strng{bibnamehash}{0e4dfcc2a660bcd69a7698d3011c1c66}
+      \strng{authorbibnamehash}{0e4dfcc2a660bcd69a7698d3011c1c66}
+      \strng{authornamehash}{0e4dfcc2a660bcd69a7698d3011c1c66}
+      \strng{authorfullhash}{0e4dfcc2a660bcd69a7698d3011c1c66}
+      \field{labelalpha}{Yan10}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Bioinformatics}
+      \field{title}{How significant is a protein structure similarity with TM-score = 0.5?}
+      \field{year}{2010}
+    \endentry
     \entry{USalign}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=b1d783a5458bbcea86ec2d64b93c5f47}{%

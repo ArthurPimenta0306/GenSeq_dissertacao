@@ -139,13 +139,13 @@ aquelas que minimizam a energia livre do sistema.
 Durante o docking, diversas poses do ligante em relação ao receptor são geradas.
 Ferramentas como RosettaDock ou AutoDock realizam essa busca, explorando translações, rotações e flexibilidade local.
 Cada pose é avaliada com base em métricas energéticas, como a \textit{Contact Molecular Surface} (CMS), \textit{Interface Buried SASA} (IBSASA),
-\textit{Delta Gibbs Free Energy of Binding} (DDG) e \textit{Surface Area Potential Score} (SAP Score).
+\textit{Delta Gibbs Free Energy of Binding} (DDG) e \textit{Spatial Aggregation Propensity Score} (SAP Score).
 
 A CMS é uma medida desenvolvida para superar as limitações de métricas tradicionais, 
 como Shape Complementarity (SC) e Delta Solvent Accessible Surface Area (Delta SASA) \cite{Docking}.
 Enquanto SC analisa a complementaridade geométrica entre superfícies moleculares e 
 Delta SASA calcula a área de superfície acessível ao solvente antes e depois da complexação,
-ambas possuem limitações na identificação de interfaces bem empacotadas.
+ambas possuem limitações na identificação de interfaces bem empacotadas \cite{Docking}.
 Em contraste, o CMS combina a área de contato com um fator de penalização baseado na distância entre triângulos de superfície,
 oferecendo uma representação mais precisa da qualidade do empacotamento na interface \cite{Docking}.
 
@@ -159,12 +159,12 @@ com valores mais negativos indicando maior estabilidade termodinâmica \cite{Doc
 A DDG, calculada frequentemente com o software Rosetta, 
 permite a otimização de sequências e conformações para maximizar a energia de ligação.
 
-O SAP Score avalia a hidrofobicidade com base na superfície acessível ao solvente, 
-sendo uma ferramenta crucial para prever a propensão à agregação e a estabilidade de complexos \cite{Docking}.
-Alterações no SAP Score após a ligação, conhecidas como Delta SAP Score, 
-fornecem insights sobre a contribuição hidrofóbica para a força motriz da interação.
-
-%Apresentar equações/imagens ilustrativas das métricas
+Por fim,o SAP Score avalia a presença de regiões hidrofóbicas expostas na superfície da proteína, 
+utilizando a área de superfície acessível ao solvente (SASA) como referência. 
+A partir dessa análise, estima-se a propensão da proteína ou do complexo formado à agregação indesejada.
+Valores mais baixos de SAP indicam menor exposição de patches hidrofóbicos ao solvente,
+sugerindo maior estabilidade estrutural e menor risco de agregação, o que é desejável na formação de complexos moleculares estáveis
+\cite{Docking}.
 
 
 %O design de proteínas substitutas do FIX depende diretamente da eficácia dessas proteínas em formar complexos estáveis

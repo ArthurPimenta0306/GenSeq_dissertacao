@@ -1,4 +1,8 @@
 \babel@toc {brazilian}{}\relax 
+\babel@toc {brazilian}{}\relax 
+\babel@toc {brazilian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {brazilian}{}\relax 
 \contentsline {chapter}{Introdução}{1}{section*.6}%
 \contentsline {section}{\numberline {0.1}Projeto de Sequências}{1}{section.0.1}%
 \contentsline {subsection}{\numberline {0.1.1}Baseado em Busca}{2}{subsection.0.1.1}%
@@ -39,7 +43,7 @@
 \contentsline {subsection}{\numberline {3.4.1}Análise Estrutural}{42}{subsection.3.4.1}%
 \contentsline {subsection}{\numberline {3.4.2}Avaliação de Interação com o Fator VIII (Docking Molecular)}{43}{subsection.3.4.2}%
 \contentsline {subsection}{\numberline {3.4.3}Avaliação da Imunogenicidade das Proteínas Geradas}{45}{subsection.3.4.3}%
-\contentsline {chapter}{\numberline {4}Resultados e Discussões}{47}{chapter.4}%
+\contentsline {chapter}{\numberline {4}Resultados}{47}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Resposta imunológica}{48}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Docking}{51}{section.4.2}%
 \contentsline {chapter}{\numberline {5}Conclusão}{53}{chapter.5}%
@@ -54,4 +58,4 @@
 {\protect \large \protect \bfseries \protect \hspace {-1.3em}Anexos\par }
 \protect \@afterheading 
 \vspace {2\baselineskip plus .5\baselineskip minus .5\baselineskip }
-\contentsline {chapter}{Refer\^encias}{55}{annex*.53}%
+\contentsline {chapter}{Refer\^encias}{55}{annex*.56}%
