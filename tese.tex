@@ -118,8 +118,8 @@
 \title{
     % Obrigatório nas duas línguas
     %titlept={Gerador de proteínas para o tratamento da Hemofilia tipo B baseado em \textit{Deep Reinforcement Learning}},
-    titlept={Design de Proteínas e Aprendizado Profundo: Uma nova fronteira no tratamento da Hemofilia B},
-    titleen={Protein Design and Deep Learning: A New Frontier in Hemophilia B Management},
+    titlept={Projeto de Proteínas e Aprendizado por Reforço Profundo: Uma nova fronteira no tratamento da Hemofilia B},
+    titleen={Protein Design and Deep Reinforcement Learning: A New Frontier in Hemophilia B Management},
     % Opcional, mas se houver deve existir nas duas línguas
     subtitlept={},
     subtitleen={},
@@ -132,7 +132,7 @@
 
 % Se não houver, remova; se houver mais de um, basta
 % repetir o comando quantas vezes forem necessárias
-\coorientador{Dr. Tiago Jose da Silva Lopes}
+%\coorientador{Dr. Tiago Jose da Silva Lopes}
 %\coorientador[fem]{Profª. Drª. Beltrana de Tal}
 
 % A página de rosto da versão para depósito (ou seja, a versão final
@@ -308,10 +308,10 @@
   $E_{ini}$ & Estrutura inicial vinculada à sequência gerada pelo \textit{ProteinMPNN}\\
   $S_{ini}$ & Sequência inicial vinculada à estrutura $E_{ini}$\\
   $Er_{0}$ & Erro inicial\\
-  $P_{val}$ & Conjunto de posições válidas na sequência de aminoácidos para sofrer mutação durante o treinamento \\
-  $R_{val}$ & Conjunto de resíduos válidos para serem utilizados na mutação durante o treinamento\\
-  $N_{rep}$ & Número máximo de vezes que um resíduo pode ser utilizado em uma mutação ao longo de um mesmo episódio durante o treinamento\\
-  $M_{max}$ & Número máximo de mutações que podem ser realizadas em um mesmo episódio durante o treinamento\\
+  $P_{val}$ & Conjunto de posições válidas \\
+  $R_{val}$ & Conjunto de resíduos válidos \\
+  $N_{rep}$ & Número máximo de vezes que um resíduo pode ser utilizado\\
+  $M_{max}$ & Número máximo de mutações \\
   $CS$ & \textit{Conservation Score} \\
   $AminoDist$ & Função de distância ou similaridade entre dois aminoácidos\\
   $Encoder$ & Dicionário que mapeia um aminoácido em um vetor de características\\

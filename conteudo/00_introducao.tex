@@ -1,4 +1,4 @@
-\unnumberedchapter{Introdução}
+\chapter{Introdução}
 \label{cap:introducao}
 \enlargethispage{.5\baselineskip}
 
@@ -24,54 +24,67 @@ exigindo uma quantidade menor de infusões.
 \section{Projeto de Sequências}
 
 O projeto de sequências refere-se ao processo de criação ou
-otimização de uma sequência de aminoácidos para produzir uma proteína
-cuja estrutura tridimensional possua propriedades desejáveis.
-Essa tarefa é extremamente desafiadora, 
+otimização de uma sequência de aminoácidos que se conformam em uma estrutura tridimensional de interesse.
+Em outras palavras, consiste em desenvolver uma função $F_{seq}$ que 
+recebe como entrada uma estrutura proteica alvo e retorna a sequência correspondente. 
+Essa tarefa é desafiadora, 
 pois o número de permutações possíveis para uma sequência de aminoácidos
 cresce exponencialmente com seu tamanho, 
-tornando inviável a busca por força bruta \cite{Overview}.
+tornando inviável a busca dentre todas as possibilidades \cite{Overview}.
 
 \begin{figure}[H]
+  \caption[Projeto de sequências]{O projeto de sequências se resume a desenvolver uma 
+  função $F_{seq}$ que mapeia uma estrutura proteica tridimensional alvo em uma sequência de aminoácidos.}
   \centering
   \includegraphics[width=.8\textwidth]{figuras/metodologia-SeqDes.jpg}
-  \caption{O projeto de sequências se resume a desenvolver uma 
-           função $F_{seq}$ que mapeia uma estrutura proteica tridimensional em uma sequência de aminoácidos.}
 \end{figure}
 
-\subsection{Baseado em Busca}
+\subsection{Projeto de Sequências baseado em busca}
 
 No projeto de sequências baseado em busca, 
-a função $F_{seq}$ é definida por um processo iterativo 
-composto por etapas bem estruturadas.
-Inicialmente, é gerada uma sequência de aminoácidos baseada em uma heurística inicial $H$. 
-A sequência resultante é avaliada por uma função objetivo $F_{obj}$, 
-que calcula a métrica a ser otimizada. 
-Se a sequência atual for melhor que a sequência anterior de acordo com a métrica definida, 
-o Agente $A$ a adota como nova sequência final e realiza mutações na sequência atual. 
+a função $F_{seq}$ é definida por um processo iterativo. 
+Inicialmente, uma sequência de aminoácidos é gerada com base em uma heurística inicial $H$.
+Essa sequência é então avaliada por uma função objetivo $F_{obj}$, 
+responsável por calcular a métrica a ser otimizada.
+A cada iteração, 
+a nova sequência gerada é comparada com a sequência anterior de acordo com a métrica definida. 
+Se a sequência atual apresentar melhor desempenho, o Agente $A$ a define como nova sequência final.
+Caso contrário, a sequência final é mantida. 
+Em ambos os cenários, o próximo passo é a aplicação de uma mutação pelo Agente $A$ sobre 
+a sequência atual com o objetivo de explorar novas possibilidades no espaço de busca.
 Esse processo é repetido até que um critério de parada seja atingido, 
-como um número máximo de iterações ou a convergência em $F_{obj}$.
+como um número máximo de iterações ou a convergência da métrica calculada por $F_{obj}$.
 
 
 \begin{figure}[H]
   \centering
   \includegraphics[width=.8\textwidth]{figuras/metodologia-SearchBased.jpg}
-  \caption{O projeto de sequências baseado em busca define $F_{seq}$ como um processo iterativo que combina uma 
-           heurística inicial $H$, a avaliação por $F_{obj}$ e as modificações realizadas pelo Agente $A$. O processo é repetido até atingir um limiar calculado por $F_{obj}$.}
+  \caption[Projeto de sequência baseado em busca]{O projeto de sequências baseado em busca define $F_{seq}$ 
+           como um processo iterativo que combina uma 
+           heurística inicial $H$, a avaliação por $F_{obj}$ e as modificações realizadas pelo Agente $A$. 
+           O processo é repetido até atingir um número máximo de iterações ou um limiar calculado por $F_{obj}$.}
   \label{fig:seqdes_search_based}
 \end{figure}
 
-O \textit{Rosetta} \cite{Rosetta} se baseia em um pipeline como este, 
-no qual a heurística inicial $H$ utiliza a sequência de uma proteína
-estruturalmente semelhante como ponto de partida. 
-A função objetivo $F_{obj}$ avalia a energia livre da proteína,
-considerando fatores como interações de Van der Waals,
-interações eletrostáticas e ligações de hidrogênio.
-O Agente $A$ utiliza o Método de Monte Carlo (MMC) para realizar mutações
-e adotar configurações com menor energia livre.
+O \textit{Rosetta} \cite{Rosetta} se baseia em um pipeline como este, onde:
+
+\begin{itemize}
+    \item \textbf{Heurística inicial ($H$):}  
+    Utiliza a sequência de uma proteína estruturalmente semelhante como ponto de partida.
+
+    \item \textbf{Função objetivo ($F_{obj}$):}  
+    Avalia a energia livre da proteína resultante, considerando fatores como interações de Van der Waals,
+    interações eletrostáticas e ligações de hidrogênio.
+
+    \item \textbf{Agente ($A$):}  
+    Utiliza o Método de Monte Carlo (MMC) para introduzir mutações na sequência e aceitar novas configurações com menor energia livre,
+    guiando iterativamente o processo de otimização.
+\end{itemize}
+
 Abordagens alternativas podem usar a similaridade estrutural como função objetivo,
 sendo uma métrica amplamente utilizada o \textit{Template Modeling Score} (TMScore) \cite{tmscore}.
 
-\subsection{Baseado em Aprendizado Profundo}
+\subsection{Projeto de sequências baseado em Aprendizado Profundo}
 
 O projeto de sequências baseado em aprendizado profundo define a função $F_{seq}$ 
 a partir de redes neurais artificiais. 
@@ -89,7 +102,7 @@ para fazer predições \cite{ProteinMPNN}.
   \caption{Projeto de Sequências baseado em aprendizado profundo.}
 \end{figure}
 
-\section{Proposta}
+\section{Projeto de Proteínas com Aprendizado por Reforço Profundo} 
 \label{section:Proposta}
 
 Além de suscitar uma possível resposta imunológica, 
@@ -106,14 +119,10 @@ Assim, o objetivo será identificar proteínas estruturalmente semelhantes que a
 Para simplificar o problema, focaremos no projeto do domínio protease, 
 reconhecido como o mais relevante para a função do fator IX.
 
-Nossa proposta consiste no desenvolvimento de um \textit{pipeline} que combina estratégias de busca 
+Nossa dissertação consiste no desenvolvimento de um \textit{pipeline} que combina estratégias de busca 
 com aprendizado profundo para otimização de sequências proteicas. 
 Esse \textit{pipeline} será estruturado em três módulos principais: Condições Iniciais, 
 Treinamento e Geração de Sequências.
-
-
-
-
 
 
 O módulo de Condições Iniciais tem como objetivo obter a sequência inicial de aminoácidos 
@@ -125,14 +134,14 @@ e o TMScore como métrica de avaliação estrutural \( F_{\text{obj}} \).
 Diferente do uso de agentes que realizam mutações aleatórias, como no \textit{Rosetta},
 no módulo de Treinamento treinaremos uma rede neural profunda, o \textit{GenSeq}, para atuar como o Agente $A$,
 sendo capaz de realizar mutações que otimizem a similaridade com a estrutura alvo, isto é, o Fator IX.
+O \textit{GenSeq} será treinado utilizando um algoritmo de Aprendizado por Reforço Profundo (DRL), 
+o \textit{Proximal Policy Optimization} (PPO) \cite{PPO}.
 
 Por fim, no módulo de Geração de Sequências, 
 o agente treinado será utilizado para produzir um conjunto variantes proteicas estruturalmente semelhantes ao Fator IX,
 por meio de um processo de mutação orientado. 
 As sequências geradas serão então avaliadas para identificar possíveis candidatas viáveis 
 que possam substituir o Fator IX no tratamento da hemofilia tipo B.
-
-
 
 \begin{figure}[H]
   \centering
