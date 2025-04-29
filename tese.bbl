@@ -670,14 +670,43 @@
       \field{title}{Nonmetric multidimensional scaling: A numerical method}
       \field{year}{1964}
     \endentry
+    \entry{CS}{article}{}
+      \name{author}{1}{}{%
+        {{un=1,uniquepart=given,hash=fe9487dcb11dff2d89568211446bc066}{%
+           family={Lopes\bibnamedelimb Tiago\bibnamedelimb J.\bibnamedelimi S.},
+           familyi={L\bibinitperiod\bibinitdelim T\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={Rios\bibnamedelima Ricardo},
+           giveni={R\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=1,
+           suffix={Nogueira\bibnamedelima Tatiane},
+           suffixi={N\bibinitperiod\bibinitdelim T\bibinitperiod},
+           suffixun=0}}%
+      }
+      \strng{namehash}{fe9487dcb11dff2d89568211446bc066}
+      \strng{fullhash}{fe9487dcb11dff2d89568211446bc066}
+      \strng{bibnamehash}{fe9487dcb11dff2d89568211446bc066}
+      \strng{authorbibnamehash}{fe9487dcb11dff2d89568211446bc066}
+      \strng{authornamehash}{fe9487dcb11dff2d89568211446bc066}
+      \strng{authorfullhash}{fe9487dcb11dff2d89568211446bc066}
+      \field{labelalpha}{Lop22}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Frontiers in Bioinformatics}
+      \field{title}{A Machine Learning Framework Predicts the Clinical Severity of Hemophilia B Caused by Point-Mutations}
+      \field{year}{2022}
+    \endentry
     \entry{aminodist}{article}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=eda0cb2b70b2e245d00414035e866e49}{%
+        {{un=1,uniquepart=given,hash=eda0cb2b70b2e245d00414035e866e49}{%
            family={Lopes\bibnamedelimb Tiago\bibnamedelimb J.\bibnamedelimi S.},
            familyi={L\bibinitperiod\bibinitdelim T\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim S\bibinitperiod},
            given={Rios\bibnamedelimb Ricardo\bibnamedelimb et\bibnamedelima al.},
            giveni={R\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim e\bibinitperiod\bibinitdelim a\bibinitperiod},
-           givenun=0,
+           givenun=1,
            suffix={Nogueira\bibnamedelima Tatiane},
            suffixi={N\bibinitperiod\bibinitdelim T\bibinitperiod},
            suffixun=0}}%

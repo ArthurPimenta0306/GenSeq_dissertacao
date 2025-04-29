@@ -946,11 +946,21 @@ INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/libertinus-type1/Liber
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/vf/public/libertinus-type1/LibertinusSerif-Regular-tlf-ts1.vf
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/libertinus-type1/LibertinusSerif-Regular-tlf-ts1--base.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_rlktsf.enc
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/libertinus-type1/LibertinusSerif-BoldItalic-tlf-t1.tfm
 INPUT ./figuras/metodologia-DeepLearningBased.jpg
 INPUT ./figuras/metodologia-DeepLearningBased.jpg
 INPUT ./figuras/metodologia-DeepLearningBased.jpg
 INPUT ./figuras/metodologia-DeepLearningBased.jpg
 INPUT ./figuras/metodologia-DeepLearningBased.jpg
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/libertinus-type1/LibertinusSerif-BoldItalic-tlf-t1.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/libertinus-type1/LibertinusSerif-Italic-tlf-t1.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/vf/public/libertinus-type1/LibertinusSerif-Italic-tlf-t1.vf
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/libertinus-type1/LibertinusSerif-Italic-tlf-t1--base.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/vf/public/libertinus-type1/LibertinusSerif-BoldItalic-tlf-t1.vf
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/libertinus-type1/LibertinusSerif-BoldItalic-tlf-t1--base.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_opzo24.enc
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/vf/public/libertinus-type1/LibertinusSerif-BoldItalic-tlf-t1.vf
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/libertinus-type1/LibertinusSerif-BoldItalic-tlf-t1--base.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/libertinus-type1/LibertinusSerif-Regular-tlf-t1.tfm
 INPUT ./figuras/metodologia-pipeline_proposta.jpg
 INPUT ./figuras/metodologia-pipeline_proposta.jpg
@@ -1040,7 +1050,6 @@ INPUT ./figuras/metodologia-Initial_cond.jpg
 INPUT ./figuras/metodologia-Initial_cond.jpg
 INPUT ./figuras/metodologia-Initial_cond.jpg
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/libertinus-type1/LibertinusSerif-Italic-tlf-t1.tfm
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/libertinus-type1/LibertinusSerif-Italic-tlf-t1.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/libertinust1math/libertinust1-mathrm.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/libertinust1math/libertinust1-mathit.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/libertinust1math/libertinust1-mathsym.tfm
@@ -1068,7 +1077,6 @@ INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/vf/public/libertinus-type1/LibertinusSerif-BoldItalic-tlf-t1.vf
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/libertinus-type1/LibertinusSerif-BoldItalic-tlf-t1--base.tfm
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_opzo24.enc
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/vf/adobe/sourcecodepro/SourceCodePro-Regular-tlf-t1.vf
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/adobe/sourcecodepro/SourceCodePro-Regular-tlf-t1--base.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/vf/public/libertinus-type1/LibertinusSerif-Regular-tlf-t1.vf

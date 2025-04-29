@@ -3,7 +3,7 @@
 \enlargethispage{.5\baselineskip}
 
 A hemofilia tipo B é uma doença hereditária rara, 
-caracterizada por uma deficiência no fator IX de coagulação sanguínea. 
+caracterizada por uma deficiência no Fator IX de coagulação humana (FIX). 
 Os pacientes com a doença enfrentam um risco maior de sofrer com hemorragias graves, 
 tanto internas quanto externas, 
 podendo levar a complicações debilitantes e até mesmo à morte \cite{Mannucci}.
@@ -14,16 +14,16 @@ O tratamento tradicional da hemofilia tipo B envolve a infusão de fatores de co
 ou derivados do plasma sanguíneo \cite{Gouw}. 
 Embora eficazes na prevenção de hemorragias,
 esses tratamentos apresentam limitações significativas,
-como a necessidade de infusões frequentes devido à curta meia-vida do fator IX na circulação,
+como a necessidade de infusões frequentes devido à curta meia-vida do FIX na circulação,
 a possibilidade de desenvolvimento de inibidores anticoagulantes e os elevados custos associados \cite{Mancuso}.
-Nesse contexto, o projeto de sequências proteicas surge 
+Nesse contexto, o desenvolvimento de novas proteínas recombinantes (\textit{Sequence Design}) surge 
 como uma abordagem com potencial de reduzir os custos associados ao tratamento da doença, 
-ao projetar proteínas sob medida que desempenham a mesma função, porém, mais estáveis, 
-exigindo uma quantidade menor de infusões.
+projetando proteínas sob medida que desempenham a mesma função do FIX, mas com maior estabilidade,
+reduzindo a frequência de infusões e o risco do desenvolvimento de inibidores
 
-\section{Projeto de Sequências}
+\section{Sequence Design}
 
-O projeto de sequências refere-se ao processo de criação ou
+\textit{Sequence Design} refere-se ao processo de criação ou
 otimização de uma sequência de aminoácidos que se conformam em uma estrutura tridimensional de interesse.
 Em outras palavras, consiste em desenvolver uma função $F_{seq}$ que 
 recebe como entrada uma estrutura proteica alvo e retorna a sequência correspondente. 
@@ -33,15 +33,15 @@ cresce exponencialmente com seu tamanho,
 tornando inviável a busca dentre todas as possibilidades \cite{Overview}.
 
 \begin{figure}[H]
-  \caption[Projeto de sequências]{O projeto de sequências se resume a desenvolver uma 
+  \caption[\textit{Sequence Design}]{\textit{Sequence Design} se resume a desenvolver uma 
   função $F_{seq}$ que mapeia uma estrutura proteica tridimensional alvo em uma sequência de aminoácidos.}
   \centering
   \includegraphics[width=.8\textwidth]{figuras/metodologia-SeqDes.jpg}
 \end{figure}
 
-\subsection{Projeto de Sequências baseado em busca}
+\subsection{Sequence Design baseado em busca}
 
-No projeto de sequências baseado em busca, 
+No \textit{Sequence Design} baseado em busca, 
 a função $F_{seq}$ é definida por um processo iterativo. 
 Inicialmente, uma sequência de aminoácidos é gerada com base em uma heurística inicial $H$.
 Essa sequência é então avaliada por uma função objetivo $F_{obj}$, 
@@ -59,14 +59,19 @@ como um número máximo de iterações ou a convergência da métrica calculada 
 \begin{figure}[H]
   \centering
   \includegraphics[width=.8\textwidth]{figuras/metodologia-SearchBased.jpg}
-  \caption[Projeto de sequência baseado em busca]{O projeto de sequências baseado em busca define $F_{seq}$ 
+  \caption[\textit{Sequence Design} baseado em busca]{\textit{Sequence Design} baseado em busca define $F_{seq}$ 
            como um processo iterativo que combina uma 
            heurística inicial $H$, a avaliação por $F_{obj}$ e as modificações realizadas pelo Agente $A$. 
            O processo é repetido até atingir um número máximo de iterações ou um limiar calculado por $F_{obj}$.}
   \label{fig:seqdes_search_based}
 \end{figure}
 
-O \textit{Rosetta} \cite{Rosetta} se baseia em um pipeline como este, onde:
+O software \textit{Rosetta} \cite{Rosetta} é uma das ferramentas 
+mais amplamente utilizadas para otimização e \textit{design} de proteínas.
+Ele implementa um \textit{pipeline} iterativo que combina heurísticas de geração de sequências iniciais, 
+avaliações de estabilidade estrutural e técnicas de mutação orientada para explorar o espaço de sequências.
+Em seu \textit{pipeline}:
+
 
 \begin{itemize}
     \item \textbf{Heurística inicial ($H$):}  
@@ -84,40 +89,40 @@ O \textit{Rosetta} \cite{Rosetta} se baseia em um pipeline como este, onde:
 Abordagens alternativas podem usar a similaridade estrutural como função objetivo,
 sendo uma métrica amplamente utilizada o \textit{Template Modeling Score} (TMScore) \cite{tmscore}.
 
-\subsection{Projeto de sequências baseado em Aprendizado Profundo}
+\subsection{\textit{Sequence Design} baseado em Aprendizado Profundo}
 
-O projeto de sequências baseado em aprendizado profundo define a função $F_{seq}$ 
+\textit{Sequence Design} baseado em aprendizado profundo define a função $F_{seq}$ 
 a partir de redes neurais artificiais. 
-O \cite{ProteinMPNN} por exemplo, 
+Pesquisas como o \cite{ProteinMPNN} por exemplo, 
 determina a $F_{seq}$ como uma rede neural profunda, denominada \textit{ProteinMPNN}, 
 que mapeia de forma direta a estrutura alvo à sequência de aminoácidos. 
 A rede é construída através de uma \textit{Message Passing Neural Network} (MPNN) 
 composta por uma arquitetura \textit{encoder-decoder} 
-que se baseia nas características da estrutura como distância e orientação dos átomos no espaço, 
+que se baseia nas características da estrutura como distância e orientação dos átomos no espaço 
 para fazer predições \cite{ProteinMPNN}. 
 
 \begin{figure}[H]
   \centering
   \includegraphics[width=.8\textwidth]{figuras/metodologia-DeepLearningBased.jpg}
-  \caption{Projeto de Sequências baseado em aprendizado profundo.}
+  \caption{\textit{Sequence Design} baseado em aprendizado profundo.}
 \end{figure}
 
-\section{Projeto de Proteínas com Aprendizado por Reforço Profundo} 
+\section{\textit{Sequence Design} baseado em Aprendizado por Reforço Profundo} 
 \label{section:Proposta}
 
 Além de suscitar uma possível resposta imunológica, 
-o tratamento da hemofilia tipo B baseado na infusão de fator IX
+o tratamento da hemofilia tipo B baseado na infusão de  FIX
 é custoso devido ao pouco tempo de vida da proteína na corrente sanguínea, demandando infusões frequentes. 
 Neste sentido, este trabalho busca responder à seguinte pergunta científica: 
-É possível, através de projeto de sequências, projetar uma proteína que desempenhe a mesma função do fator IX, 
+É possível, através de \textit{Sequence Design}, projetar uma proteína que desempenhe a mesma função do FIX, 
 mas com maior estabilidade, menor imunogenicidade e menos necessidade de infusões?
 
 Para responder a esta questão, formulamos a hipótese de que, 
-se existir uma proteína alternativa superior ao Fator IX, 
+se existir uma proteína alternativa superior ao FIX, 
 ela deverá ser estruturalmente similar. 
 Assim, o objetivo será identificar proteínas estruturalmente semelhantes que atendam aos critérios estabelecidos.
 Para simplificar o problema, focaremos no projeto do domínio protease, 
-reconhecido como o mais relevante para a função do fator IX.
+reconhecido como o mais relevante para a função do FIX \cite{FIX}.
 
 Nossa dissertação consiste no desenvolvimento de um \textit{pipeline} que combina estratégias de busca 
 com aprendizado profundo para otimização de sequências proteicas. 
@@ -133,27 +138,27 @@ e o TMScore como métrica de avaliação estrutural \( F_{\text{obj}} \).
 
 Diferente do uso de agentes que realizam mutações aleatórias, como no \textit{Rosetta},
 no módulo de Treinamento treinaremos uma rede neural profunda, o \textit{GenSeq}, para atuar como o Agente $A$,
-sendo capaz de realizar mutações que otimizem a similaridade com a estrutura alvo, isto é, o Fator IX.
+sendo capaz de realizar mutações que otimizem a similaridade com a estrutura alvo, isto é, o FIX.
 O \textit{GenSeq} será treinado utilizando um algoritmo de Aprendizado por Reforço Profundo (DRL), 
 o \textit{Proximal Policy Optimization} (PPO) \cite{PPO}.
 
 Por fim, no módulo de Geração de Sequências, 
-o agente treinado será utilizado para produzir um conjunto variantes proteicas estruturalmente semelhantes ao Fator IX,
+o agente treinado será utilizado para produzir um conjunto de variantes proteicas estruturalmente semelhantes ao FIX,
 por meio de um processo de mutação orientado. 
 As sequências geradas serão então avaliadas para identificar possíveis candidatas viáveis 
-que possam substituir o Fator IX no tratamento da hemofilia tipo B.
+que possam substituir o FIX no tratamento da hemofilia tipo B.
 
 \begin{figure}[H]
   \centering
   \includegraphics[width=.8\textwidth]{figuras/metodologia-pipeline_proposta.jpg}
-  \caption{Pipeline proposto para o projeto de sequências.}
+  \caption{\textit{Pipeline} proposto de \textit{Sequence Design}.}
   \label{fig:proposta}
 \end{figure}
 
 \section{Objetivos}
 
 \begin{enumerate}
-  \item Obter um conjunto de sequências de aminoácidos que mimetizem a estrutura do fator de coagulação IX baseado na métrica TMScore.
-  \item Avaliar, dentro do conjunto de proteínas obtidas em 1, quais possuem potencial de substituir o Fator IX de modo tornar o tratamento de Hemofilia tipo B mais acessível e eficiente.
+  \item Obter um conjunto de sequências de aminoácidos que mimetizem a estrutura do FIX baseado na métrica TMScore.
+  \item Avaliar, dentro do conjunto de proteínas obtidas em 1, quais possuem potencial de substituir o FIX de modo tornar o tratamento de Hemofilia tipo B mais acessível e eficiente.
   \item Desenvolver um \textit{pipeline} genérico que produza sequências que mimetizem uma estrutura qualquer.
 \end{enumerate}

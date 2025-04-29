@@ -1,17 +1,9 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%TO DO %%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%Colocar sobre projeto de estruturas aqui (colocar imagem esquemática, similar ao que foi feito na introdução), falar do ESMFold, AlphaFold...Falar sobre o DeNovo
-%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
 \chapter{Fundamentação teórica}
 
 Neste capítulo vamos apresentar os fundamentos teóricos utilizados neste trabalho acerca de proteínas e aprendizado por reforço profundo. 
 
 
 \section{Proteína}
-%O que é (sequencia de aminoácidos)
 Uma proteína é uma macromolécula biológica composta por cadeias de aminoácidos. 
 Constituem a maior parte da massa seca de uma célula, podendo desempenhar funções enzimáticas, estruturais,
 imunológicas, de transporte, entre outras \cite{Bio}. 
@@ -95,7 +87,7 @@ cuja interação com o domínio A2 do FVIIIa permite a ativação conformacional
 %o domínio protease de serina é o mais relevante para a estabilidade e a eficiência catalítica do 
 %complexo tenase intrínseco. 
 \cite{FIX} explica que variantes do FIXa, como o FIX-Padua, que modificam o domínio protease, 
-apresentam maior eficiência catalítica, destacando seu papel central no projeto de proteínas otimizadas para terapia de hemofilia.
+apresentam maior eficiência catalítica, destacando seu papel central no desenvolvimento de proteínas otimizadas para terapia de hemofilia.
 
 %A formação de um complexo tenase estável depende de várias interações específicas.
 %O domínio Gla do FIXa se liga ao domínio C2 do FVIIIa, promovendo a ancoragem na membrana fosfolipídica.
@@ -109,9 +101,9 @@ apresentam maior eficiência catalítica, destacando seu papel central no projet
     \caption[Interação entre FIXa e FVIIIa]{Interação entre FIXa e FVIIIa, formando o complexo tenase. Adaptação da figura 3 de \cite{FIX}}
   \end{figure}
 
-A estrutura do domínio protease é a estrutura alvo do projeto de sequências proposto por este trabalho.  
+A estrutura do domínio protease é a estrutura alvo do \textit{pipeline} de \textit{sequence design} proposto por este trabalho.  
 É composta por 235 resíduos. 
-Logo, o espaço de possíveis novas sequências com este tamanho, considerando 20 diferentes aminoácidos, é de $235^20$. 
+Logo, o espaço de possíveis novas sequências com este tamanho, considerando 20 diferentes aminoácidos, é de $235^{20}$. 
 
 \begin{figure}[H]
     \centering
@@ -177,20 +169,24 @@ sugerindo maior estabilidade estrutural e menor risco de agregação, o que é d
 \subsection{Resposta Imunológica}
 \label{subsection:RespImuno} 
 
-A resposta imune desencadeada por uma proteína terapêutica é um fator crítico que pode influenciar diretamente sua segurança e eficácia. 
-No contexto do projeto de uma proteína substituta do FIXa,
+A resposta imune desencadeada por uma proteína terapêutica é um fator crítico 
+que pode influenciar diretamente sua segurança e eficácia. 
+No contexto de \textit{sequence design} de uma proteína substituta do FIXa,
 a análise dessa resposta imune é especialmente relevante para evitar complicações associadas à formação de inibidores,
 uma limitação comum no tratamento de hemofilia. 
 Esses inibidores são anticorpos neutralizantes que se ligam à proteína administrada,
 reduzindo sua eficácia e exigindo estratégias de tratamento alternativas mais caras e menos seguras.
 
 A imunogenicidade está intrinsicamente relacionada à presença de epítopos imunogênicos na sequência da proteína. 
-Esses epítopos são regiões específicas que se ligam a moléculas de MHC classe II em células que apresentam antígenos (APCs), 
+Esses epítopos são regiões específicas que se ligam a moléculas de MHC classe II em células 
+que apresentam antígenos (APCs), 
 facilitando a ativação de linfócitos T auxiliares \cite{Imuno}. 
 A afinidade de ligação é um fator determinante na indução da resposta imune. 
-Altas afinidades entre peptídeos e MHC-II aumentam a probabilidade de reconhecimento imune e subsequente ativação de células T \cite{Imuno}.
+Altas afinidades entre peptídeos e MHC-II aumentam a probabilidade 
+de reconhecimento imune e subsequente ativação de células T \cite{Imuno}.
 
-A predição de afinidade de ligação entre epítopos e MHC-II emprega ferramentas computacionais baseadas em aprendizado de máquina,
+A predição de afinidade de ligação entre epítopos e MHC-II emprega ferramentas computacionais 
+baseadas em aprendizado de máquina,
 como o NetMHCIIpan, que simulam interações entre peptídeos derivados da proteína e uma variedade de alelos de MHC. 
 A sequência da proteína é fragmentada em peptídeos sobrepostos com comprimentos típicos de 8 a 15 aminoácidos,
 e a afinidade de cada peptídeo é quantificada por meio do valor de $IC_{50}$ (concentração inibitória de 50\%).
@@ -200,7 +196,8 @@ são mais propensos a serem reconhecidos como epítopos imunogênicos \cite{Imun
 Portanto, o objetivo ao projetar a proteína substituta do FIXa é não apenas otimizar a estabilidade de ligação ao FVIIIa, 
 mas também evitar a apresentação de novos epítopos imunogênicos que poderiam levar à formação de inibidores. 
 A redução da imunogenicidade melhora a adesão ao tratamento e reduz complicações, 
-consolidando a importância da integração de predições imunológicas no pipeline de projeto de proteínas terapêuticas.
+consolidando a importância da integração de predições imunológicas 
+no \textit{pipeline} de desenvolvimento de proteínas terapêuticas.
 
 %Apresentar equações/imagens ilustrativas das métricas
 
@@ -271,7 +268,7 @@ O cálculo desta medida será feito a partir da plataforma desenvolvida por \cit
 O \textit{Conservation Score} (CS) é uma métrica que estima a importância ou 
 contribuição individual de cada resíduo da sequência na caracterização da estrutura da proteína.
 Resíduos cruciais na estrutura da proteína tendem a ser conservados,
-visto que alterações neles podem impactar significativamente a função proteíca. 
+visto que alterações neles podem impactar significativamente a função proteíca \cite{CS}. 
 O score é obtido levando-se em conta a frequência com que certas combinações de aminoácidos 
 ocorrem em proteínas homólogas ao longo da evolução das espécies \cite{Eddy}. 
 Para este trabalho, utilizamos o CS calculado pelo servidor ConsurfDB \cite{ConsurfDB},

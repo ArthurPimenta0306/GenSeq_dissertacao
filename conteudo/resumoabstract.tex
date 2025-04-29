@@ -25,40 +25,40 @@
 
 \resumo{
     Neste trabalho, propomos o desenvolvimento de um pipeline computacional
-    para o design de proteínas substitutas ao Fator IX (FIX), 
+    para o \textit{design} de proteínas substitutas ao Fator IX de coagulação humana (FIX), 
     com o objetivo de otimizar seu uso terapêutico no tratamento da hemofilia B. 
     A metodologia combina aprendizado por reforço profundo com técnicas avançadas de modelagem estrutural 
     e análise de interação molecular. 
     O pipeline é dividido em três módulos principais: (i) Condições Iniciais, 
-    responsável por gerar a sequência inicial de aminoácidos com o \textit{ProteinMPNN} 
-    e avaliar sua estrutura via \textit{ESMFold}; 
-    (ii) Treinamento, no qual um agente \textit{GenSeq} é treinado por Proximal Policy Optimization (PPO) 
-    para realizar mutações que maximizem a similaridade estrutural com o FIX; 
+    responsável por gerar a sequência inicial de aminoácidos 
+    e avaliar sua estrutura; 
+    (ii) Treinamento, no qual um agente \textit{GenSeq} é treinado com aprendizado por reforço 
+    para realizar mutações na sequência inicial que maximizem a similaridade estrutural com o FIX; 
     e (iii) Geração de Sequências, que utiliza o agente treinado para explorar o espaço de sequências. 
-    A avaliação das proteínas geradas inclui a análise de similaridade estrutural via \textit{TMScore}, 
-    o estudo das interações moleculares com o Fator VIII (FVIII) através de \textit{Rosetta Docking},
-    e a predição de imunogenicidade com o \textit{NetMHCIIpan}. 
+    A avaliação das proteínas geradas inclui a análise de similaridade estrutural, 
+    o estudo das interações moleculares com o Fator VIII de coagulação humana (FVIII),
+    e a avaliação do perfil imunológico. 
     Os resultados demonstram que as proteínas propostas apresentam alta similaridade estrutural com o FIX nativo, 
     interações moleculares eficientes com o FVIII e perfis imunogênicos comparáveis ou mais favoráveis que o FIX.
-    O pipeline mostrou-se promissor como ferramenta para o design de proteínas terapêuticas personalizadas 
+    O pipeline mostrou-se promissor como ferramenta para o \textit{design} de proteínas terapêuticas personalizadas 
     e de baixo risco imunológico para aplicação clínica no tratamento da hemofilia B.
 }
 
 \abstract{
     This work proposes the development of a computational pipeline for 
-    designing substitute proteins for Coagulation Factor IX (FIX),
+    designing substitute proteins for Human coagulation Factor IX (FIX),
     aiming to optimize their therapeutic application in the treatment of hemophilia B. 
     The methodology combines deep reinforcement learning with advanced structural modeling 
     and molecular interaction analysis techniques. 
     The pipeline is divided into three main modules: (i) Initial Conditions, 
-    responsible for generating the initial amino acid sequence using \textit{ProteinMPNN} 
-    and predicting its structure via \textit{ESMFold}; 
+    responsible for generating the initial amino acid sequence  
+    and predicting its structure; 
     (ii) Training, where an agent named \textit{GenSeq} is trained by 
-    Proximal Policy Optimization (PPO) to perform mutations that maximize structural similarity to FIX; 
+    deep reinforcement learning to perform mutations that maximize structural similarity to FIX; 
     and (iii) Sequence Generation, where the trained agent explores the space of sequences. 
-    The evaluation of the generated proteins includes structural similarity analysis using \textit{TMScore},
-    molecular docking studies with Factor VIII (FVIII) through \textit{Rosetta Docking},
-    and immunogenicity prediction using NetMHCIIpan. 
+    The evaluation of the generated proteins includes structural similarity analysis,
+    molecular docking studies with Human coagulation Factor FVIII (FVIII),
+    and the immunogenic profile evaluation. 
     The results demonstrate that the designed proteins present high structural similarity to the native FIX, 
     efficient molecular interactions with FVIII, and immunogenicity profiles comparable to or lower than the reference FIX.
     The proposed pipeline proved to be a promising tool for the design of personalized therapeutic proteins 

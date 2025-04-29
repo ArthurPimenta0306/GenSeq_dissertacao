@@ -1,24 +1,36 @@
 \chapter{Conclusão}
 
-Este trabalho apresentou um novo paradigma para o projeto de proteínas terapêuticas,
+Este trabalho apresentou um novo paradigma para o desenvolvimento de proteínas terapêuticas,
 aplicando aprendizado por reforço profundo para otimizar a sequência do fator IX (FIX),
 com o objetivo de melhorar sua estabilidade estrutural, 
 reduzir a imunogenicidade e potencializar sua eficácia no tratamento da hemofilia tipo B.  
 
+
 A abordagem proposta combinou metodologias avançadas de modelagem molecular e inteligência artificial 
 para explorar de maneira eficiente o vasto espaço de sequências proteicas. 
-O uso do algoritmo \textit{Proximal Policy Optimization} (PPO) permitiu a evolução de variantes do FIX 
-por meio de um processo iterativo de seleção e refinamento, 
-guiado por métricas estruturais. 
+Utilizando o algoritmo \textit{Proximal Policy Optimization} (PPO)
+desenvolvemos o \textit{GenSeq}, um modelo capaz de realizar mutações guiadas em sequências proteicas,
+permitindo a evolução de variantes do FIX por meio de um processo iterativo
+guiado por métricas estruturais.
 A validação das proteínas geradas foi realizada por meio de análises computacionais, 
-incluindo cálculos de similaridade estrutural com o TMScore, identificação da presença de epítopos imunogênicos nas sequências geradas
-e avaliação da interação proteína-proteína através do \textit{docking} molecular com o Fator VIII.
-Os resultados indicaram que algumas variantes apresentam potencial terapêutico promissor.  
+incluindo cálculos de similaridade estrutural com o \textit{TMScore}, 
+avaliação da interação proteína-proteína através do \textit{docking} molecular com o Fator VIII
+e identificação da presença de epítopos imunogênicos nas sequências geradas.
+Os resultados indicaram que algumas variantes apresentam potencial terapêutico promissor. 
 
-A principal contribuição deste trabalho reside na aplicação inédita de aprendizado por reforço profundo
-para a otimização do FIX, um campo ainda pouco explorado na literatura científica. 
-A inexistência de estudos anteriores que utilizem essa abordagem para o projeto de proteínas 
-voltadas ao tratamento da hemofilia B reforça a originalidade e a relevância deste estudo.  
+É importante destacar que o \textit{pipeline} desenvolvido é genérico, 
+podendo ser adaptado para otimizar outras proteínas terapêuticas que tenham suas estruturas tridimensionais
+conhecidas. A arquitetura modular do \textit{pipeline} facilita a substituição dos modelos de entrada,
+das funções objetivo e dos critérios de avaliação.
+
+Além disso, o trabalho introduziu o IMI (Imuno Índice),
+uma métrica desenvolvida para quantificar a compatibilidade imunológica de proteínas projetadas 
+em relação ao perfil imune da população humana. 
+O IMI mede o desalinhamento entre os epítopos 
+preditos em uma proteína e a frequência dos alelos na população, 
+permitindo avaliar a propensão de uma resposta imunológica adversa.
+Esta métrica foi fundamental para comparar as variantes geradas e 
+identificar quais proteínas apresentavam menor risco de desencadear uma resposta imunológica.
 
 Embora os resultados obtidos sejam promissores, 
 é importante ressaltar que ainda é necessário validar experimentalmente (\textit{wet lab})
@@ -26,9 +38,9 @@ as proteínas geradas, a fim de confirmar sua estabilidade e atividade biológic
 Além disso, é fundamental a realização de ensaios pré-clínicos e clínicos
 para avaliar a segurança e eficácia dessas proteínas em pacientes com hemofilia B.
 
-Em síntese, este trabalho demonstra o potencial do aprendizado por reforço profundo no projeto 
+Em síntese, este trabalho demonstra o potencial do aprendizado por reforço profundo no desenvolvimento 
 de proteínas terapêuticas. 
 Os avanços obtidos podem servir de base para novas pesquisas que busquem aprimorar o 
-desenvolvimento de biofármacos personalizados, 
+geração de biofármacos personalizados, 
 contribuindo para a inovação no tratamento da hemofilia tipo B e outras doenças genéticas.
 
