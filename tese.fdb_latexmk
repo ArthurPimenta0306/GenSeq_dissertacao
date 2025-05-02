@@ -1,19 +1,19 @@
 # Fdb version 4
-["biber tese"] 1745791456.3392 "tese.bcf" "tese.bbl" "tese" 1745895225.608 0
-  "bibliografia.bib" 1742182437.59496 19777 a7ef4d7ff3fe90580a0edbe35de1a499 ""
-  "tese.bcf" 1745895225.40084 112792 beffa61c82109b9aca01ddc79d877b4c "pdflatex"
+["biber tese"] 1746142704.19966 "tese.bcf" "tese.bbl" "tese" 1746144403.99234 0
+  "bibliografia.bib" 1746142704.00873 20760 428467ef0ce958321810d36e8c90b805 ""
+  "tese.bcf" 1746144403.78784 113035 286054dc7b176d97991eba7c69c01240 "pdflatex"
   (generated)
   "tese.bbl"
   "tese.blg"
   (rewritten before read)
-["makeindex tese.idx"] 1742771392.55805 "tese.idx" "tese.ind" "tese" 1745895225.6079 0
-  "tese.idx" 1745895225.40149 690 c44a99c7526830e78cc350645063a5bc "pdflatex"
+["makeindex tese.idx"] 1746140714.4664 "tese.idx" "tese.ind" "tese" 1746144403.99225 0
+  "tese.idx" 1746144403.78856 718 23e5701e2722d72f1a84ebcb0c769370 "pdflatex"
   (generated)
   "tese.ilg"
   "tese.ind"
   (rewritten before read)
-["pdflatex"] 1745895219.09385 "/Users/arthurmoriggipimenta/Desktop/GenSeq_dissertacao/tese.tex" "tese.pdf" "tese" 1745895225.60818 0
-  "/Users/arthurmoriggipimenta/Desktop/GenSeq_dissertacao/tese.tex" 1744166399.76568 20088 580f973be66e107662e0b7f38ba2b09c ""
+["pdflatex"] 1746144397.54019 "/Users/arthurmoriggipimenta/Desktop/GenSeq_dissertacao/tese.tex" "tese.pdf" "tese" 1746144403.99252 0
+  "/Users/arthurmoriggipimenta/Desktop/GenSeq_dissertacao/tese.tex" 1746133137.68587 20465 06b63309efe9c7e027c1421b060e6e2d ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_75t36g.enc" 1667852677 3022 13dbae1db4ca7b6d6a3611a22a194cb8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_cb34qf.enc" 1667852677 3498 97969c5bc9b87f369104f937c6467737 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/libertinus-type1/lbts_mfadfl.enc" 1667852677 3039 b94e5746763ffece6312a6e9abac298f ""
@@ -426,11 +426,11 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1740018820.76874 5467645 128b85b7cde5f5edc5cb7f1dd7ff8736 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1740018778 8221423 925f2624ec7201a072a8332d220ca2d5 ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "conteudo/00_introducao.tex" 1745790094.408 9225 e12165f5ab838f0b68c947dc2985aa7f ""
-  "conteudo/01_revisaobibliografica.tex" 1740017502.45898 10592 d368ab9818af0a500eddf19c06918895 ""
-  "conteudo/02_background.tex" 1745795275.98792 30978 a853a02330316bcd02d6cb9fc615ec2b ""
-  "conteudo/04_metodologia.tex" 1742765203.75349 45480 70c39e22f0097fcef9381bb6a90658b1 ""
-  "conteudo/05_resultados.tex" 1745793095.41014 9207 56dafd5cd50aedafd59e8f08494400b2 ""
+  "conteudo/00_introducao.tex" 1746144384.26162 10986 bc3458b661dc3a8cf2594065ff34c0d1 ""
+  "conteudo/01_revisaobibliografica.tex" 1746144384.26155 10602 3f53e4f53346b966357709ee3e2085db ""
+  "conteudo/02_background.tex" 1746144384.26143 31036 945efb876a15081aefb9d2f353a46504 ""
+  "conteudo/04_metodologia.tex" 1746144384.26147 45483 846deb4c58efc736f8e4885bb703099f ""
+  "conteudo/05_resultados.tex" 1746144384.15085 9211 962ce90ea84a657187967fb994ce13cf ""
   "conteudo/06_conclusao.tex" 1745895218.77265 2935 65c2343d5b36d24172f7584f7b085d8e ""
   "conteudo/resumoabstract.tex" 1745784792.82139 4178 e78e676fc5ea69c140f17ded890b779d ""
   "extras/basics.tex" 1740017502.45985 21858 e8ebcf37eadf449319a17242b7094977 ""
@@ -491,15 +491,15 @@
   "imagechapter.sty" 1740017502.48026 6292 df5a2992b4ef39fd6e7a93b6da37f445 ""
   "lstpseudocode.sty" 1740017502.48069 8773 ee54807d51c2d1bcdf9ca65307b1e611 ""
   "mkidxhead.ist" 1740017502.48086 80 c56667d514c1ae5929d36d5c24f727ad ""
-  "tese.aux" 1745895225.39156 29309 3d9df6c7a831003c8b3967e8dc9ab315 "pdflatex"
-  "tese.bbl" 1745791457.9701 42855 f9ee2b775d986e900ffa03ad35c21876 "biber tese"
-  "tese.ind" 1742771392.62289 1057 f77d4f461c5bdcdf3e96a78f53951265 "makeindex tese.idx"
-  "tese.lof" 1745895225.4015 4758 b1b7e56792948d0953ff0c7c8054ad5f "pdflatex"
-  "tese.lot" 1745895225.40153 846 d7cdd20c65b6326899bcfb43614845c2 "pdflatex"
-  "tese.out" 1745895225.39865 6943 badab14f4641e996757225774e087c3b "pdflatex"
-  "tese.run.xml" 1745895225.40143 2466 3ee5bd278abc846af94930ead8952602 "pdflatex"
-  "tese.tex" 1744166399.76568 20088 580f973be66e107662e0b7f38ba2b09c ""
-  "tese.toc" 1745895225.40154 4588 95d12f78a3dcda2d93e1150b76f37f00 "pdflatex"
+  "tese.aux" 1746144403.77819 29617 1664647ced4acda0ffc65c54023c64c7 "pdflatex"
+  "tese.bbl" 1746142705.60906 48698 a8b66c782be0abb949775b6731adefe2 "biber tese"
+  "tese.ind" 1746140714.54286 1085 309e9e4952db433f8cb80e09852dd32f "makeindex tese.idx"
+  "tese.lof" 1746144403.78859 4736 5b5465c72beb84b9ca546839861fc618 "pdflatex"
+  "tese.lot" 1746144403.78861 826 cc0ed15a9369b47fea4291bdc3ee36bb "pdflatex"
+  "tese.out" 1746144403.78541 7061 42d70828c7894a6b70728c84d871756d "pdflatex"
+  "tese.run.xml" 1746144403.78849 2466 3ee5bd278abc846af94930ead8952602 "pdflatex"
+  "tese.tex" 1746133137.68587 20465 06b63309efe9c7e027c1421b060e6e2d ""
+  "tese.toc" 1746144403.78863 4524 e596028cebf120871567dab14ae72253 "pdflatex"
   (generated)
   "tese.aux"
   "tese.bcf"

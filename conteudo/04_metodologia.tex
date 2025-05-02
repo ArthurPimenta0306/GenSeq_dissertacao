@@ -452,7 +452,7 @@ onde $Er_{f}$ é o erro final, i.e, da última iteração do episódio.
 Cada episódio é finalizado ao se atingir um número máximo de iterações, ou um limiar de erro. 
 Foi definido um limite superior para o erro $Er_{max}$ de modo a evitar que o Agente atinja erros muito grandes em um mesmo episódio,
 e um limite inferior $Er_{min}$ para valorizar episódios em que o Agente foi capaz de encontrar "atalhos", i.e,
-conseguiu reduzir o erro considerávelmente em poucas iterações.
+conseguiu reduzir o erro consideravelmente em poucas iterações.
 
 O pior cenário em termos de recompensa para o agente é o caso em que limiar de erro máximo $Er_{max}$ ocorre antes de atingir o número máximo 
 de iterações. Nesse caso, a recompensa adicional é dada pela sequinte expressão:
@@ -738,7 +738,7 @@ utilizando métricas como \textit{Contact Molecular Surface} (CMS), \textit{Inte
 
 Antes da realização do \textit{docking}, é necessário alinhar estruturalmente a proteína gerada com o FVIII
 para garantir que a proteína mutante ocupe a mesma posição relativa do FIX no complexo original. 
-Isso é feito utilizando \textit{ChimeraX} \cite{ChimeraX} por meio do comando \texttt{matchmaker}, 
+Isso é feito utilizando \textit{ChimeraX} (\cite{ChimeraX}) por meio do comando \texttt{matchmaker}, 
 que alinha a estrutura gerada ao FIX presente no complexo tenase. 
 O procedimento segue os seguintes passos: (i) carregamento do PDB do complexo tenase, 
 (ii) carregamento do PDB da estrutura gerada, (iii) alinhamento da estrutura gerada sobrepondo-a ao FIX do complexo tenase 
@@ -816,7 +816,7 @@ a qualidade da interação entre as proteínas geradas e o FVIII utilizando o \t
 
 O objetivo desta etapa é identificar possíveis epítopos imunogênicos presentes nas sequências geradas, 
 os quais poderiam desencadear respostas imunes indesejadas nos pacientes.
-Para realizar esta análise, foi utilizado o \textit{NetMHCIIpan} versão 4.1 \cite{Jensen2018NetMHCIIpan}, 
+Para realizar esta análise, foi utilizado o \textit{NetMHCIIpan} versão 4.1 (\cite{Jensen2018NetMHCIIpan}), 
 um dos algoritmos mais avançados para predição de ligação de peptídeos a moléculas 
 do Complexo Principal de Histocompatibilidade de classe II (MHC II). 
 O \textit{NetMHCIIpan} emprega técnicas de aprendizado de máquina para prever a afinidade de ligação de peptídeos 
