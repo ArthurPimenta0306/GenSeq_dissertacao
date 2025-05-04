@@ -1213,8 +1213,6 @@ INPUT ./figuras/plot_ddg.png
 INPUT ./figuras/plot_ddg.png
 INPUT ./conteudo/06_conclusao.tex
 INPUT ./conteudo/06_conclusao.tex
-INPUT ./conteudo/06_conclusao.tex
-INPUT ./conteudo/06_conclusao.tex
 INPUT conteudo/06_conclusao.tex
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/libertinus-type1/LibertinusSans-Regular-tlf-t1.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/vf/public/libertinus-type1/LibertinusSans-Regular-tlf-t1.vf

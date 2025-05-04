@@ -1,23 +1,26 @@
 \chapter{Resultados}
 
-Com o Agente treinado, é possível gerar novas sequências seguindo a arquitetura 
+Com o Agente treinado é possível gerar novas sequências seguindo a arquitetura 
 ilustrada na figura \ref{fig:geradorseq}. 
-O Agente gerou mais de 200 proteínas diferentes a partir de mutações na sequência inicial. 
+Foram gerados mais de 200 proteínas diferentes a partir de mutações na sequência inicial. 
 De modo a identificar cada proteína, 
-vamos considerar a ordem com que foi gerada como seu respectivo ID.
-Filtramos as proteínas geradas baseado em um limiar de 92\% de TMScore.
-Com isso, selecionamos as 63 primeiras sequências.  
+vamos considerar a ordem com que foi gerada como seu respectivo \textit{ID}.
+Considerando um limiar de 92\% de \textit{TMScore}, selecionamos as 
+63 primeiras sequências geradas.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=.6\linewidth]{figuras/plot_tmscore_decreasing.png}    
-    \caption{Variação da similaridade entre as sequências geradas e o FIX }
+    \caption{Variação da similaridade entre as sequências geradas e o FIX}
     \label{fig:tmscore_decreasing}
   \end{figure}
 
-
-A proteína gerada que é estruturalmente mais similar ao FIXa é a de ID 34,
-tendo TMScore igual a 94.48\% e RMSD de 1.485 angstroms. 
+Os resultados obtidos demonstram que o agente \textit{GenSeq} foi capaz de gerar sequências de aminoácidos que
+estão associadas a estruturas com elevado grau de similaridade ao FIX nativo.
+Considerando que o valor de \textit{TMScore} superior a 0.5 já indica similaridade estrutural significativa (\cite{05TMScore}),
+os valores obtidos sugerem que as proteínas geradas mantêm a conformação global e o dobramento necessários para sua funcionalidade.
+A proteína gerada mais similar ao FIX é a de ID 34,
+tendo \textit{TMScore} igual a 94.48\% e RMSD de 1.485 angstroms. 
 
 \begin{figure}[H]
     \centering
@@ -26,10 +29,6 @@ tendo TMScore igual a 94.48\% e RMSD de 1.485 angstroms.
     \label{fig:FIX_vs_ID34}
 \end{figure}
 
-Os resultados obtidos demonstram que o agente \textit{GenSeq} foi capaz de gerar sequências de aminoácidos que
-estão associadas a estruturas com elevado grau de similaridade ao FIX nativo.
-Considerando que o valor de \textit{TMScore} superior a 0.5 já indica similaridade estrutural significativa (\cite{05TMScore}),
-os valores obtidos sugerem que as proteínas geradas mantêm a conformação global e o dobramento necessários para funcionalidade.
 
 É interessante notar que, apesar da forte semelhança estrutural entre as proteínas,
 em termos de IS (Idêntidade de Sequência)
@@ -39,7 +38,7 @@ são sequências muito diferentes, tendo em média apenas 30\% de similaridade.
     \centering
     \begin{tabular}{c|cccc}
         \hline
-        \textbf{ID} & \textbf{TM-Score} & \textbf{RMSD} & \textbf{IS - seq. original} \\
+        \textbf{ID} & \textbf{TMScore} & \textbf{RMSD} & \textbf{IS - seq. original} \\
         \hline
          20 & 93.33\% & 1.75 Å & 30.64\% \\
          30 & 93.62\% & 1.68 Å & 30.21\% \\
@@ -91,7 +90,7 @@ pelo resultado do grupo DRB1.
     %\label{fig:example}%
 \end{figure}
 
-A propensão a provocar uma resposta imune não está apenas relacionada a quantidade de epítopos, 
+A propensão a provocar uma resposta imune não está apenas relacionada à quantidade de epítopos, 
 mas também é diretamente proporcional a frequência de ocorrência dos alelos e inversamente proporcional 
 ao \textit{binding affinity}. Neste sentido, para mensurar qual proteína induz a uma melhor resposta imune, propomos a 
 métrica $IMI$ (Imuno Índice), que consiste na média da razão entre \textit{binding affinity} (${Af}_{i}$) 
@@ -102,7 +101,7 @@ dividido pela quantidade de epítopos (N):
     IMI = \frac{1}{N} \sum_{i=1}^{N} \frac{1}{N} \frac{{Af}_{i}}{Fr_{i}}
 \end{equation}
 
-Desta forma, a proteína associada ao maior IMI possui o menor risco de induzir a uma resposta imune.
+Desta forma, quanto maior o IMI, menor risco de induzir a uma resposta imune.
 De modo geral, as 4 últimas sequências geradas possuem um IMI superior ao do FIX: IDs 60, 61, 62 e 63.
 
 \begin{figure}[H]
@@ -151,7 +150,7 @@ Para isto, realizamos análises de \textit{docking} molecular de cada sequência
 calculando métricas que capturam diferentes características da interface proteína-proteína. 
 Ilustramos a seguir os resultados obtidos para as métricas \textit{CMS}, \textit{IBSASA}, \textit{SAP Score} e \textit{DDG}.
 Estão destacadas em azul as proteínas que superaram o FIX em cada métrica.
-Em termos de \textit{CMS}, obtivemos 56 proteínas (89\% do total) superiores ao FIX, 
+Em termos de \textit{CMS}, que quantifica a área da superfície de contato, obtivemos 56 proteínas (89\% do total) superiores ao FIX, 
 sugerindo interfaces de ligação maiores para essas sequências.
 O \textit{DDG}, que mede a estabilidade da interação, indicou que 46 proteínas (73\% do total) 
 são mais estáveis (DDG menor) do que o FIX.

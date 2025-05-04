@@ -72,7 +72,7 @@ impossibilitando uma coagulação saúdavel, o que configura a hemofilia tipo B.
     \caption{Atuação do FIXa na ativação do FX}
   \end{figure}
 
-O FIXa é composta por diferentes domínios,
+O FIXa é composto por diferentes domínios,
 cada um desempenhando um papel essencial nas interações moleculares que permitem a formação do complexo tenase intrínseco. 
 Na região N-terminal, o domínio Gla (gamma-carboxiglutâmico) é responsável por ligar o FIXa a superfícies de membranas fosfolipídicas, 
 uma interação dependente de íons de cálcio, 
@@ -211,7 +211,7 @@ Neste trabalho, vamos assumir que uma mutação consiste na substituição de ap
 \label{subsection:TMScore}  
 Para projetar proteínas semelhantes ao FIXa, é necessário definir uma métrica de similaridade entre estruturas.
 Duas métricas amplamente utilizadas são o \textit{Root-Mean-Square Deviation} (RMSD) 
-e o \textit{Template Modeling Score} (TM-score) (\cite{tmscore}),
+e o \textit{Template Modeling Score} (TMScore) (\cite{tmscore}),
 cada uma com características próprias que influenciam sua adequação a diferentes cenários de comparação estrutural.
 
 O \textbf{RMSD} é definido como a raiz quadrada da média dos quadrados das distâncias 
@@ -229,7 +229,7 @@ O \textbf{TMScore}, por sua vez,
 mede a similaridade estrutural global, superando limitações do RMSD. \cite{tmscore} a formulou da seguinte maneira:
 
 \begin{equation}
-    \text{TM-score} = \frac{1}{L_{\text{ref}}} \sum_{i=1}^{L_{\text{model}}} \frac{1}{1 + \left(\frac{d_i}{d_0(L_{\text{ref}})}\right)^2},
+    \text{TMScore} = \frac{1}{L_{\text{ref}}} \sum_{i=1}^{L_{\text{model}}} \frac{1}{1 + \left(\frac{d_i}{d_0(L_{\text{ref}})}\right)^2},
 \end{equation}
 
 onde \(L_{\text{ref}}\) é o número de resíduos na estrutura de referência,
@@ -248,10 +248,10 @@ O termo \( (L_{\text{ref}} - 15)^{1/3} \)
 reflete uma relação empírica entre o tamanho da proteína e as distâncias típicas entre resíduos alinhados,
 modelando o crescimento da distância permissível conforme a proteína aumenta de tamanho.
 A constante multiplicativa 1.24 e o deslocamento -1.8 também foram determinados empiricamente para fornecer 
-um valor de \( d_0 \) que otimiza a correlação entre o TM-score e a percepção biológica de similaridade estrutural.
+um valor de \( d_0 \) que otimiza a correlação entre o TMScore e a percepção biológica de similaridade estrutural.
 Essa função adapta o limiar de normalização das distâncias entre pares de resíduos alinhados,
 garantindo que proteínas de diferentes comprimentos sejam comparadas de forma justa.
-Proteínas maiores toleram distâncias absolutas maiores entre resíduos alinhados sem que o TM-score seja severamente penalizado (\cite{tmscore}).
+Proteínas maiores toleram distâncias absolutas maiores entre resíduos alinhados sem que o TMScore seja severamente penalizado (\cite{tmscore}).
  
 
 O TMScore varia entre 0 e 1, onde valores próximos a 1 indicam alta similaridade topológica (\cite{tmscore}).
@@ -259,7 +259,7 @@ Se a distância entre cada par alinhado de átomos \(C_\alpha\) for igual a 0, e
 entre as macromoléculas. Em contra partida, quanto maiores são as distâncias, menor é o TMScore (mais próximo de 0).
 
 Devido à sua robustez na avaliação da similaridade estrutural global e à sua interpretabilidade,
-com valores limitados entre 0 e 1, adotaremos o TM-score como a métrica principal a ser otimizada neste projeto.
+com valores limitados entre 0 e 1, adotaremos o TMScore como a métrica principal a ser otimizada neste projeto.
 O cálculo desta medida será feito a partir da plataforma desenvolvida por (\cite{USalign}).
 
 
