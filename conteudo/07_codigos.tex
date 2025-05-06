@@ -1,0 +1,89 @@
+\chapter{Comandos e Parametrizações}
+
+Neste apêndice apresentamos os comandos e suas parametrizações utilizados 
+para a execução dos \textit{softwares} que constituem o \textit{pipeline} 
+e os métodos de avaliação.
+
+\textbf{Comando para execução - \textit{ProteinMPNN}}
+\begin{lstlisting}[language=bash, breaklines=true, frame=single, backgroundcolor=\color{lightgray}]
+  python src/ProteinMPNN/protein_mpnn_run.py \
+      --pdb_path {structure_path} \
+      --pdb_path_chains {chains_to_design} \
+      --out_folder tmp \
+      --num_seq_per_target 1 \
+      --sampling_temp "0.5" \
+      --seed 37 \
+      --batch_size 1
+  \end{lstlisting}
+\textbf{Parametrização - \textit{ProteinMPNN}}
+\begin{enumerate}
+    \item \textbf{pdb\_path}: \texttt{data/05\_model\_input/fixa\_human\_SP\_renumber.pdb}. Caminho até o arquivo da estrutura do FIX. 
+    \item \textbf{pdb\_path\_chains}: \texttt{"H"}. Cadeia proteica a ser predita. 
+    \item \textbf{out\_folder}: \texttt{"tmp"}. Nome do diretório temporário. 
+    \item \textbf{num\_seq\_per\_target}: \texttt{1}. Quantidade de sequências geradas. 
+    \item \textbf{sampling\_temp}: \texttt{0.5}. Temperatura de amostragem. Quanto menor, mais conservadora a predição. 
+    \item \textbf{seed}: \texttt{37}. Semente aleatória para reprodutibilidade da predição.
+    \item \textbf{batch\_size}: \texttt{1}. Tamanho do batch utilizado para inferência. 
+\end{enumerate}
+
+\textbf{Comando para execução - \textit{ESMFold}}
+\begin{lstlisting}[language=bash, breaklines=true, frame=single, backgroundcolor=\color{lightgray}]
+  curl -X POST --data "{initial_seq}" https://api.esmatlas.com/foldSequence/v1/pdb/ > tmp/pred_initial_structure.pdb
+\end{lstlisting}
+
+\textbf{Parametrização - \textit{ESMFold}}
+\begin{enumerate}
+    \item \textbf{data}: String contendo a sequência de aminoácidos. Ex: "AACYA...".
+\end{enumerate}
+
+
+\textbf{Comando para execução - \textit{TMScore}}
+\begin{lstlisting}[language=bash, breaklines=true, frame=single, backgroundcolor=\color{lightgray}]
+  ./USalign -outfmt 2 {path_structure_1} {path_structure_2}
+\end{lstlisting}
+
+\textbf{Parametrização - \textit{TMScore}}
+\begin{enumerate}
+    \item \textbf{path\_structure\_1}: Caminho até o arquivo .pdb da estrutura protéica referência. 
+    \item \textbf{path\_structure\_2}: Caminho até o arquivo .pdb da segunda estrutura protéica a ser comparada. 
+\end{enumerate}
+
+\textbf{Comando para execução - \textit{Rosetta Docking}}
+\begin{lstlisting}[language=bash, breaklines=true, frame=single, backgroundcolor=\color{lightgray}]
+  ../rosetta.source.release-371/main/source/bin/docking_protocol.default.macosclangrelease -ignore_unrecognized_res @flag_file -out:prefix process_1_
+\end{lstlisting}
+
+\textbf{Parametrização - \textit{Rosetta Docking}}
+\begin{enumerate}
+    \item \textbf{ignore\_unrecognized\_res}: Atributo utilizado para ignorar resíduos não reconhecidos pelo \textit{Rosetta}.
+    \item \textbf{flag\_file}: Arquivo .flag contendo os parâmetros de execução do \textit{Rosetta Docking}.
+    \item \textbf{out:prefix}: Prefixo para os arquivos de saída gerados pelo \textit{Rosetta Docking}.
+\end{enumerate}
+
+\textbf{Parametrização - Arquivo .flag utilizado como \textit{input} do \textit{Rosetta Docking}}
+\begin{enumerate}
+    \item \textbf{in:file:s}: Especifica o caminho para o arquivo PDB do complexo de entrada (FVIII junto de uma proteína gerada), que será utilizada no processo de docking. Ex: \texttt{complex\_step\_1.pdb}
+    \item \textbf{nstruct}: \texttt{1000}. Define o número de modelos (poses de encaixe entre as duas proteínas) a serem gerados no processo de \textit{docking}.
+    \item \textbf{partners}: \texttt{A\_H}. Especifica quais cadeias da estrutura PDB interagem no \textit{docking}. 
+    \item \textbf{dock\_pert}: \texttt{3 8}. Aplica uma perturbação inicial na orientação da proteína antes do docking. O primeiro valor (\texttt{3}) representa um deslocamento translacional em Ångströms, enquanto o segundo (\texttt{8}) define uma rotação em graus.
+    \item \textbf{out:path:all}: Define o diretório onde todos os arquivos de saída do docking serão armazenados. Ex: \texttt{output\_files/} 
+\end{enumerate}
+
+\textbf{Comando para execução - \textit{netMHCIIpan}}
+\begin{lstlisting}[language=bash, breaklines=true, frame=single, backgroundcolor=\color{lightgray}]
+    cores=2  
+    while read p; do
+        ls *.fasta | parallel -j $cores -k \
+        "../netMHCIIpan-4.1/netMHCIIpan -a $p -f {} \
+        -length 15,16,17,18,19,20 -BA -context > {}-$p-output.txt"
+    done < selected_alleles.txt
+  \end{lstlisting}
+  
+  \textbf{Parametrização - Análise Imunológica com \textit{NetMHCIIpan}}
+  \begin{enumerate}
+      \item \textbf{cores}: 2. Número de núcleos de processamento utilizados para paralelização.
+      \item \textbf{selected\_alleles.txt}: Arquivo contendo a lista dos alelos de MHC II humanos que serão utilizados na predição. Foram utilizados 46 alelos de MHC II frequentes na população humana, pertencentes aos grupos DP, DQ, DRB1 DRB3, DRB4 e DRB5.
+      \item \textbf{length}: 15,16,17,18,19,20. Define os comprimentos dos peptídeos que serão extraídos da sequência e avaliados quanto à afinidade de ligação. Esses comprimentos são típicos de epítopos apresentados por MHC II.
+      \item \textbf{BA}: Ativa o modo de predição baseado na afinidade de ligação (Binding Affinity).
+      \item \textbf{context}: Habilita a consideração de regiões adjacentes aos peptídeos, o que aumenta a precisão da predição.
+  \end{enumerate}

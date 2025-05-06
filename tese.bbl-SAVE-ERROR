@@ -19,6 +19,32 @@
 
 \refsection{0}
   \datalist[entry]{nyt/global//global/global}
+    \entry{ConsurfDB}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7ebdbe9021d62e63b5a6b0572e277837}{%
+           family={Adi\bibnamedelimb Ben\bibnamedelima Chorin},
+           familyi={A\bibinitperiod\bibinitdelim B\bibinitperiod\bibinitdelim C\bibinitperiod},
+           given={et\bibnamedelima al.},
+           giveni={e\bibinitperiod\bibinitdelim a\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7ebdbe9021d62e63b5a6b0572e277837}
+      \strng{fullhash}{7ebdbe9021d62e63b5a6b0572e277837}
+      \strng{bibnamehash}{7ebdbe9021d62e63b5a6b0572e277837}
+      \strng{authorbibnamehash}{7ebdbe9021d62e63b5a6b0572e277837}
+      \strng{authornamehash}{7ebdbe9021d62e63b5a6b0572e277837}
+      \strng{authorfullhash}{7ebdbe9021d62e63b5a6b0572e277837}
+      \field{labelalpha}{Adi20}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Protein Sci}
+      \field{title}{ConSurf-DB: an accessible repository for the evolutionary conservation patterns of the majority of PDB proteins}
+      \field{year}{2020}
+    \endentry
     \entry{ProteinMPNN}{article}{}
       \name{author}{1}{}{%
         {{un=1,uniquepart=given,hash=4ad52527d94c6530ff27b17c0a9e4fe8}{%
@@ -48,64 +74,6 @@
       \field{journaltitle}{Science}
       \field{title}{Robust deep learning–based protein sequence design using ProteinMPNN}
       \field{year}{2022}
-    \endentry
-    \entry{PPO}{article}{}
-      \name{author}{1}{}{%
-        {{un=1,uniquepart=given,hash=19fa116d5005a7a28ca7cc93b0756e4f}{%
-           family={al},
-           familyi={a\bibinitperiod},
-           given={John\bibnamedelima Schulman},
-           giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod},
-           givenun=1,
-           prefix={et},
-           prefixi={e\bibinitperiod},
-           prefixun=0}}%
-      }
-      \strng{namehash}{19fa116d5005a7a28ca7cc93b0756e4f}
-      \strng{fullhash}{19fa116d5005a7a28ca7cc93b0756e4f}
-      \strng{bibnamehash}{19fa116d5005a7a28ca7cc93b0756e4f}
-      \strng{authorbibnamehash}{19fa116d5005a7a28ca7cc93b0756e4f}
-      \strng{authornamehash}{19fa116d5005a7a28ca7cc93b0756e4f}
-      \strng{authorfullhash}{19fa116d5005a7a28ca7cc93b0756e4f}
-      \field{labelalpha}{al17}
-      \field{sortinit}{a}
-      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{ArXiv}
-      \field{title}{Proximal Policy Optimization Algorithms}
-      \field{year}{2017}
-    \endentry
-    \entry{FIX}{article}{}
-      \name{author}{1}{}{%
-        {{un=1,uniquepart=given,hash=ddd26532d9a9340696520fbee43e4349}{%
-           family={al},
-           familyi={a\bibinitperiod},
-           given={Mettine\bibnamedelimb H.A.\bibnamedelimi Bos},
-           giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim B\bibinitperiod},
-           givenun=1,
-           prefix={et},
-           prefixi={e\bibinitperiod},
-           prefixun=0}}%
-      }
-      \strng{namehash}{ddd26532d9a9340696520fbee43e4349}
-      \strng{fullhash}{ddd26532d9a9340696520fbee43e4349}
-      \strng{bibnamehash}{ddd26532d9a9340696520fbee43e4349}
-      \strng{authorbibnamehash}{ddd26532d9a9340696520fbee43e4349}
-      \strng{authornamehash}{ddd26532d9a9340696520fbee43e4349}
-      \strng{authorfullhash}{ddd26532d9a9340696520fbee43e4349}
-      \field{labelalpha}{al24}
-      \field{sortinit}{a}
-      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{American Society for Hematology Journal BLOOD}
-      \field{title}{Blood coagulation factor IX: structural insights impacting hemophilia B therapy}
-      \field{year}{2024}
     \endentry
     \entry{ESMFold}{article}{}
       \name{author}{1}{}{%
@@ -137,24 +105,53 @@
       \field{title}{Language models of protein sequences at the scale of evolution enable accurate structure prediction}
       \field{year}{2022}
     \endentry
-    \entry{Massimo}{article}{}
+    \entry{ChimeraX}{article}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=5b916762d5d9504aa5d70c18d7e1d7f8}{%
+        {{un=1,uniquepart=given,hash=64c4f1c609626fa1773abf2539f98612}{%
            family={al.},
            familyi={a\bibinitperiod},
-           given={Massimo\bibnamedelima Franchini},
-           giveni={M\bibinitperiod\bibinitdelim F\bibinitperiod},
-           givenun=0,
+           given={Elaine\bibnamedelimb C.\bibnamedelimi Meng;},
+           giveni={E\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=1,
            prefix={et},
            prefixi={e\bibinitperiod},
            prefixun=0}}%
       }
-      \strng{namehash}{5b916762d5d9504aa5d70c18d7e1d7f8}
-      \strng{fullhash}{5b916762d5d9504aa5d70c18d7e1d7f8}
-      \strng{bibnamehash}{5b916762d5d9504aa5d70c18d7e1d7f8}
-      \strng{authorbibnamehash}{5b916762d5d9504aa5d70c18d7e1d7f8}
-      \strng{authornamehash}{5b916762d5d9504aa5d70c18d7e1d7f8}
-      \strng{authorfullhash}{5b916762d5d9504aa5d70c18d7e1d7f8}
+      \strng{namehash}{64c4f1c609626fa1773abf2539f98612}
+      \strng{fullhash}{64c4f1c609626fa1773abf2539f98612}
+      \strng{bibnamehash}{64c4f1c609626fa1773abf2539f98612}
+      \strng{authorbibnamehash}{64c4f1c609626fa1773abf2539f98612}
+      \strng{authornamehash}{64c4f1c609626fa1773abf2539f98612}
+      \strng{authorfullhash}{64c4f1c609626fa1773abf2539f98612}
+      \field{labelalpha}{al23}
+      \field{sortinit}{a}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Protein Science}
+      \field{title}{UCSF ChimeraX: Tools for structure building and analysis}
+      \field{year}{2023}
+    \endentry
+    \entry{Gouw}{article}{}
+      \name{author}{1}{}{%
+        {{un=1,uniquepart=given,hash=02f9b0dcc6c7dbf24a55d06003ab1255}{%
+           family={al.},
+           familyi={a\bibinitperiod},
+           given={Samantha\bibnamedelimb C.\bibnamedelimi Gouw},
+           giveni={S\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=1,
+           prefix={et},
+           prefixi={e\bibinitperiod},
+           prefixun=0}}%
+      }
+      \strng{namehash}{02f9b0dcc6c7dbf24a55d06003ab1255}
+      \strng{fullhash}{02f9b0dcc6c7dbf24a55d06003ab1255}
+      \strng{bibnamehash}{02f9b0dcc6c7dbf24a55d06003ab1255}
+      \strng{authorbibnamehash}{02f9b0dcc6c7dbf24a55d06003ab1255}
+      \strng{authornamehash}{02f9b0dcc6c7dbf24a55d06003ab1255}
+      \strng{authorfullhash}{02f9b0dcc6c7dbf24a55d06003ab1255}
       \field{labelalpha}{al13}
       \field{sortinit}{a}
       \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
@@ -162,9 +159,38 @@
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Biologics: Targets and Therapy}
-      \field{title}{Outcome of Clinical Trials with New Extended Half-Life FVIII/IX Concentrates.}
+      \field{journaltitle}{New England Journal of Medicine}
+      \field{title}{Factor VIII products and inhibitor development in severe hemophilia A}
       \field{year}{2013}
+    \endentry
+    \entry{Imuno}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=8ba9ad77a4865df0b71194ffc968a24b}{%
+           family={Alessandro\bibnamedelima Sette},
+           familyi={A\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={Bjoern\bibnamedelimb Peters;\bibnamedelimb Morten\bibnamedelima Nielsen},
+           giveni={B\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0,
+           prefix={e},
+           prefixi={e\bibinitperiod},
+           prefixun=0}}%
+      }
+      \strng{namehash}{8ba9ad77a4865df0b71194ffc968a24b}
+      \strng{fullhash}{8ba9ad77a4865df0b71194ffc968a24b}
+      \strng{bibnamehash}{8ba9ad77a4865df0b71194ffc968a24b}
+      \strng{authorbibnamehash}{8ba9ad77a4865df0b71194ffc968a24b}
+      \strng{authornamehash}{8ba9ad77a4865df0b71194ffc968a24b}
+      \strng{authorfullhash}{8ba9ad77a4865df0b71194ffc968a24b}
+      \field{labelalpha}{Ale20}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Annual Reviews}
+      \field{title}{T Cell Epitope Predictions}
+      \field{year}{2020}
     \endentry
     \entry{DyNAPPO}{inproceedings}{}
       \name{author}{1}{}{%
@@ -229,60 +255,6 @@
       \field{title}{Designing protein structures and complexes with the molecular modeling program Rosetta}
       \field{year}{2019}
     \endentry
-    \entry{Bio}{book}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=26d80a78a12313b30fb5aa9b40b94d70}{%
-           family={B.\bibnamedelimi Alberts},
-           familyi={B\bibinitperiod\bibinitdelim A\bibinitperiod},
-           given={et\bibnamedelima al.},
-           giveni={e\bibinitperiod\bibinitdelim a\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {Garland Science}%
-      }
-      \strng{namehash}{26d80a78a12313b30fb5aa9b40b94d70}
-      \strng{fullhash}{26d80a78a12313b30fb5aa9b40b94d70}
-      \strng{bibnamehash}{26d80a78a12313b30fb5aa9b40b94d70}
-      \strng{authorbibnamehash}{26d80a78a12313b30fb5aa9b40b94d70}
-      \strng{authornamehash}{26d80a78a12313b30fb5aa9b40b94d70}
-      \strng{authorfullhash}{26d80a78a12313b30fb5aa9b40b94d70}
-      \field{labelalpha}{B A02}
-      \field{sortinit}{B}
-      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Molecular Biology of the Cell}
-      \field{year}{2002}
-    \endentry
-    \entry{ConsurfDB}{article}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=a47344c545c27af2a91724d5a2045451}{%
-           family={Ben\bibnamedelima Chorin},
-           familyi={B\bibinitperiod\bibinitdelim C\bibinitperiod},
-           given={A.\bibnamedelimi et\bibnamedelima al},
-           giveni={A\bibinitperiod\bibinitdelim e\bibinitperiod\bibinitdelim a\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{a47344c545c27af2a91724d5a2045451}
-      \strng{fullhash}{a47344c545c27af2a91724d5a2045451}
-      \strng{bibnamehash}{a47344c545c27af2a91724d5a2045451}
-      \strng{authorbibnamehash}{a47344c545c27af2a91724d5a2045451}
-      \strng{authornamehash}{a47344c545c27af2a91724d5a2045451}
-      \strng{authorfullhash}{a47344c545c27af2a91724d5a2045451}
-      \field{labelalpha}{Ben20}
-      \field{sortinit}{B}
-      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Protein Sci}
-      \field{title}{ConSurf-DB: an accessible repository for the evolutionary conservation patterns of the majority of PDB proteins}
-      \field{year}{2020}
-    \endentry
     \entry{Bishop}{book}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=30c639f9e74781ebdf3fe84b6985e9be}{%
@@ -310,38 +282,6 @@
       \field{labeltitlesource}{title}
       \field{title}{Pattern Recognition and Machine Learning}
       \field{year}{2006}
-    \endentry
-    \entry{Imuno}{article}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=28eeef117090f8d913f4993916613334}{%
-           family={Bjoern\bibnamedelima Peters},
-           familyi={B\bibinitperiod\bibinitdelim P\bibinitperiod},
-           given={Morten\bibnamedelima Nielsen},
-           giveni={M\bibinitperiod\bibinitdelim N\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=01f57f098eba14e67a810ddbe5217d31}{%
-           family={Sette},
-           familyi={S\bibinitperiod},
-           given={Alessandro},
-           giveni={A\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{60d9ec5749c5549116a03972bad148d7}
-      \strng{fullhash}{60d9ec5749c5549116a03972bad148d7}
-      \strng{bibnamehash}{60d9ec5749c5549116a03972bad148d7}
-      \strng{authorbibnamehash}{60d9ec5749c5549116a03972bad148d7}
-      \strng{authornamehash}{60d9ec5749c5549116a03972bad148d7}
-      \strng{authorfullhash}{60d9ec5749c5549116a03972bad148d7}
-      \field{labelalpha}{BS20}
-      \field{sortinit}{B}
-      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Annual Reviews}
-      \field{title}{T Cell Epitope Predictions}
-      \field{year}{2020}
     \endentry
     \entry{seqinR}{article}{}
       \name{author}{1}{}{%
@@ -372,53 +312,6 @@
       \field{title}{R. In Structural Approaches to Sequence Evolution}
       \field{year}{2007}
     \endentry
-    \entry{COHEN1995675}{article}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=a1e328461df0ce13291e5cc2e778b40d}{%
-           family={Cohen},
-           familyi={C\bibinitperiod},
-           given={Alice\bibnamedelima J.},
-           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=4f4fe4f9edf3accf3cddcdfc364a3001}{%
-           family={Kessler},
-           familyi={K\bibinitperiod},
-           given={Craig\bibnamedelima M.},
-           giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{a3fbf687055aaa419270ab8eee28afef}
-      \strng{fullhash}{a3fbf687055aaa419270ab8eee28afef}
-      \strng{bibnamehash}{a3fbf687055aaa419270ab8eee28afef}
-      \strng{authorbibnamehash}{a3fbf687055aaa419270ab8eee28afef}
-      \strng{authornamehash}{a3fbf687055aaa419270ab8eee28afef}
-      \strng{authorfullhash}{a3fbf687055aaa419270ab8eee28afef}
-      \field{labelalpha}{CK95}
-      \field{sortinit}{C}
-      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Inherited coagulation protein deficiencies associated with bleeding diatheses may present with spontaneous bleeding early in life, or may not be recognized until the development of hemorrhage after trauma or surgery. Diagnostic evaluation with coagulation screening tests, followed by confirmation with coagulation factor assays, is essential for appropriate management. For moderate-to-severe hemophilia, treatment includes coagulation factor replacement with purified, plasma-derived coagulation factor, or in the case of hemophilia A, factor VIII concentrate produced with recombinant techniques. Increased use of pharmacologic agents such as desmopressin acetate for patients with mild hemophilia A or type 1 von Willebrand's disease has allowed physicians to treat patients without the risk of infectious complications from plasma-derived factor concentrates. In addition to the management of the inherited bleeding disorders, patients may also require management of human immunodeficiency virus infection, hepatitis, and coagulation factor inhibitors. Issues for the coming years will include continued work to ensure product safety, the role of prophylactic treatment to prevent long-term disabilities, and the application of gene therapy to the management of bleeding disorders.}
-      \field{issn}{0002-9343}
-      \field{journaltitle}{The American Journal of Medicine}
-      \field{number}{6}
-      \field{title}{Treatment of inherited coagulation disorders}
-      \field{volume}{99}
-      \field{year}{1995}
-      \field{pages}{675\bibrangedash 682}
-      \range{pages}{8}
-      \verb{doi}
-      \verb https://doi.org/10.1016/S0002-9343(99)80256-3
-      \endverb
-      \verb{urlraw}
-      \verb https://www.sciencedirect.com/science/article/pii/S0002934399802563
-      \endverb
-      \verb{url}
-      \verb https://www.sciencedirect.com/science/article/pii/S0002934399802563
-      \endverb
-    \endentry
     \entry{Docking}{thesis}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=7a8447e9d417158bdc499df8b9e7b775}{%
@@ -448,6 +341,79 @@
       \field{type}{phdthesis}
       \field{year}{2021}
     \endentry
+    \entry{COHEN1995675}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=15574cf0ebd8371f8db467a99916d69c}{%
+           family={Craig\bibnamedelimb M.\bibnamedelimi Kessler},
+           familyi={C\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim K\bibinitperiod},
+           given={Alice\bibnamedelimb J.\bibnamedelimi Cohen},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0,
+           prefix={e},
+           prefixi={e\bibinitperiod},
+           prefixun=0}}%
+      }
+      \strng{namehash}{15574cf0ebd8371f8db467a99916d69c}
+      \strng{fullhash}{15574cf0ebd8371f8db467a99916d69c}
+      \strng{bibnamehash}{15574cf0ebd8371f8db467a99916d69c}
+      \strng{authorbibnamehash}{15574cf0ebd8371f8db467a99916d69c}
+      \strng{authornamehash}{15574cf0ebd8371f8db467a99916d69c}
+      \strng{authorfullhash}{15574cf0ebd8371f8db467a99916d69c}
+      \field{labelalpha}{Cra95}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Inherited coagulation protein deficiencies associated with bleeding diatheses may present with spontaneous bleeding early in life, or may not be recognized until the development of hemorrhage after trauma or surgery. Diagnostic evaluation with coagulation screening tests, followed by confirmation with coagulation factor assays, is essential for appropriate management. For moderate-to-severe hemophilia, treatment includes coagulation factor replacement with purified, plasma-derived coagulation factor, or in the case of hemophilia A, factor VIII concentrate produced with recombinant techniques. Increased use of pharmacologic agents such as desmopressin acetate for patients with mild hemophilia A or type 1 von Willebrand's disease has allowed physicians to treat patients without the risk of infectious complications from plasma-derived factor concentrates. In addition to the management of the inherited bleeding disorders, patients may also require management of human immunodeficiency virus infection, hepatitis, and coagulation factor inhibitors. Issues for the coming years will include continued work to ensure product safety, the role of prophylactic treatment to prevent long-term disabilities, and the application of gene therapy to the management of bleeding disorders.}
+      \field{issn}{0002-9343}
+      \field{journaltitle}{The American Journal of Medicine}
+      \field{number}{6}
+      \field{title}{Treatment of inherited coagulation disorders}
+      \field{volume}{99}
+      \field{year}{1995}
+      \field{pages}{675\bibrangedash 682}
+      \range{pages}{8}
+      \verb{doi}
+      \verb https://doi.org/10.1016/S0002-9343(99)80256-3
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0002934399802563
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0002934399802563
+      \endverb
+    \endentry
+    \entry{FIX}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=0a7676c8fb5d1639314274ea7f0e47aa}{%
+           family={Diest\bibnamedelimb e\bibnamedelimb Dougald\bibnamedelimb M.\bibnamedelimi Monroe},
+           familyi={D\bibinitperiod\bibinitdelim e\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={Mettine\bibnamedelimb H.\bibnamedelimi A.\bibnamedelimi Bos;\bibnamedelimb Rianne\bibnamedelima E.},
+           giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim B\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0,
+           prefix={van},
+           prefixi={v\bibinitperiod},
+           prefixun=0}}%
+      }
+      \strng{namehash}{0a7676c8fb5d1639314274ea7f0e47aa}
+      \strng{fullhash}{0a7676c8fb5d1639314274ea7f0e47aa}
+      \strng{bibnamehash}{0a7676c8fb5d1639314274ea7f0e47aa}
+      \strng{authorbibnamehash}{0a7676c8fb5d1639314274ea7f0e47aa}
+      \strng{authornamehash}{0a7676c8fb5d1639314274ea7f0e47aa}
+      \strng{authorfullhash}{0a7676c8fb5d1639314274ea7f0e47aa}
+      \field{labelalpha}{Die24}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{American Society for Hematology Journal BLOOD}
+      \field{title}{Blood coagulation factor IX: structural insights impacting hemophilia B therapy}
+      \field{year}{2024}
+    \endentry
     \entry{Eddy}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=0c941acc8e8fd7ba7f9f2405add948a1}{%
@@ -473,32 +439,6 @@
       \field{journaltitle}{Nature Biotechnology}
       \field{title}{Where did the BLOSUM62 alignment score matrix come from?}
       \field{year}{2004}
-    \endentry
-    \entry{ChimeraX}{article}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=3df9208586d37c3cb78860cc6c4736b2}{%
-           family={Elaine\bibnamedelimb C.\bibnamedelimi Meng},
-           familyi={E\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim M\bibinitperiod},
-           given={et\bibnamedelima al.},
-           giveni={e\bibinitperiod\bibinitdelim a\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{3df9208586d37c3cb78860cc6c4736b2}
-      \strng{fullhash}{3df9208586d37c3cb78860cc6c4736b2}
-      \strng{bibnamehash}{3df9208586d37c3cb78860cc6c4736b2}
-      \strng{authorbibnamehash}{3df9208586d37c3cb78860cc6c4736b2}
-      \strng{authornamehash}{3df9208586d37c3cb78860cc6c4736b2}
-      \strng{authorfullhash}{3df9208586d37c3cb78860cc6c4736b2}
-      \field{labelalpha}{Ela23}
-      \field{sortinit}{E}
-      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Protein Science}
-      \field{title}{UCSF ChimeraX: Tools for structure building and analysis}
-      \field{year}{2023}
     \endentry
     \entry{Figueiredo}{article}{}
       \name{author}{1}{}{%
@@ -526,34 +466,123 @@
       \field{title}{Aplicação de algoritmos de aprendizagem por reforço para controle de navios em águas restritas}
       \field{year}{2018}
     \endentry
-    \entry{Gouw}{article}{}
+    \entry{Overview}{article}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=bb14730ce38cec059952828db86c763a}{%
-           family={Gouw},
-           familyi={G\bibinitperiod},
-           given={et\bibnamedelima al.},
-           giveni={e\bibinitperiod\bibinitdelim a\bibinitperiod},
+        {{un=0,uniquepart=base,hash=b9d5a010d2f101e8b0150049227f0764}{%
+           family={Haipeng\bibnamedelima Gong},
+           familyi={H\bibinitperiod\bibinitdelim G\bibinitperiod},
+           given={Wenze\bibnamedelimb Ding;\bibnamedelimb Kenta\bibnamedelima Nakai},
+           giveni={W\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim K\bibinitperiod\bibinitdelim N\bibinitperiod},
            givenun=0,
-           suffix={S.\bibnamedelimi C.},
-           suffixi={S\bibinitperiod\bibinitdelim C\bibinitperiod},
-           suffixun=0}}%
+           prefix={e},
+           prefixi={e\bibinitperiod},
+           prefixun=0}}%
       }
-      \strng{namehash}{bb14730ce38cec059952828db86c763a}
-      \strng{fullhash}{bb14730ce38cec059952828db86c763a}
-      \strng{bibnamehash}{bb14730ce38cec059952828db86c763a}
-      \strng{authorbibnamehash}{bb14730ce38cec059952828db86c763a}
-      \strng{authornamehash}{bb14730ce38cec059952828db86c763a}
-      \strng{authorfullhash}{bb14730ce38cec059952828db86c763a}
-      \field{labelalpha}{Gou13}
-      \field{sortinit}{G}
-      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \strng{namehash}{b9d5a010d2f101e8b0150049227f0764}
+      \strng{fullhash}{b9d5a010d2f101e8b0150049227f0764}
+      \strng{bibnamehash}{b9d5a010d2f101e8b0150049227f0764}
+      \strng{authorbibnamehash}{b9d5a010d2f101e8b0150049227f0764}
+      \strng{authornamehash}{b9d5a010d2f101e8b0150049227f0764}
+      \strng{authorfullhash}{b9d5a010d2f101e8b0150049227f0764}
+      \field{labelalpha}{Hai22}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{New England Journal of Medicine}
-      \field{title}{Factor VIII products and inhibitor development in severe hemophilia A}
-      \field{year}{2013}
+      \field{journaltitle}{Oxford Academic}
+      \field{title}{Protein design via deep learning}
+      \field{year}{2022}
+    \endentry
+    \entry{tmscore}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a83b98bfe6a8b9fdab248427fead3111}{%
+           family={Jeffrey\bibnamedelima Skolnick},
+           familyi={J\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={Yang\bibnamedelima Zhang},
+           giveni={Y\bibinitperiod\bibinitdelim Z\bibinitperiod},
+           givenun=0,
+           prefix={e},
+           prefixi={e\bibinitperiod},
+           prefixun=0}}%
+      }
+      \strng{namehash}{a83b98bfe6a8b9fdab248427fead3111}
+      \strng{fullhash}{a83b98bfe6a8b9fdab248427fead3111}
+      \strng{bibnamehash}{a83b98bfe6a8b9fdab248427fead3111}
+      \strng{authorbibnamehash}{a83b98bfe6a8b9fdab248427fead3111}
+      \strng{authornamehash}{a83b98bfe6a8b9fdab248427fead3111}
+      \strng{authorfullhash}{a83b98bfe6a8b9fdab248427fead3111}
+      \field{labelalpha}{Jef04}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proteins: Structure, Function, and Bioinformatics}
+      \field{title}{Scoring function for automated assessment of protein structure template quality}
+      \field{year}{2004}
+    \endentry
+    \entry{05TMScore}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=5bfcb6a8e919fb105e841db8e3d41078}{%
+           family={Jinrui\bibnamedelima Xu},
+           familyi={J\bibinitperiod\bibinitdelim X\bibinitperiod},
+           given={Yang\bibnamedelima Zhang},
+           giveni={Y\bibinitperiod\bibinitdelim Z\bibinitperiod},
+           givenun=0,
+           prefix={e},
+           prefixi={e\bibinitperiod},
+           prefixun=0}}%
+      }
+      \strng{namehash}{5bfcb6a8e919fb105e841db8e3d41078}
+      \strng{fullhash}{5bfcb6a8e919fb105e841db8e3d41078}
+      \strng{bibnamehash}{5bfcb6a8e919fb105e841db8e3d41078}
+      \strng{authorbibnamehash}{5bfcb6a8e919fb105e841db8e3d41078}
+      \strng{authornamehash}{5bfcb6a8e919fb105e841db8e3d41078}
+      \strng{authorfullhash}{5bfcb6a8e919fb105e841db8e3d41078}
+      \field{labelalpha}{Jin10}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Bioinformatics}
+      \field{title}{How significant is a protein structure similarity with TM-score = 0.5?}
+      \field{year}{2010}
+    \endentry
+    \entry{AC}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=287d59e9dfad670eee24e450e25933ed}{%
+           family={John\bibnamedelimb N.\bibnamedelimi Tsitsiklis},
+           familyi={J\bibinitperiod\bibinitdelim N\bibinitperiod\bibinitdelim T\bibinitperiod},
+           given={Vijay\bibnamedelimb R.\bibnamedelimi Konda},
+           giveni={V\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0,
+           prefix={e},
+           prefixi={e\bibinitperiod},
+           prefixun=0}}%
+      }
+      \strng{namehash}{287d59e9dfad670eee24e450e25933ed}
+      \strng{fullhash}{287d59e9dfad670eee24e450e25933ed}
+      \strng{bibnamehash}{287d59e9dfad670eee24e450e25933ed}
+      \strng{authorbibnamehash}{287d59e9dfad670eee24e450e25933ed}
+      \strng{authornamehash}{287d59e9dfad670eee24e450e25933ed}
+      \strng{authorfullhash}{287d59e9dfad670eee24e450e25933ed}
+      \field{labelalpha}{Joh01}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Society for Industrial and Applied Mathematics}
+      \field{month}{04}
+      \field{title}{Actor-Critic Algorithms}
+      \field{volume}{42}
+      \field{year}{2001}
     \endentry
     \entry{Alphafold2}{article}{}
       \name{author}{1}{}{%
@@ -584,66 +613,6 @@
       \field{title}{Highly accurate protein structure prediction with AlphaFold}
       \field{year}{2021}
     \endentry
-    \entry{Jensen2018NetMHCIIpan}{article}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=d2b82834c307c6a045d192fe5446de28}{%
-           family={K.\bibnamedelimi K.\bibnamedelimi Jensen},
-           familyi={K\bibinitperiod\bibinitdelim K\bibinitperiod\bibinitdelim J\bibinitperiod},
-           given={et\bibnamedelima al.},
-           giveni={e\bibinitperiod\bibinitdelim a\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{d2b82834c307c6a045d192fe5446de28}
-      \strng{fullhash}{d2b82834c307c6a045d192fe5446de28}
-      \strng{bibnamehash}{d2b82834c307c6a045d192fe5446de28}
-      \strng{authorbibnamehash}{d2b82834c307c6a045d192fe5446de28}
-      \strng{authornamehash}{d2b82834c307c6a045d192fe5446de28}
-      \strng{authorfullhash}{d2b82834c307c6a045d192fe5446de28}
-      \field{labelalpha}{K K18}
-      \field{sortinit}{K}
-      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Immunology}
-      \field{title}{Improved methods for predicting peptide binding affinity to MHC class II molecules}
-      \field{year}{2018}
-    \endentry
-    \entry{AC}{article}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=78a8e5a461c3029ed45a351a0a6efff0}{%
-           family={Konda},
-           familyi={K\bibinitperiod},
-           given={Vijay},
-           giveni={V\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=9302ce71276ce9fe27267a6ef56ac19a}{%
-           family={Tsitsiklis},
-           familyi={T\bibinitperiod},
-           given={John},
-           giveni={J\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{220690998379a900730d94bd65ade676}
-      \strng{fullhash}{220690998379a900730d94bd65ade676}
-      \strng{bibnamehash}{220690998379a900730d94bd65ade676}
-      \strng{authorbibnamehash}{220690998379a900730d94bd65ade676}
-      \strng{authornamehash}{220690998379a900730d94bd65ade676}
-      \strng{authorfullhash}{220690998379a900730d94bd65ade676}
-      \field{labelalpha}{KT01}
-      \field{sortinit}{K}
-      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Society for Industrial and Applied Mathematics}
-      \field{month}{04}
-      \field{title}{Actor-Critic Algorithms}
-      \field{volume}{42}
-      \field{year}{2001}
-    \endentry
     \entry{mds}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=3b89b4f02ff2e102fd2373f69879b51a}{%
@@ -670,83 +639,22 @@
       \field{title}{Nonmetric multidimensional scaling: A numerical method}
       \field{year}{1964}
     \endentry
-    \entry{CS}{article}{}
+    \entry{Mannucci}{article}{}
       \name{author}{1}{}{%
-        {{un=1,uniquepart=given,hash=fe9487dcb11dff2d89568211446bc066}{%
-           family={Lopes\bibnamedelimb Tiago\bibnamedelimb J.\bibnamedelimi S.},
-           familyi={L\bibinitperiod\bibinitdelim T\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim S\bibinitperiod},
-           given={Rios\bibnamedelima Ricardo},
-           giveni={R\bibinitperiod\bibinitdelim R\bibinitperiod},
-           givenun=1,
-           suffix={Nogueira\bibnamedelima Tatiane},
-           suffixi={N\bibinitperiod\bibinitdelim T\bibinitperiod},
-           suffixun=0}}%
-      }
-      \strng{namehash}{fe9487dcb11dff2d89568211446bc066}
-      \strng{fullhash}{fe9487dcb11dff2d89568211446bc066}
-      \strng{bibnamehash}{fe9487dcb11dff2d89568211446bc066}
-      \strng{authorbibnamehash}{fe9487dcb11dff2d89568211446bc066}
-      \strng{authornamehash}{fe9487dcb11dff2d89568211446bc066}
-      \strng{authorfullhash}{fe9487dcb11dff2d89568211446bc066}
-      \field{labelalpha}{Lop22}
-      \field{sortinit}{L}
-      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Frontiers in Bioinformatics}
-      \field{title}{A Machine Learning Framework Predicts the Clinical Severity of Hemophilia B Caused by Point-Mutations}
-      \field{year}{2022}
-    \endentry
-    \entry{aminodist}{article}{}
-      \name{author}{1}{}{%
-        {{un=1,uniquepart=given,hash=eda0cb2b70b2e245d00414035e866e49}{%
-           family={Lopes\bibnamedelimb Tiago\bibnamedelimb J.\bibnamedelimi S.},
-           familyi={L\bibinitperiod\bibinitdelim T\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim S\bibinitperiod},
-           given={Rios\bibnamedelimb Ricardo\bibnamedelimb et\bibnamedelima al.},
-           giveni={R\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim e\bibinitperiod\bibinitdelim a\bibinitperiod},
-           givenun=1,
-           suffix={Nogueira\bibnamedelima Tatiane},
-           suffixi={N\bibinitperiod\bibinitdelim T\bibinitperiod},
-           suffixun=0}}%
-      }
-      \strng{namehash}{eda0cb2b70b2e245d00414035e866e49}
-      \strng{fullhash}{eda0cb2b70b2e245d00414035e866e49}
-      \strng{bibnamehash}{eda0cb2b70b2e245d00414035e866e49}
-      \strng{authorbibnamehash}{eda0cb2b70b2e245d00414035e866e49}
-      \strng{authornamehash}{eda0cb2b70b2e245d00414035e866e49}
-      \strng{authorfullhash}{eda0cb2b70b2e245d00414035e866e49}
-      \field{labelalpha}{Lop21}
-      \field{sortinit}{L}
-      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Nature}
-      \field{title}{Prediction of hemophilia A severity using a small-input machine-learning framework}
-      \field{year}{2021}
-    \endentry
-    \entry{Mancuso}{article}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=6db927c91d04d45497102fc71c78065c}{%
-           family={Mancuso},
+        {{un=0,uniquepart=base,hash=51889f7d71a7efb22e446c7220b334a8}{%
+           family={Mannucci},
            familyi={M\bibinitperiod},
-           given={et\bibnamedelima al.},
-           giveni={e\bibinitperiod\bibinitdelim a\bibinitperiod},
-           givenun=0,
-           suffix={M.\bibnamedelimi E.},
-           suffixi={M\bibinitperiod\bibinitdelim E\bibinitperiod},
-           suffixun=0}}%
+           given={Pier\bibnamedelima Mannuccio},
+           giveni={P\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
       }
-      \strng{namehash}{6db927c91d04d45497102fc71c78065c}
-      \strng{fullhash}{6db927c91d04d45497102fc71c78065c}
-      \strng{bibnamehash}{6db927c91d04d45497102fc71c78065c}
-      \strng{authorbibnamehash}{6db927c91d04d45497102fc71c78065c}
-      \strng{authornamehash}{6db927c91d04d45497102fc71c78065c}
-      \strng{authorfullhash}{6db927c91d04d45497102fc71c78065c}
-      \field{labelalpha}{Man05}
+      \strng{namehash}{51889f7d71a7efb22e446c7220b334a8}
+      \strng{fullhash}{51889f7d71a7efb22e446c7220b334a8}
+      \strng{bibnamehash}{51889f7d71a7efb22e446c7220b334a8}
+      \strng{authorbibnamehash}{51889f7d71a7efb22e446c7220b334a8}
+      \strng{authornamehash}{51889f7d71a7efb22e446c7220b334a8}
+      \strng{authorfullhash}{51889f7d71a7efb22e446c7220b334a8}
+      \field{labelalpha}{Man20}
       \field{sortinit}{M}
       \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
       \field{extradatescope}{labelyear}
@@ -754,33 +662,94 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Haematologica}
-      \field{title}{Environmental risk factors for inhibitor development in children with hemophilia A: a case–control study}
-      \field{year}{2005}
+      \field{title}{emophilia therapy: the future has begun.}
+      \field{year}{2020}
     \endentry
-    \entry{Mancuso2}{article}{}
+    \entry{Jensen2018NetMHCIIpan}{article}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=3e08e4c11074bd079bb24af5e86ce0af}{%
-           family={Mancuso\bibnamedelima ME},
-           familyi={M\bibinitperiod\bibinitdelim M\bibinitperiod},
-           given={Santagostino\bibnamedelima E.},
-           giveni={S\bibinitperiod\bibinitdelim E\bibinitperiod},
-           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c77bc2e2165bf2b87876eda0e977f797}{%
+           family={Massimo\bibnamedelima Andreattas},
+           familyi={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+           given={Kamilla\bibnamedelimb K.\bibnamedelimi Jensen},
+           giveni={K\bibinitperiod\bibinitdelim K\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0,
+           prefix={e},
+           prefixi={e\bibinitperiod},
+           prefixun=0}}%
       }
-      \strng{namehash}{3e08e4c11074bd079bb24af5e86ce0af}
-      \strng{fullhash}{3e08e4c11074bd079bb24af5e86ce0af}
-      \strng{bibnamehash}{3e08e4c11074bd079bb24af5e86ce0af}
-      \strng{authorbibnamehash}{3e08e4c11074bd079bb24af5e86ce0af}
-      \strng{authornamehash}{3e08e4c11074bd079bb24af5e86ce0af}
-      \strng{authorfullhash}{3e08e4c11074bd079bb24af5e86ce0af}
-      \field{labelalpha}{Man17}
+      \strng{namehash}{c77bc2e2165bf2b87876eda0e977f797}
+      \strng{fullhash}{c77bc2e2165bf2b87876eda0e977f797}
+      \strng{bibnamehash}{c77bc2e2165bf2b87876eda0e977f797}
+      \strng{authorbibnamehash}{c77bc2e2165bf2b87876eda0e977f797}
+      \strng{authornamehash}{c77bc2e2165bf2b87876eda0e977f797}
+      \strng{authorfullhash}{c77bc2e2165bf2b87876eda0e977f797}
+      \field{labelalpha}{Mas18}
       \field{sortinit}{M}
       \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{J Clin Med.}
-      \field{title}{Outcome of Clinical Trials with New Extended Half-Life FVIII/IX Concentrates.}
+      \field{journaltitle}{Immunology}
+      \field{title}{Improved methods for predicting peptide binding affinity to MHC class II molecules}
+      \field{year}{2018}
+    \endentry
+    \entry{Massimo}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=70740752d2c5644a9bc7ceb5595519c7}{%
+           family={Massimo\bibnamedelima Franchini},
+           familyi={M\bibinitperiod\bibinitdelim F\bibinitperiod},
+           given={Pier\bibnamedelimb Mannuccio\bibnamedelima Mannucci},
+           giveni={P\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0,
+           prefix={e},
+           prefixi={e\bibinitperiod},
+           prefixun=0}}%
+      }
+      \strng{namehash}{70740752d2c5644a9bc7ceb5595519c7}
+      \strng{fullhash}{70740752d2c5644a9bc7ceb5595519c7}
+      \strng{bibnamehash}{70740752d2c5644a9bc7ceb5595519c7}
+      \strng{authorbibnamehash}{70740752d2c5644a9bc7ceb5595519c7}
+      \strng{authornamehash}{70740752d2c5644a9bc7ceb5595519c7}
+      \strng{authorfullhash}{70740752d2c5644a9bc7ceb5595519c7}
+      \field{labelalpha}{Mas14}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Biologics: Targets and Therapy}
+      \field{title}{Emerging drugs for hemophilia B}
+      \field{year}{2014}
+    \endentry
+    \entry{PPO}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=76e87925fa1ef75086878263fc4b4084}{%
+           family={Oleg\bibnamedelima Klimov},
+           familyi={O\bibinitperiod\bibinitdelim K\bibinitperiod},
+           given={John\bibnamedelimb Schulman;\bibnamedelimb Filip\bibnamedelimb Wolski;\bibnamedelimb Prafulla\bibnamedelimb Dhariwal;\bibnamedelimb Alec\bibnamedelima Radford},
+           giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim F\bibinitperiod\bibinitdelim W\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0,
+           prefix={e},
+           prefixi={e\bibinitperiod},
+           prefixun=0}}%
+      }
+      \strng{namehash}{76e87925fa1ef75086878263fc4b4084}
+      \strng{fullhash}{76e87925fa1ef75086878263fc4b4084}
+      \strng{bibnamehash}{76e87925fa1ef75086878263fc4b4084}
+      \strng{authorbibnamehash}{76e87925fa1ef75086878263fc4b4084}
+      \strng{authornamehash}{76e87925fa1ef75086878263fc4b4084}
+      \strng{authorfullhash}{76e87925fa1ef75086878263fc4b4084}
+      \field{labelalpha}{Ole17}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ArXiv}
+      \field{title}{Proximal Policy Optimization Algorithms}
       \field{year}{2017}
     \endentry
     \entry{MDP}{book}{}
@@ -812,22 +781,56 @@
       \field{title}{Processos de Decisão de Markov: um tutorial}
       \field{year}{2007}
     \endentry
-    \entry{Mannucci}{article}{}
+    \entry{Bio}{book}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=45f38acb657e1b74fef4b7d3bc0a7c2f}{%
-           family={PM},
-           familyi={P\bibinitperiod},
-           given={Mannucci},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f2fed220ed0d98f968e0c8fc565ee626}{%
+           family={Peter\bibnamedelima Walter},
+           familyi={P\bibinitperiod\bibinitdelim W\bibinitperiod},
+           given={Bruce\bibnamedelimb Alberts;\bibnamedelimb Alexander\bibnamedelimb Johnson;\bibnamedelimb Julian\bibnamedelimb Lewis;\bibnamedelimb Martin\bibnamedelimb Raff;\bibnamedelimb Keith\bibnamedelima Roberts},
+           giveni={B\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim L\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim K\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0,
+           prefix={e},
+           prefixi={e\bibinitperiod},
+           prefixun=0}}%
       }
-      \strng{namehash}{45f38acb657e1b74fef4b7d3bc0a7c2f}
-      \strng{fullhash}{45f38acb657e1b74fef4b7d3bc0a7c2f}
-      \strng{bibnamehash}{45f38acb657e1b74fef4b7d3bc0a7c2f}
-      \strng{authorbibnamehash}{45f38acb657e1b74fef4b7d3bc0a7c2f}
-      \strng{authornamehash}{45f38acb657e1b74fef4b7d3bc0a7c2f}
-      \strng{authorfullhash}{45f38acb657e1b74fef4b7d3bc0a7c2f}
-      \field{labelalpha}{PM20}
+      \list{publisher}{1}{%
+        {Garland Science}%
+      }
+      \strng{namehash}{f2fed220ed0d98f968e0c8fc565ee626}
+      \strng{fullhash}{f2fed220ed0d98f968e0c8fc565ee626}
+      \strng{bibnamehash}{f2fed220ed0d98f968e0c8fc565ee626}
+      \strng{authorbibnamehash}{f2fed220ed0d98f968e0c8fc565ee626}
+      \strng{authornamehash}{f2fed220ed0d98f968e0c8fc565ee626}
+      \strng{authorfullhash}{f2fed220ed0d98f968e0c8fc565ee626}
+      \field{labelalpha}{Pet02}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Molecular Biology of the Cell}
+      \field{year}{2002}
+    \endentry
+    \entry{Mancuso}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=580558c3fe70cea045b32a49024b079c}{%
+           family={Pier\bibnamedelimb Mannuccio\bibnamedelima Mannucci},
+           familyi={P\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={Elena\bibnamedelimb Santagostino;\bibnamedelimb Maria\bibnamedelimb Elisa\bibnamedelimb Mancuso;\bibnamedelimb Angiola\bibnamedelimb Rocino;\bibnamedelimb Giacomo\bibnamedelimb Mancuso;\bibnamedelimb Maria\bibnamedelimb Gabriella\bibnamedelimb Mazzucconi;\bibnamedelimb Annarita\bibnamedelimb Tagliaferri;\bibnamedelimb Maria\bibnamedelima Messina},
+           giveni={E\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim T\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0,
+           prefix={e},
+           prefixi={e\bibinitperiod},
+           prefixun=0}}%
+      }
+      \strng{namehash}{580558c3fe70cea045b32a49024b079c}
+      \strng{fullhash}{580558c3fe70cea045b32a49024b079c}
+      \strng{bibnamehash}{580558c3fe70cea045b32a49024b079c}
+      \strng{authorbibnamehash}{580558c3fe70cea045b32a49024b079c}
+      \strng{authornamehash}{580558c3fe70cea045b32a49024b079c}
+      \strng{authorfullhash}{580558c3fe70cea045b32a49024b079c}
+      \field{labelalpha}{Pie05}
       \field{sortinit}{P}
       \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
       \field{extradatescope}{labelyear}
@@ -835,89 +838,187 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Haematologica}
-      \field{title}{emophilia therapy: the future has begun.}
-      \field{year}{2020}
+      \field{title}{Environmental risk factors for inhibitor development in children with hemophilia A: a case–control study}
+      \field{year}{2005}
     \endentry
-    \entry{Overview}{article}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=268a26edb770d483edba2d76a8d67b43}{%
-           family={Wenze\bibnamedelima Ding},
-           familyi={W\bibinitperiod\bibinitdelim D\bibinitperiod},
-           given={Kenta\bibnamedelima Nakai},
-           giveni={K\bibinitperiod\bibinitdelim N\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=6d2ba89858eebf0b4089581e58d22233}{%
-           family={Gong},
-           familyi={G\bibinitperiod},
-           given={Haipeng},
-           giveni={H\bibinitperiod},
+    \entry{repo}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=c28e87c3dd34ab9dcfc00e8fdc30aa94}{%
+           family={Pimenta},
+           familyi={P\bibinitperiod},
+           given={Arthur\bibnamedelima M.},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{0f3ec95510444e921fbf23b02f9ee2a0}
-      \strng{fullhash}{0f3ec95510444e921fbf23b02f9ee2a0}
-      \strng{bibnamehash}{0f3ec95510444e921fbf23b02f9ee2a0}
-      \strng{authorbibnamehash}{0f3ec95510444e921fbf23b02f9ee2a0}
-      \strng{authornamehash}{0f3ec95510444e921fbf23b02f9ee2a0}
-      \strng{authorfullhash}{0f3ec95510444e921fbf23b02f9ee2a0}
-      \field{labelalpha}{WG22}
-      \field{sortinit}{W}
-      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \strng{namehash}{c28e87c3dd34ab9dcfc00e8fdc30aa94}
+      \strng{fullhash}{c28e87c3dd34ab9dcfc00e8fdc30aa94}
+      \strng{bibnamehash}{c28e87c3dd34ab9dcfc00e8fdc30aa94}
+      \strng{authorbibnamehash}{c28e87c3dd34ab9dcfc00e8fdc30aa94}
+      \strng{authornamehash}{c28e87c3dd34ab9dcfc00e8fdc30aa94}
+      \strng{authorfullhash}{c28e87c3dd34ab9dcfc00e8fdc30aa94}
+      \field{labelalpha}{Pim25}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Oxford Academic}
-      \field{title}{Protein design via deep learning}
+      \field{title}{Protein design by deep reinforcement learning}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://github.com/ArthurPimenta0306/Hallucination
+      \endverb
+      \verb{url}
+      \verb https://github.com/ArthurPimenta0306/Hallucination
+      \endverb
+    \endentry
+    \entry{aminodist}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=bcbccb3ad68342d77b85723c5a1a4e4b}{%
+           family={Rios\bibnamedelima Ricardo},
+           familyi={R\bibinitperiod\bibinitdelim R\bibinitperiod},
+           given={Lopes\bibnamedelimb Tiago\bibnamedelimb J.\bibnamedelimi S.;\bibnamedelimb Nogueira\bibnamedelima Tatiane},
+           giveni={L\bibinitperiod\bibinitdelim T\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim N\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0,
+           prefix={e},
+           prefixi={e\bibinitperiod},
+           prefixun=0}}%
+      }
+      \strng{namehash}{bcbccb3ad68342d77b85723c5a1a4e4b}
+      \strng{fullhash}{bcbccb3ad68342d77b85723c5a1a4e4b}
+      \strng{bibnamehash}{bcbccb3ad68342d77b85723c5a1a4e4b}
+      \strng{authorbibnamehash}{bcbccb3ad68342d77b85723c5a1a4e4b}
+      \strng{authornamehash}{bcbccb3ad68342d77b85723c5a1a4e4b}
+      \strng{authorfullhash}{bcbccb3ad68342d77b85723c5a1a4e4b}
+      \field{extraname}{1}
+      \field{labelalpha}{Rio21}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nature}
+      \field{title}{Prediction of hemophilia A severity using a small-input machine-learning framework}
+      \field{year}{2021}
+    \endentry
+    \entry{CS}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=bcbccb3ad68342d77b85723c5a1a4e4b}{%
+           family={Rios\bibnamedelima Ricardo},
+           familyi={R\bibinitperiod\bibinitdelim R\bibinitperiod},
+           given={Lopes\bibnamedelimb Tiago\bibnamedelimb J.\bibnamedelimi S.;\bibnamedelimb Nogueira\bibnamedelima Tatiane},
+           giveni={L\bibinitperiod\bibinitdelim T\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim N\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0,
+           prefix={e},
+           prefixi={e\bibinitperiod},
+           prefixun=0}}%
+      }
+      \strng{namehash}{bcbccb3ad68342d77b85723c5a1a4e4b}
+      \strng{fullhash}{bcbccb3ad68342d77b85723c5a1a4e4b}
+      \strng{bibnamehash}{bcbccb3ad68342d77b85723c5a1a4e4b}
+      \strng{authorbibnamehash}{bcbccb3ad68342d77b85723c5a1a4e4b}
+      \strng{authornamehash}{bcbccb3ad68342d77b85723c5a1a4e4b}
+      \strng{authorfullhash}{bcbccb3ad68342d77b85723c5a1a4e4b}
+      \field{extraname}{2}
+      \field{labelalpha}{Rio22}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Frontiers in Bioinformatics}
+      \field{title}{A Machine Learning Framework Predicts the Clinical Severity of Hemophilia B Caused by Point-Mutations}
       \field{year}{2022}
     \endentry
-    \entry{05TMScore}{article}{}
+    \entry{Mancuso2}{article}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=0e4dfcc2a660bcd69a7698d3011c1c66}{%
-           family={Yang\bibnamedelima Zhang},
-           familyi={Y\bibinitperiod\bibinitdelim Z\bibinitperiod},
-           given={et\bibnamedelima al.},
-           giveni={e\bibinitperiod\bibinitdelim a\bibinitperiod},
+        {{un=0,uniquepart=base,hash=1f86971f4ea3d261b7f745d97f9c990c}{%
+           family={Santagostino},
+           familyi={S\bibinitperiod},
+           given={Maria\bibnamedelimb Elisa\bibnamedelimb Mancuso;\bibnamedelima Elena},
+           giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim E\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{0e4dfcc2a660bcd69a7698d3011c1c66}
-      \strng{fullhash}{0e4dfcc2a660bcd69a7698d3011c1c66}
-      \strng{bibnamehash}{0e4dfcc2a660bcd69a7698d3011c1c66}
-      \strng{authorbibnamehash}{0e4dfcc2a660bcd69a7698d3011c1c66}
-      \strng{authornamehash}{0e4dfcc2a660bcd69a7698d3011c1c66}
-      \strng{authorfullhash}{0e4dfcc2a660bcd69a7698d3011c1c66}
-      \field{labelalpha}{Yan10}
-      \field{sortinit}{Y}
-      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \strng{namehash}{1f86971f4ea3d261b7f745d97f9c990c}
+      \strng{fullhash}{1f86971f4ea3d261b7f745d97f9c990c}
+      \strng{bibnamehash}{1f86971f4ea3d261b7f745d97f9c990c}
+      \strng{authorbibnamehash}{1f86971f4ea3d261b7f745d97f9c990c}
+      \strng{authornamehash}{1f86971f4ea3d261b7f745d97f9c990c}
+      \strng{authorfullhash}{1f86971f4ea3d261b7f745d97f9c990c}
+      \field{labelalpha}{San17}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Bioinformatics}
-      \field{title}{How significant is a protein structure similarity with TM-score = 0.5?}
-      \field{year}{2010}
+      \field{journaltitle}{J Clin Med.}
+      \field{title}{Outcome of Clinical Trials with New Extended Half-Life FVIII/IX Concentrates.}
+      \field{year}{2017}
+    \endentry
+    \entry{WFH2024}{poster}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=8bb9f9260efb2ee3776afdfb235ae1fc}{%
+           family={Tiago\bibnamedelimb J.\bibnamedelimi Lopes},
+           familyi={T\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim L\bibinitperiod},
+           given={Arthur\bibnamedelimb M.\bibnamedelimi Pimenta;\bibnamedelimb Roberto\bibnamedelimb Hirata\bibnamedelima Jr.},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0,
+           prefix={e},
+           prefixi={e\bibinitperiod},
+           prefixun=0}}%
+      }
+      \list{location}{1}{%
+        {Madrid, Espanha}%
+      }
+      \list{organization}{1}{%
+        {World Federation of Hemophilia (WFH)}%
+      }
+      \strng{namehash}{8bb9f9260efb2ee3776afdfb235ae1fc}
+      \strng{fullhash}{8bb9f9260efb2ee3776afdfb235ae1fc}
+      \strng{bibnamehash}{8bb9f9260efb2ee3776afdfb235ae1fc}
+      \strng{authorbibnamehash}{8bb9f9260efb2ee3776afdfb235ae1fc}
+      \strng{authornamehash}{8bb9f9260efb2ee3776afdfb235ae1fc}
+      \strng{authorfullhash}{8bb9f9260efb2ee3776afdfb235ae1fc}
+      \field{labelalpha}{Tia24}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Protein Design and Deep Learning: A New Frontier in Hemophilia B Management}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://www.postersessiononline.eu/173580348_eu/congresos/WFH2024/aula/-PO_34_WFH2024.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.postersessiononline.eu/173580348_eu/congresos/WFH2024/aula/-PO_34_WFH2024.pdf
+      \endverb
     \endentry
     \entry{USalign}{article}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=b1d783a5458bbcea86ec2d64b93c5f47}{%
-           family={Zhang},
-           familyi={Z\bibinitperiod},
-           given={et\bibnamedelima al.},
-           giveni={e\bibinitperiod\bibinitdelim a\bibinitperiod},
+        {{un=0,uniquepart=base,hash=fa2425fd6c161c018ed62da1bb8ba4ec}{%
+           family={Yang\bibnamedelima Zhang},
+           familyi={Y\bibinitperiod\bibinitdelim Z\bibinitperiod},
+           given={Chengxin\bibnamedelimb Zhang;\bibnamedelimb Morgan\bibnamedelimb Shine;\bibnamedelimb Anna\bibnamedelimb Marie\bibnamedelima Pyle},
+           giveni={C\bibinitperiod\bibinitdelim Z\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim P\bibinitperiod},
            givenun=0,
-           suffix={C.},
-           suffixi={C\bibinitperiod},
-           suffixun=0}}%
+           prefix={e},
+           prefixi={e\bibinitperiod},
+           prefixun=0}}%
       }
-      \strng{namehash}{b1d783a5458bbcea86ec2d64b93c5f47}
-      \strng{fullhash}{b1d783a5458bbcea86ec2d64b93c5f47}
-      \strng{bibnamehash}{b1d783a5458bbcea86ec2d64b93c5f47}
-      \strng{authorbibnamehash}{b1d783a5458bbcea86ec2d64b93c5f47}
-      \strng{authornamehash}{b1d783a5458bbcea86ec2d64b93c5f47}
-      \strng{authorfullhash}{b1d783a5458bbcea86ec2d64b93c5f47}
-      \field{extraname}{1}
-      \field{labelalpha}{Zha22}
-      \field{sortinit}{Z}
-      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \strng{namehash}{fa2425fd6c161c018ed62da1bb8ba4ec}
+      \strng{fullhash}{fa2425fd6c161c018ed62da1bb8ba4ec}
+      \strng{bibnamehash}{fa2425fd6c161c018ed62da1bb8ba4ec}
+      \strng{authorbibnamehash}{fa2425fd6c161c018ed62da1bb8ba4ec}
+      \strng{authornamehash}{fa2425fd6c161c018ed62da1bb8ba4ec}
+      \strng{authorfullhash}{fa2425fd6c161c018ed62da1bb8ba4ec}
+      \field{labelalpha}{Yan22}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
@@ -925,36 +1026,6 @@
       \field{journaltitle}{Nat Methods}
       \field{title}{US-align: universal structure alignments of proteins, nucleic acids, and macromolecular complexes}
       \field{year}{2022}
-    \endentry
-    \entry{tmscore}{article}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=7772092686b27faaff37331534d4b100}{%
-           family={Zhang},
-           familyi={Z\bibinitperiod},
-           given={et\bibnamedelima al.},
-           giveni={e\bibinitperiod\bibinitdelim a\bibinitperiod},
-           givenun=0,
-           suffix={Y.},
-           suffixi={Y\bibinitperiod},
-           suffixun=0}}%
-      }
-      \strng{namehash}{7772092686b27faaff37331534d4b100}
-      \strng{fullhash}{7772092686b27faaff37331534d4b100}
-      \strng{bibnamehash}{7772092686b27faaff37331534d4b100}
-      \strng{authorbibnamehash}{7772092686b27faaff37331534d4b100}
-      \strng{authornamehash}{7772092686b27faaff37331534d4b100}
-      \strng{authorfullhash}{7772092686b27faaff37331534d4b100}
-      \field{extraname}{2}
-      \field{labelalpha}{Zha04}
-      \field{sortinit}{Z}
-      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Proteins: Structure, Function, and Bioinformatics}
-      \field{title}{Scoring function for automated assessment of protein structure template quality}
-      \field{year}{2004}
     \endentry
   \enddatalist
 \endrefsection

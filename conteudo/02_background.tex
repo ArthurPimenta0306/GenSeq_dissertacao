@@ -59,6 +59,7 @@ onde podem formar ligações de hidrogênio com a água e outras moléculas pola
 
 
 \subsection{O Fator IX}
+\label{subsection:FIX} 
 O Fator IX (FIX) é uma proteína essencial para o processo de coagulação.
 Quando ativado (FIXa), atua em conjunto com o Fator VIIIa (FVIIIa) para formar 
 um complexo conhecido como tenase intrínseco, que é responsável por ativar o Fator X. 
@@ -119,22 +120,22 @@ contribuindo para maior segurança e eficácia terapêutica.
 
 \subsection{Docking}
 \label{subsection:Docking} 
-A análise de docking é uma técnica computacional amplamente utilizada no estudo de interações biomoleculares,
+A análise de \textit{docking} é uma técnica computacional amplamente utilizada no estudo de interações biomoleculares,
 particularmente para prever a orientação e a afinidade entre duas moléculas,
 como proteínas. Nesse sentido, é essencial para avaliar como uma proteína substituta do FIXa interage com o FVIIIa. 
-O docking molecular simula o reconhecimento entre uma molécula receptora e outra ligante. 
+O \textit{docking} molecular simula o reconhecimento entre uma molécula receptora e outra ligante. 
 No caso de interações proteína-proteína, o receptor e o ligante são ambos macromoléculas,
 cujas superfícies e conformações influenciam a formação de um complexo estável.
-O objetivo do docking é identificar as poses mais favoráveis termodinamicamente, ou seja, 
+O objetivo do \textit{docking} é identificar as poses mais favoráveis termodinamicamente, ou seja, 
 aquelas que minimizam a energia livre do sistema.
 
-Durante o docking, diversas poses do ligante em relação ao receptor são geradas.
+Durante o \textit{docking}, diversas poses do ligante em relação ao receptor são geradas.
 Ferramentas como RosettaDock ou AutoDock realizam essa busca, explorando translações, rotações e flexibilidade local.
 Cada pose é avaliada com base em métricas energéticas, como a \textit{Contact Molecular Surface} (CMS), \textit{Interface Buried SASA} (IBSASA),
 \textit{Delta Gibbs Free Energy of Binding} (DDG) e \textit{Spatial Aggregation Propensity Score} (SAP Score).
 
 A CMS é uma medida desenvolvida para superar as limitações de métricas tradicionais, 
-como Shape Complementarity (SC) e Delta Solvent Accessible Surface Area (Delta SASA) \cite{Docking}.
+como \textit{Shape Complementarity} (SC) e \textit{Delta Solvent Accessible Surface Area} (Delta SASA) \cite{Docking}.
 Enquanto SC analisa a complementaridade geométrica entre superfícies moleculares e 
 Delta SASA calcula a área de superfície acessível ao solvente antes e depois da complexação,
 ambas possuem limitações na identificação de interfaces bem empacotadas (\cite{Docking}).
@@ -151,7 +152,7 @@ com valores mais negativos indicando maior estabilidade termodinâmica (\cite{Do
 A DDG, calculada frequentemente com o software Rosetta, 
 permite a otimização de sequências e conformações para maximizar a energia de ligação.
 
-Por fim,o SAP Score avalia a presença de regiões hidrofóbicas expostas na superfície da proteína, 
+Por fim, o SAP Score avalia a presença de regiões hidrofóbicas expostas na superfície da proteína, 
 utilizando a área de superfície acessível ao solvente (SASA) como referência. 
 A partir dessa análise, estima-se a propensão da proteína ou do complexo formado à agregação indesejada.
 Valores mais baixos de SAP indicam menor exposição de patches hidrofóbicos ao solvente,
@@ -221,7 +222,7 @@ entre pares de átomos correspondentes em duas estruturas alinhadas:
     \text{RMSD} = \sqrt{\frac{1}{N} \sum_{i=1}^{N} d_i^2},
 \end{equation}
 
-onde \(N\) representa o número de pares de átomos alinhados e \(d_i\) é a distância entre os \(i\)-ésimos átomos nas estruturas comparadas. 
+\noindent Onde \(N\) representa o número de pares de átomos alinhados e \(d_i\) é a distância entre os \(i\)-ésimos átomos nas estruturas comparadas. 
 Embora seja uma métrica intuitiva, o RMSD é altamente sensível a desalinhamentos locais e não é normalizado pelo comprimento da proteína,
 o que limita sua eficácia ao comparar proteínas de diferentes tamanhos.
 
@@ -232,7 +233,7 @@ mede a similaridade estrutural global, superando limitações do RMSD. \cite{tms
     \text{TMScore} = \frac{1}{L_{\text{ref}}} \sum_{i=1}^{L_{\text{model}}} \frac{1}{1 + \left(\frac{d_i}{d_0(L_{\text{ref}})}\right)^2},
 \end{equation}
 
-onde \(L_{\text{ref}}\) é o número de resíduos na estrutura de referência,
+\noindent Onde \(L_{\text{ref}}\) é o número de resíduos na estrutura de referência,
  \(L_{\text{model}}\) é o número de resíduos no modelo comparado, 
  e \(d_i\) é a distância entre os átomos \(C_\alpha\) alinhados. 
  
@@ -254,13 +255,13 @@ garantindo que proteínas de diferentes comprimentos sejam comparadas de forma j
 Proteínas maiores toleram distâncias absolutas maiores entre resíduos alinhados sem que o TMScore seja severamente penalizado (\cite{tmscore}).
  
 
-O TMScore varia entre 0 e 1, onde valores próximos a 1 indicam alta similaridade topológica (\cite{tmscore}).
+O \textit{TMScore} varia entre 0 e 1, onde valores próximos a 1 indicam alta similaridade topológica (\cite{tmscore}).
 Se a distância entre cada par alinhado de átomos \(C_\alpha\) for igual a 0, então o TMScore é igual a 1, indicando sobreposição completa 
 entre as macromoléculas. Em contra partida, quanto maiores são as distâncias, menor é o TMScore (mais próximo de 0).
 
 Devido à sua robustez na avaliação da similaridade estrutural global e à sua interpretabilidade,
 com valores limitados entre 0 e 1, adotaremos o TMScore como a métrica principal a ser otimizada neste projeto.
-O cálculo desta medida será feito a partir da plataforma desenvolvida por (\cite{USalign}).
+O cálculo desta medida será feito a partir da plataforma \textit{US-align} desenvolvida por (\cite{USalign}).
 
 
 \subsection{Conservation Score}
@@ -269,7 +270,7 @@ O \textit{Conservation Score} (CS) é uma métrica que estima a importância ou
 contribuição individual de cada resíduo da sequência na caracterização da estrutura da proteína.
 Resíduos cruciais na estrutura da proteína tendem a ser conservados,
 visto que alterações neles podem impactar significativamente a função proteíca (\cite{CS}). 
-O score é obtido levando-se em conta a frequência com que certas combinações de aminoácidos 
+O \textit{score} é obtido levando-se em conta a frequência com que certas combinações de aminoácidos 
 ocorrem em proteínas homólogas ao longo da evolução das espécies (\cite{Eddy}). 
 Para este trabalho, utilizamos o CS calculado pelo servidor ConsurfDB (\cite{ConsurfDB}),
 tendo a estrutura do FIXa de coagulação como entrada. 
@@ -319,7 +320,8 @@ Para tal, será fornecido um contexto sobre Processo de Decisão de Markov (MDP)
 
 
 \subsection{Processo de Decisão de Markov}
-O Processo de Decisão de Markov (MDP) é utilizado para modelar processos de forma probabilística. Ele é chamado de markoviano pois a distribuição de probabilidade de um estado depende apenas do estado anterior e da ação selecionada. Uma ação dá origem a um novo estado ao passo que promove alterações no estado atual. Um Agente seleciona cada ação com base em uma política ($\pi$) que mapeia estados a ações. Em um MDP, o processo evolui em etapas, ou \textit{steps}, à medida que o agente toma ações. A sequência de estados, desde o inicial até o final, é chamada de episódio. A qualidade de cada ação é avaliada com base no quão benéfico é o estado alcançado.
+O Processo de Decisão de Markov (MDP) é utilizado para modelar processos de forma probabilística. Ele é chamado de markoviano pois a distribuição de probabilidade de um estado depende apenas do estado anterior e da ação selecionada. Uma ação dá origem a um novo estado ao passo que promove alterações no estado atual. 
+Um agente seleciona cada ação com base em uma política ($\pi$) que mapeia estados a ações. Em um MDP, o processo evolui em etapas, ou \textit{steps}, à medida que o agente toma ações. A sequência de estados, desde o inicial até o final, é chamada de episódio. A qualidade de cada ação é avaliada com base no quão benéfico é o estado alcançado.
 De acordo com \cite{MDP}, o MDP pode ser definido como uma tupla 
 <S,A,T,R> onde:
 
@@ -330,7 +332,7 @@ De acordo com \cite{MDP}, o MDP pode ser definido como uma tupla
    \item r : S × A$\rightarrow$r é uma função que mede a recompensa por selecionar a ação a $\in$ A quando o processo está no estado s $\in$ S.
  \end{itemize}
 
-De modo a encontrar um bom $\pi$, é necessário definir uma maneira de comparar diferentes políticas. Uma técnica comum é comparar a esperança da recompensa acumulada descontada, ou Valor de Retorno (R), que cada política produziu em um mesmo episódio.
+De modo a encontrar uma boa política $\pi$, é necessário definir uma maneira de comparar diferentes políticas. Uma técnica comum é comparar a esperança da recompensa acumulada descontada, ou Valor de Retorno (R), que cada política produziu em um mesmo episódio.
 
 \begin{equation}
     R = E\begin{bmatrix} \sum_{k=1}^{z} \gamma ^{k-1} r_k \end{bmatrix}
@@ -385,7 +387,7 @@ Dentre elas, uma das mais tradicionais é a baseada no gradiente descendente, qu
     w(t +1) = w(t) - n\nabla L(w(t)) 
 \end{equation}
 
-Onde w é o vetor de pesos, $n$ é uma constante positiva conhecida como taxa de aprendizagem, 
+\noindent Onde w é o vetor de pesos, $n$ é uma constante positiva conhecida como taxa de aprendizagem, 
 que quantifica o tamanho do ajuste dos parâmetros a cada iteração e $L$ é a função de perda. 
 Um dos algoritmo mais utilizados para calcular o gradiente da função de perda e atualizar os parâmetros da rede é o \textit{Backpropagation} (\cite{Bishop}). 
 
@@ -461,7 +463,8 @@ Dado um conjunto de $n$ objetos e uma matriz de distâncias $D = (d_{ij})$,
 onde cada elemento $d_{ij}$ representa a distância entre o par de objetos $i$ e $j$,
 o objetivo do MDS é encontrar uma configuração vetorial $X_i = [x_{i1}, x_{i2}, ..., x_{im}]$ 
 para cada objeto $i$ em um espaço de dimensão $m$,
-de modo que a distância euclidiana entre $X_i$ e $X_j$ aproxime $d_{ij}$. 
+de modo que a distância euclidiana entre dois objetos i, j 
+dados respectivamente pelas suas representações $X_i$ e $X_j$ aproxime $d_{ij}$. 
 O MDS busca minimizar as distâncias reais e as distâncias no espaço embutido, 
 utilizando a função de perda conhecida como \textit{stress}:
 

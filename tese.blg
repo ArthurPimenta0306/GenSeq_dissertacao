@@ -1,17 +1,17 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'tese.blg'
-[26] biber-darwin:340> INFO - === Thu May  1, 2025, 20:38:25
+[25] biber-darwin:340> INFO - === Mon May  5, 2025, 23:25:37
 [31] Biber.pm:419> INFO - Reading 'tese.bcf'
-[64] Biber.pm:979> INFO - Found 34 citekeys in bib section 0
-[69] Biber.pm:4419> INFO - Processing section 0
-[73] Biber.pm:4610> INFO - Looking for bibtex file 'bibliografia.bib' for section 0
-[74] bibtex.pm:1713> INFO - LaTeX decoding ...
-[91] bibtex.pm:1519> INFO - Found BibTeX data source 'bibliografia.bib'
-[153] UCollate.pm:68> INFO - Overriding locale 'pt-BR' defaults 'variable = shifted' with 'variable = non-ignorable'
-[153] UCollate.pm:68> INFO - Overriding locale 'pt-BR' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[153] Biber.pm:4239> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'pt-BR'
-[153] Biber.pm:4245> INFO - No sort tailoring available for locale 'pt-BR'
-[169] bbl.pm:660> INFO - Writing 'tese.bbl' with encoding 'UTF-8'
-[173] bbl.pm:763> INFO - Output to tese.bbl
-[173] Biber.pm:131> WARN - BibTeX subsystem: /var/folders/vn/qwxg6g2j3x363x3hjdxtfnpr0000gn/T/biber_tmp_DEoL/499af1e6906591d6961f19d66c065a09_4438.utf8, line 166, warning: 104 characters of junk seen at toplevel
-[173] Biber.pm:133> INFO - WARNINGS: 1
+[65] Biber.pm:979> INFO - Found 34 citekeys in bib section 0
+[70] Biber.pm:4419> INFO - Processing section 0
+[74] Biber.pm:4610> INFO - Looking for bibtex file 'bibliografia.bib' for section 0
+[75] bibtex.pm:1713> INFO - LaTeX decoding ...
+[92] bibtex.pm:1519> INFO - Found BibTeX data source 'bibliografia.bib'
+[155] UCollate.pm:68> INFO - Overriding locale 'pt-BR' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[155] UCollate.pm:68> INFO - Overriding locale 'pt-BR' defaults 'variable = shifted' with 'variable = non-ignorable'
+[155] Biber.pm:4239> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'pt-BR'
+[155] Biber.pm:4245> INFO - No sort tailoring available for locale 'pt-BR'
+[171] bbl.pm:660> INFO - Writing 'tese.bbl' with encoding 'UTF-8'
+[177] bbl.pm:763> INFO - Output to tese.bbl
+[177] Biber.pm:131> WARN - BibTeX subsystem: /var/folders/vn/qwxg6g2j3x363x3hjdxtfnpr0000gn/T/biber_tmp_z44w/499af1e6906591d6961f19d66c065a09_4915.utf8, line 166, warning: 104 characters of junk seen at toplevel
+[177] Biber.pm:133> INFO - WARNINGS: 1

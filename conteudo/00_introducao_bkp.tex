@@ -1,0 +1,183 @@
+%\chapter{Introdução}
+\unnumberedchapter{Introdução}
+\label{cap:introducao}
+\enlargethispage{.5\baselineskip}
+
+A hemofilia tipo B é uma doença hereditária rara, 
+caracterizada por uma deficiência no Fator IX de coagulação humana (FIX). 
+Os pacientes com a doença enfrentam um risco maior de sofrer com hemorragias graves, 
+tanto internas quanto externas, 
+podendo levar a complicações debilitantes e até mesmo à morte (\cite{Mannucci}).
+
+Apesar dos avanços notáveis no tratamento da hemofilia nas últimas décadas,
+muitos desafios ainda persistem.
+O tratamento tradicional da hemofilia tipo B envolve a infusão de fatores de coagulação recombinantes
+ou derivados do plasma sanguíneo (\cite{Gouw}). 
+Embora eficazes na prevenção de hemorragias,
+esses tratamentos apresentam limitações significativas,
+como a necessidade de infusões frequentes devido à curta meia-vida do FIX na circulação,
+a possibilidade de desenvolvimento de inibidores anticoagulantes e os elevados custos associados (\cite{Mancuso}).
+Nesse contexto, o desenvolvimento de novas proteínas recombinantes (\textit{Sequence Design}) surge 
+como uma abordagem com potencial de reduzir os custos associados ao tratamento da doença, 
+projetando proteínas sob medida que desempenham a mesma função do FIX, mas com maior estabilidade,
+reduzindo a frequência de infusões e o risco do desenvolvimento de inibidores
+
+%\section{Sequence Design}
+\unnumberedsection{Sequence Design}
+
+\textit{Sequence Design} refere-se ao processo de criação ou
+otimização de uma sequência de aminoácidos que se conformam em uma estrutura tridimensional de interesse.
+Em outras palavras, consiste em desenvolver uma função $F_{seq}$ que 
+recebe como entrada uma estrutura proteica alvo e retorna a sequência correspondente. 
+Essa tarefa é desafiadora, 
+pois o número de permutações possíveis para uma sequência de aminoácidos
+cresce exponencialmente com seu tamanho, 
+tornando inviável a busca dentre todas as possibilidades (\cite{Overview}).
+
+\begin{figure}[H]
+  \caption[\textit{Sequence Design}]{\textit{Sequence Design} se resume a desenvolver uma 
+  função $F_{seq}$ que mapeia uma estrutura proteica tridimensional alvo em uma sequência de aminoácidos.}
+  \centering
+  \includegraphics[width=.8\textwidth]{figuras/metodologia-SeqDes.jpg}
+\end{figure}
+
+%\subsection{Sequence Design baseado em busca}
+\unnumberedsubsection{Sequence Design baseado em busca}
+
+No \textit{Sequence Design} baseado em busca, 
+a função $F_{seq}$ é definida por um processo iterativo. 
+Inicialmente, uma sequência de aminoácidos é gerada com base em uma heurística inicial $H$.
+Essa sequência é então avaliada por uma função objetivo $F_{obj}$, 
+responsável por calcular a métrica a ser otimizada.
+A cada iteração, 
+a nova sequência gerada é comparada com a sequência anterior de acordo com a métrica definida. 
+Se a sequência atual apresentar melhor desempenho, o Agente $A$ a define como nova sequência final.
+Caso contrário, a sequência final é mantida. 
+Em ambos os cenários, o próximo passo é a aplicação de uma mutação pelo Agente $A$ sobre 
+a sequência atual com o objetivo de explorar novas possibilidades no espaço de busca.
+Esse processo é repetido até que um critério de parada seja atingido, 
+como um número máximo de iterações ou a convergência da métrica calculada por $F_{obj}$.
+
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=.8\textwidth]{figuras/metodologia-SearchBased.jpg}
+  \caption[\textit{Sequence Design} baseado em busca]{\textit{Sequence Design} baseado em busca define $F_{seq}$ 
+           como um processo iterativo que combina uma 
+           heurística inicial $H$, a avaliação por $F_{obj}$ e as modificações realizadas pelo Agente $A$. 
+           O processo é repetido até atingir um número máximo de iterações ou um limiar calculado por $F_{obj}$.}
+  \label{fig:seqdes_search_based}
+\end{figure}
+
+O software \textit{Rosetta} (\cite{Rosetta}) é uma das ferramentas 
+mais amplamente utilizadas para otimização e \textit{design} de proteínas.
+Ele implementa um \textit{pipeline} iterativo que combina heurísticas de geração de sequências iniciais, 
+avaliações de estabilidade estrutural e técnicas de mutação orientada para explorar o espaço de sequências.
+Em seu \textit{pipeline}:
+
+
+\begin{itemize}
+    \item \textbf{Heurística inicial ($H$):}  
+    Utiliza a sequência de uma proteína estruturalmente semelhante como ponto de partida.
+
+    \item \textbf{Função objetivo ($F_{obj}$):}  
+    Avalia a energia livre da proteína resultante, considerando fatores como interações de Van der Waals,
+    interações eletrostáticas e ligações de hidrogênio.
+
+    \item \textbf{Agente ($A$):}  
+    Utiliza o Método de Monte Carlo (MMC) para introduzir mutações na sequência e aceitar novas configurações com menor energia livre,
+    guiando iterativamente o processo de otimização.
+\end{itemize}
+
+Abordagens alternativas podem usar a similaridade estrutural como função objetivo,
+sendo uma métrica amplamente utilizada o \textit{Template Modeling Score} (TMScore) (\cite{tmscore}).
+
+%\subsection{\textit{Sequence Design} baseado em Aprendizado Profundo}
+\unnumberedsubsection{Sequence Design baseado em Aprendizado Profundo}
+\textit{Sequence Design} baseado em aprendizado profundo define a função $F_{seq}$ 
+a partir de redes neurais artificiais. 
+O trabalho de \cite{ProteinMPNN} por exemplo, 
+determina a $F_{seq}$ como uma rede neural profunda, denominada \textit{ProteinMPNN}, 
+que mapeia de forma direta a estrutura alvo à sequência de aminoácidos. 
+A rede é construída através de uma \textit{Message Passing Neural Network} (MPNN) 
+composta por uma arquitetura \textit{encoder-decoder} 
+que se baseia nas características da estrutura como distância e orientação dos átomos no espaço 
+para fazer predições (\cite{ProteinMPNN}). 
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=.8\textwidth]{figuras/metodologia-DeepLearningBased.jpg}
+  \caption{\textit{Sequence Design} baseado em aprendizado profundo.}
+\end{figure}
+
+%\section{\textit{Sequence Design} baseado em Aprendizado por Reforço Profundo} 
+\unnumberedsection{\textit{Sequence Design} baseado em Aprendizado por Reforço Profundo}
+\label{section:Proposta}
+
+Além de suscitar uma possível resposta imunológica, 
+o tratamento da hemofilia tipo B baseado na infusão de  FIX
+é custoso devido ao pouco tempo de vida da proteína na corrente sanguínea, demandando infusões frequentes. 
+Neste sentido, este trabalho busca responder à seguinte pergunta científica: 
+É possível, através de \textit{Sequence Design}, projetar uma proteína que desempenhe a mesma função do FIX, 
+mas com maior estabilidade, menor imunogenicidade e com necessidade de infusões reduzida? %menos necessidade de infusões?
+
+Para responder a esta questão, formulamos a hipótese de que, 
+se existir uma proteína alternativa superior ao FIX, 
+ela deverá ser estruturalmente similar. 
+Assim, o objetivo será identificar proteínas estruturalmente semelhantes que atendam aos critérios estabelecidos.
+Para simplificar o problema, focaremos no projeto do domínio protease, 
+reconhecido como o mais relevante para a função do FIX (\cite{FIX}).
+
+Nossa dissertação consiste no desenvolvimento de um \textit{pipeline} que combina estratégias de busca 
+com aprendizado profundo para otimização de sequências proteicas. 
+Esse \textit{pipeline} será estruturado em três módulos principais: Condições Iniciais, 
+Treinamento e Geração de Sequências.
+
+
+O módulo de Condições Iniciais tem como objetivo obter a sequência inicial de aminoácidos 
+por meio da heurística \( H \), além de calcular o erro inicial associado a essa sequência 
+utilizando a função objetivo \( F_{\text{obj}} \). 
+Para isso, empregaremos o \textit{ProteinMPNN} como heurística \( H \) 
+e o TMScore como métrica de avaliação estrutural \( F_{\text{obj}} \).  
+
+Diferente do uso de agentes que realizam mutações aleatórias, como no \textit{Rosetta},
+no módulo de Treinamento uma rede neural profunda, o \textit{GenSeq}, será treinada para atuar como o Agente $A$,
+sendo capaz de realizar mutações que otimizem a similaridade com a estrutura alvo, isto é, o FIX.
+O \textit{GenSeq} será treinado utilizando um algoritmo de Aprendizado por Reforço Profundo (DRL), 
+o \textit{Proximal Policy Optimization} (PPO) (\cite{PPO}).
+
+Por fim, no módulo de Geração de Sequências, 
+o agente treinado será utilizado para produzir um conjunto de variantes proteicas estruturalmente semelhantes ao FIX,
+por meio de um processo de mutação orientado. 
+As sequências geradas serão então avaliadas para identificar candidatas viáveis 
+a substituir o FIX no tratamento da hemofilia tipo B.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=.8\textwidth]{figuras/metodologia-pipeline_proposta.jpg}
+  \caption{\textit{Pipeline} proposto de \textit{Sequence Design}.}
+  \label{fig:proposta}
+\end{figure}
+
+%\section{Objetivos}
+\unnumberedsection{Objetivos}
+
+\begin{enumerate}
+  \item Desenvolver um \textit{pipeline} genérico que produza sequências que mimetizem uma estrutura qualquer.
+  \item Obter um conjunto de sequências de aminoácidos que mimetizem a estrutura do FIX baseado na métrica TMScore.
+  \item Avaliar, dentro do conjunto de proteínas obtidas em 1, quais possuem potencial de substituir o FIX de modo tornar o tratamento de Hemofilia tipo B mais acessível e eficiente.
+\end{enumerate}
+
+%\section{Contribuições}
+\unnumberedsection{Contribuições}
+As contribuições deste trabalho são:
+\begin{enumerate}
+  \item O desenvolvimento de proteínas potenciais candidatas a substituir o FIX no tratamento da hemofilia tipo B.
+  \item Um \textit{pipeline} para \textit{Sequence Design} baseado em Aprendizado por Reforço Profundo, que pode ser adaptado para outras proteínas com estruturas conhecidas.
+  \item Introdução da métrica IMI (Imuno Índice), que quantifica a propensão de uma proteína gerar uma resposta imunológica adversa.
+  \item O artefato do modelo de aprendizado por reforço profundo, o \textit{GenSeq}, que pode ser utilizado para geração de novas sequências proteicas a partir da estrutura do FIX (\cite{repo}).
+  \item O código fonte das implementações e os scripts utilizados para o treinamento do \textit{GenSeq}, bem como a avaliação 
+  de similaridade estrutural, \textit{docking} e imunogenicidade das sequências geradas (\cite{repo}).
+  \item Os arquivos PDB utilizados como entrada para o treinamento do \textit{GenSeq} e para a avaliação das proteínas geradas (\cite{repo}).
+  \item Apresentação dos resultados no \textit{World Federation of Hemophilia (WFH) 2024}, realizado em Madrid, Espanha, por meio do pôster científico intitulado \textit{“Protein Design and Deep Learning: A New Frontier in Hemophilia B Management”} (\cite{WFH2024})
+\end{enumerate}
